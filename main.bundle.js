@@ -3087,10 +3087,10 @@ var MasterRepo = (function () {
         }
     };
     MasterRepo.prototype.ValidateNepaliDate = function (Engdate) {
-        //console.log('date1', this.date1);
-        //console.log('date2', this.date2);
-        // //console.log('Engdate',Engdate);
-        if (Engdate < this.date1 && Engdate >= this.date2) {
+        console.log('date1', this.date1);
+        console.log('date2', this.date2);
+        console.log('Engdate', Engdate);
+        if (Engdate <= this.date1 && Engdate >= this.date2) {
             return true;
         }
         else {
@@ -10507,6 +10507,30 @@ var MasterRepo = (function () {
             if (adDate)
                 return adDate.year + '-' + adDate.month.toString().padStart(2, '0') + '-' + adDate.day.toString().padStart(2, '0');
         }
+    };
+    MasterRepo.prototype.checkPIInDebitNote = function (voucherNo) {
+        voucherNo = voucherNo.replace("/", "ZZ");
+        var res = { status: "error", result: "" };
+        var returnSubject = new __WEBPACK_IMPORTED_MODULE_6_rxjs_subject__["Subject"]();
+        this.http
+            .get(this.apiUrl + ("/checkPIInDebitNote/" + voucherNo), this.getRequestOption())
+            .subscribe(function (response) {
+            var data = response.json();
+            if (data.status == "ok") {
+                returnSubject.next(data);
+                returnSubject.unsubscribe();
+            }
+            else {
+                returnSubject.next(data);
+                returnSubject.unsubscribe();
+            }
+        }, function (error) {
+            res.status = "error";
+            res.result = error;
+            returnSubject.next(res);
+            returnSubject.unsubscribe();
+        });
+        return returnSubject;
     };
     return MasterRepo;
 }());
@@ -27987,8 +28011,8 @@ var ProductInsertComponent = (function () {
                     VT == __WEBPACK_IMPORTED_MODULE_1__interfaces_TrnMain__["a" /* VoucherTypeEnum */].SalesReturn ||
                     VT == __WEBPACK_IMPORTED_MODULE_1__interfaces_TrnMain__["a" /* VoucherTypeEnum */].CreditNote ||
                     //VT == VoucherTypeEnum.Purchase ||
-                    (VT == __WEBPACK_IMPORTED_MODULE_1__interfaces_TrnMain__["a" /* VoucherTypeEnum */].TaxInvoice && (this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "distributor" ||
-                        this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "superdistributor")) ||
+                    // (VT == VoucherTypeEnum.TaxInvoice && (this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "distributor" ||
+                    //     this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "superdistributor")) ||
                     (VT == __WEBPACK_IMPORTED_MODULE_1__interfaces_TrnMain__["a" /* VoucherTypeEnum */].TaxInvoiceCancel && (this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "distributor" ||
                         this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "superdistributor")))
                     showColumn = true;
@@ -27998,8 +28022,8 @@ var ProductInsertComponent = (function () {
                     VT == __WEBPACK_IMPORTED_MODULE_1__interfaces_TrnMain__["a" /* VoucherTypeEnum */].SalesReturn ||
                     VT == __WEBPACK_IMPORTED_MODULE_1__interfaces_TrnMain__["a" /* VoucherTypeEnum */].CreditNote ||
                     //(VT == VoucherTypeEnum.Purchase && (this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "distributor")) ||
-                    (VT == __WEBPACK_IMPORTED_MODULE_1__interfaces_TrnMain__["a" /* VoucherTypeEnum */].TaxInvoice && (this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "distributor" ||
-                        this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "superdistributor")) ||
+                    // (VT == VoucherTypeEnum.TaxInvoice && (this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "distributor" ||
+                    //     this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "superdistributor")) ||
                     (VT == __WEBPACK_IMPORTED_MODULE_1__interfaces_TrnMain__["a" /* VoucherTypeEnum */].TaxInvoiceCancel && (this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "distributor" ||
                         this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "superdistributor")))
                     showColumn = true;
@@ -28016,8 +28040,8 @@ var ProductInsertComponent = (function () {
             case "OTHER_DIS_HEADER":
                 if (VT == __WEBPACK_IMPORTED_MODULE_1__interfaces_TrnMain__["a" /* VoucherTypeEnum */].Sales ||
                     VT == __WEBPACK_IMPORTED_MODULE_1__interfaces_TrnMain__["a" /* VoucherTypeEnum */].SalesReturn ||
-                    (VT == __WEBPACK_IMPORTED_MODULE_1__interfaces_TrnMain__["a" /* VoucherTypeEnum */].TaxInvoice && (this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "distributor" ||
-                        this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "superdistributor")) ||
+                    // (VT == VoucherTypeEnum.TaxInvoice && (this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "distributor" ||
+                    //     this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "superdistributor")) ||
                     (VT == __WEBPACK_IMPORTED_MODULE_1__interfaces_TrnMain__["a" /* VoucherTypeEnum */].TaxInvoiceCancel && (this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "distributor" ||
                         this._trnMainService.userProfile.CompanyInfo.ORG_TYPE == "superdistributor")))
                     showColumn = true;
@@ -40266,7 +40290,7 @@ var Footer = (function () {
 Footer = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'pages-footer',
-        template: "\n    <footer class=\"al-footer clearfix sticky-footer\">\n    <table cellpadding=\"0\" cellspacing=\"0\" class=\"wms-cd\">\n    <colgroup>\n    <col>\n    </colgroup>\n    <tbody>\n      <tr>\n        <td style=\"text-align:left;\" class=\"copyright\">\n          <span style=\"margin-left:3px;font-size:11px;color:#000;\">Powered by IMS</span>\n        </td> \n        <td>Account V7.4.8</td> \n        <td class=\"wpusname trans-Status\">\n          <span class=\"wp-hdr-login\">Company </span>\n          <span class=\"wp-hdr-login-txt\">{{loggedInUserDetail.CompanyInfo.NAME}} </span> \n          <span class=\"wp-hdr-login\">Location </span> \n          <span class=\"wp-hdr-login-txt\">{{loggedInUserDetail.CompanyInfo.ADDRESS}} </span> \n          <span class=\"wp-hdr-login\">Login User </span> \n          <span class=\"wp-hdr-login-txt\">{{loggedInUserDetail.username}} </span> \n          \n        \n        </td>\n      </tr>\n     </tbody>\n     </table>\n    </footer>\n    ",
+        template: "\n    <footer class=\"al-footer clearfix sticky-footer\">\n    <table cellpadding=\"0\" cellspacing=\"0\" class=\"wms-cd\">\n    <colgroup>\n    <col>\n    </colgroup>\n    <tbody>\n      <tr>\n        <td style=\"text-align:left;\" class=\"copyright\">\n          <span style=\"margin-left:3px;font-size:11px;color:#000;\">Powered by IMS</span>\n        </td> \n        <td>Account V7.4.9</td> \n        <td class=\"wpusname trans-Status\">\n          <span class=\"wp-hdr-login\">Company </span>\n          <span class=\"wp-hdr-login-txt\">{{loggedInUserDetail.CompanyInfo.NAME}} </span> \n          <span class=\"wp-hdr-login\">Location </span> \n          <span class=\"wp-hdr-login-txt\">{{loggedInUserDetail.CompanyInfo.ADDRESS}} </span> \n          <span class=\"wp-hdr-login\">Login User </span> \n          <span class=\"wp-hdr-login-txt\">{{loggedInUserDetail.username}} </span> \n          \n        \n        </td>\n      </tr>\n     </tbody>\n     </table>\n    </footer>\n    ",
         styles: [
             "\n        \n.wms-cd{\n    z-index: 100;\n    border-top: 1px solid #cacaca;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    width: 100%;\n    height: 21px;\n    text-decoration: none;\n    color: #666;\n    background: #dadada left top;\n    background-attachment: scroll;\n    text-align: right;\n  }\n  \n  .wp-hdr-login {\n    font-size: 11px;\n    font-style: normal;\n    padding-left: 3px;\n    color: #666;\n    font-weight: 700;\n  }\n  .wpusname {\n    display: inline;\n    line-height: 20px;\n    text-align: right;\n    padding-right: 5px;\n  }\n        "
         ]

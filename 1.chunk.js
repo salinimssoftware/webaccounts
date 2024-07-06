@@ -4358,6 +4358,7 @@ var BulkPrintComponent = (function () {
         this.offset = 0;
         this.voucherPrefix = '';
         this.SelectAll = false;
+        this.itemsToProcess = 0;
         this.gridVoucherListPopupSettings = new __WEBPACK_IMPORTED_MODULE_9__common_popupLists_generic_grid_generic_popup_grid_component__["b" /* GenericPopUpSettings */]();
         this.userProfile = authService.getUserProfile();
         this.PhiscalObj = authService.getPhiscalInfo();
@@ -4378,7 +4379,11 @@ var BulkPrintComponent = (function () {
             //      this.masterService.voucherListsForBulkPrint.push(value);
             //      this.PrepareBodyDataForBulkPrint(value.VCHRNO);
             //  }
-            this.PrepareBodyDataForBulkPrint(value.VCHRNO);
+            this.PrepareBodyDataForBulkPrint(value.VCHRNO).then(function () {
+                if (_this.itemsToProcess === 0) {
+                    _this.spinnerService.hide();
+                }
+            });
         }
         else if (!value.IS_CHECKED) {
             // this.masterService.voucherListsForBulkPrint.forEach((voucher,i) => {
@@ -4420,79 +4425,86 @@ var BulkPrintComponent = (function () {
         var vat = this.userProfile.CompanyInfo.VAT;
         var VATresult = vat.split("");
         var voucherprefix = this.voucherPrefix;
-        this.masterService.getPrintFileName(voucherprefix).subscribe(function (res) {
-            if (res.status == "ok") {
-                _this.filename = res.result ? res.result[0].FileName : '';
-                _this.rownumber = res.result ? res.result[0].RowsNumber : 0;
-                _this.masterService.getNumberToWords(VCHRNO, _this.userProfile.CompanyInfo.INITIAL, _this.masterService.PhiscalObj.PhiscalID, _this.userProfile.CompanyInfo.COMPANYID, '').subscribe(function (res) {
-                    if (res.status == "ok") {
-                        _this.numtowords = res.result ? res.result[0].NUMTOWORDS : '';
-                        var userdivision = _this.userProfile.userDivision ? _this.userProfile.userDivision : _this.userProfile.CompanyInfo.INITIAL;
-                        var ADDRESS_1 = _this.userProfile.CompanyInfo.ADDRESS;
-                        var BRANCHNAME_1 = _this.userProfile.CompanyInfo.INITIAL;
-                        _this.masterService.getDetailsByUserDivision(userdivision).subscribe(function (res) {
-                            if (res.status == "ok") {
-                                if (res.result && res.result.length > 0 && res.result[0] && res.result[0].COMADD) {
-                                    ADDRESS_1 = res.result[0].COMADD;
-                                }
-                                if (ADDRESS_1 === null || ADDRESS_1 === undefined || ADDRESS_1 === '') {
-                                    ADDRESS_1 = _this.userProfile.CompanyInfo.ADDRESS;
-                                }
-                                if (res.result && res.result.length > 0 && res.result[0] && res.result[0].BRANCHNAME) {
-                                    BRANCHNAME_1 = res.result[0].BRANCHNAME;
-                                }
-                                if (BRANCHNAME_1 === null || BRANCHNAME_1 === undefined || BRANCHNAME_1 === '') {
-                                    BRANCHNAME_1 = _this.userProfile.CompanyInfo.INITIAL;
-                                }
-                                var pdfPrintFormatParameters = {};
-                                pdfPrintFormatParameters.filename = _this.filename;
-                                pdfPrintFormatParameters.rownumber = _this.rownumber;
-                                pdfPrintFormatParameters.VCHRNO = VCHRNO;
-                                pdfPrintFormatParameters.NAME = _this.userProfile.CompanyInfo.NAME;
-                                pdfPrintFormatParameters.ADDRESS = ADDRESS_1 ? ADDRESS_1 : ' ';
-                                pdfPrintFormatParameters.INITIAL = _this.userProfile.CompanyInfo.INITIAL;
-                                pdfPrintFormatParameters.PhiscalID = _this.userProfile.CompanyInfo.PhiscalID,
-                                    pdfPrintFormatParameters.COMPANYID = _this.userProfile.CompanyInfo.COMPANYID;
-                                pdfPrintFormatParameters.phone1 = _this.userProfile.CompanyInfo.TELA ? _this.userProfile.CompanyInfo.TELA : ' ';
-                                pdfPrintFormatParameters.phone2 = _this.userProfile.CompanyInfo.TELB ? _this.userProfile.CompanyInfo.TELB : ' ';
-                                pdfPrintFormatParameters.EMAIL = _this.userProfile.CompanyInfo.EMAIL ? _this.userProfile.CompanyInfo.EMAIL : ' ';
-                                pdfPrintFormatParameters.numtowords = _this.numtowords ? _this.numtowords : ' ';
-                                pdfPrintFormatParameters.panno1 = VATresult[0] ? VATresult[0] : ' ';
-                                pdfPrintFormatParameters.panno2 = VATresult[1] ? VATresult[1] : ' ';
-                                pdfPrintFormatParameters.panno3 = VATresult[2] ? VATresult[2] : ' ';
-                                pdfPrintFormatParameters.panno4 = VATresult[3] ? VATresult[3] : ' ';
-                                pdfPrintFormatParameters.panno5 = VATresult[4] ? VATresult[4] : ' ';
-                                pdfPrintFormatParameters.panno6 = VATresult[5] ? VATresult[5] : ' ';
-                                pdfPrintFormatParameters.panno7 = VATresult[6] ? VATresult[6] : ' ';
-                                pdfPrintFormatParameters.panno8 = VATresult[7] ? VATresult[7] : ' ';
-                                pdfPrintFormatParameters.panno9 = VATresult[8] ? VATresult[8] : ' ';
-                                pdfPrintFormatParameters.VoucherPrefix = _this.voucherPrefix;
-                                pdfPrintFormatParameters.PRINTBY = _this.userProfile.username ? _this.userProfile.username : ' ';
-                                pdfPrintFormatParameters.COMPANYVAT = vat ? vat : _this.userProfile.CompanyInfo.VAT;
-                                pdfPrintFormatParameters.BRANCHNAME = BRANCHNAME_1 ? BRANCHNAME_1 : ' ';
-                                var bodyData = {
-                                    "filename": pdfPrintFormatParameters.filename,
-                                    "Parameter": {
-                                        "vchrno": pdfPrintFormatParameters.VCHRNO, "voucherno": pdfPrintFormatParameters.VCHRNO, "rowsnumber": pdfPrintFormatParameters.rownumber,
-                                        "companyname": pdfPrintFormatParameters.NAME, "companyaddress": pdfPrintFormatParameters.ADDRESS,
-                                        "division": pdfPrintFormatParameters.INITIAL, "phiscalid": pdfPrintFormatParameters.PhiscalID, "companyid": pdfPrintFormatParameters.COMPANYID, "numtowords": pdfPrintFormatParameters.numtowords,
-                                        "p1": pdfPrintFormatParameters.panno1, "p2": pdfPrintFormatParameters.panno2, "p3": pdfPrintFormatParameters.panno3, "p4": pdfPrintFormatParameters.panno4, "p5": pdfPrintFormatParameters.panno5, "p6": pdfPrintFormatParameters.panno6, "p7": pdfPrintFormatParameters.panno7, "p8": pdfPrintFormatParameters.panno8, "p9": pdfPrintFormatParameters.panno9,
-                                        "branchname": pdfPrintFormatParameters.BRANCHNAME,
-                                        "phone1": pdfPrintFormatParameters.phone1, "phone2": pdfPrintFormatParameters.phone2, "email": pdfPrintFormatParameters.EMAIL,
-                                        "PRINTBY": pdfPrintFormatParameters.PRINTBY, "companyemail": pdfPrintFormatParameters.EMAIL, "companyvat": pdfPrintFormatParameters.COMPANYVAT
+        return new Promise(function (resolve) {
+            _this.masterService.getPrintFileName(voucherprefix).subscribe(function (res) {
+                if (res.status == "ok") {
+                    _this.filename = res.result ? res.result[0].FileName : '';
+                    _this.rownumber = res.result ? res.result[0].RowsNumber : 0;
+                    _this.masterService.getNumberToWords(VCHRNO, _this.userProfile.CompanyInfo.INITIAL, _this.masterService.PhiscalObj.PhiscalID, _this.userProfile.CompanyInfo.COMPANYID, '').subscribe(function (res) {
+                        if (res.status == "ok") {
+                            _this.numtowords = res.result ? res.result[0].NUMTOWORDS : '';
+                            var userdivision = _this.userProfile.userDivision ? _this.userProfile.userDivision : _this.userProfile.CompanyInfo.INITIAL;
+                            var ADDRESS_1 = _this.userProfile.CompanyInfo.ADDRESS;
+                            var BRANCHNAME_1 = _this.userProfile.CompanyInfo.INITIAL;
+                            _this.masterService.getDetailsByUserDivision(userdivision).subscribe(function (res) {
+                                if (res.status == "ok") {
+                                    if (res.result && res.result.length > 0 && res.result[0] && res.result[0].COMADD) {
+                                        ADDRESS_1 = res.result[0].COMADD;
                                     }
-                                };
-                                _this.BulkVoucherPrintBodyList.push(bodyData);
-                            }
-                        });
-                    }
-                });
-            }
+                                    if (ADDRESS_1 === null || ADDRESS_1 === undefined || ADDRESS_1 === '') {
+                                        ADDRESS_1 = _this.userProfile.CompanyInfo.ADDRESS;
+                                    }
+                                    if (res.result && res.result.length > 0 && res.result[0] && res.result[0].BRANCHNAME) {
+                                        BRANCHNAME_1 = res.result[0].BRANCHNAME;
+                                    }
+                                    if (BRANCHNAME_1 === null || BRANCHNAME_1 === undefined || BRANCHNAME_1 === '') {
+                                        BRANCHNAME_1 = _this.userProfile.CompanyInfo.INITIAL;
+                                    }
+                                    var pdfPrintFormatParameters = {};
+                                    pdfPrintFormatParameters.filename = _this.filename;
+                                    pdfPrintFormatParameters.rownumber = _this.rownumber;
+                                    pdfPrintFormatParameters.VCHRNO = VCHRNO;
+                                    pdfPrintFormatParameters.NAME = _this.userProfile.CompanyInfo.NAME;
+                                    pdfPrintFormatParameters.ADDRESS = ADDRESS_1 ? ADDRESS_1 : ' ';
+                                    pdfPrintFormatParameters.INITIAL = _this.userProfile.CompanyInfo.INITIAL;
+                                    pdfPrintFormatParameters.PhiscalID = _this.userProfile.CompanyInfo.PhiscalID,
+                                        pdfPrintFormatParameters.COMPANYID = _this.userProfile.CompanyInfo.COMPANYID;
+                                    pdfPrintFormatParameters.phone1 = _this.userProfile.CompanyInfo.TELA ? _this.userProfile.CompanyInfo.TELA : ' ';
+                                    pdfPrintFormatParameters.phone2 = _this.userProfile.CompanyInfo.TELB ? _this.userProfile.CompanyInfo.TELB : ' ';
+                                    pdfPrintFormatParameters.EMAIL = _this.userProfile.CompanyInfo.EMAIL ? _this.userProfile.CompanyInfo.EMAIL : ' ';
+                                    pdfPrintFormatParameters.numtowords = _this.numtowords ? _this.numtowords : ' ';
+                                    pdfPrintFormatParameters.panno1 = VATresult[0] ? VATresult[0] : ' ';
+                                    pdfPrintFormatParameters.panno2 = VATresult[1] ? VATresult[1] : ' ';
+                                    pdfPrintFormatParameters.panno3 = VATresult[2] ? VATresult[2] : ' ';
+                                    pdfPrintFormatParameters.panno4 = VATresult[3] ? VATresult[3] : ' ';
+                                    pdfPrintFormatParameters.panno5 = VATresult[4] ? VATresult[4] : ' ';
+                                    pdfPrintFormatParameters.panno6 = VATresult[5] ? VATresult[5] : ' ';
+                                    pdfPrintFormatParameters.panno7 = VATresult[6] ? VATresult[6] : ' ';
+                                    pdfPrintFormatParameters.panno8 = VATresult[7] ? VATresult[7] : ' ';
+                                    pdfPrintFormatParameters.panno9 = VATresult[8] ? VATresult[8] : ' ';
+                                    pdfPrintFormatParameters.VoucherPrefix = _this.voucherPrefix;
+                                    pdfPrintFormatParameters.PRINTBY = _this.userProfile.username ? _this.userProfile.username : ' ';
+                                    pdfPrintFormatParameters.COMPANYVAT = vat ? vat : _this.userProfile.CompanyInfo.VAT;
+                                    pdfPrintFormatParameters.BRANCHNAME = BRANCHNAME_1 ? BRANCHNAME_1 : ' ';
+                                    var bodyData = {
+                                        "filename": pdfPrintFormatParameters.filename,
+                                        "Parameter": {
+                                            "vchrno": pdfPrintFormatParameters.VCHRNO, "voucherno": pdfPrintFormatParameters.VCHRNO, "rowsnumber": pdfPrintFormatParameters.rownumber,
+                                            "companyname": pdfPrintFormatParameters.NAME, "companyaddress": pdfPrintFormatParameters.ADDRESS,
+                                            "division": pdfPrintFormatParameters.INITIAL, "phiscalid": pdfPrintFormatParameters.PhiscalID, "companyid": pdfPrintFormatParameters.COMPANYID, "numtowords": pdfPrintFormatParameters.numtowords,
+                                            "p1": pdfPrintFormatParameters.panno1, "p2": pdfPrintFormatParameters.panno2, "p3": pdfPrintFormatParameters.panno3, "p4": pdfPrintFormatParameters.panno4, "p5": pdfPrintFormatParameters.panno5, "p6": pdfPrintFormatParameters.panno6, "p7": pdfPrintFormatParameters.panno7, "p8": pdfPrintFormatParameters.panno8, "p9": pdfPrintFormatParameters.panno9,
+                                            "branchname": pdfPrintFormatParameters.BRANCHNAME,
+                                            "phone1": pdfPrintFormatParameters.phone1, "phone2": pdfPrintFormatParameters.phone2, "email": pdfPrintFormatParameters.EMAIL,
+                                            "PRINTBY": pdfPrintFormatParameters.PRINTBY, "companyemail": pdfPrintFormatParameters.EMAIL, "companyvat": pdfPrintFormatParameters.COMPANYVAT
+                                        }
+                                    };
+                                    _this.BulkVoucherPrintBodyList.push(bodyData);
+                                }
+                                if (_this.itemsToProcess > 0)
+                                    _this.itemsToProcess--;
+                                resolve();
+                            });
+                        }
+                    });
+                }
+            });
         });
     };
     BulkPrintComponent.prototype.onSelectAllClicked = function () {
         var _this = this;
         if (this.SelectAll) {
+            this.spinnerService.show("Prepearing Voucher for Print, Please Wait...");
+            this.itemsToProcess = this.masterService.voucherListsForBulkPrint.filter(function (x) { return !x.IS_CHECKED; }).length;
             this.masterService.voucherListsForBulkPrint.forEach(function (x) {
                 if (x.IS_CHECKED) {
                     return;
@@ -4719,6 +4731,24 @@ var BulkPrintComponent = (function () {
         this.voucherPrefix = "";
         this.masterService.voucherListsForBulkPrint = [];
         this.BulkVoucherPrintBodyList = [];
+        this.FROM = null;
+        this.TO = null;
+    };
+    BulkPrintComponent.prototype.onVoucherTypeChange = function (event) {
+        var _this = this;
+        if (this.BulkVoucherPrintBodyList.length > 0) {
+            if (confirm("All prepeared voucher data will reset. Are you sure you want to change voucher type? ")) {
+                this.BulkVoucherPrintBodyList = [];
+            }
+            else {
+                setTimeout(function () {
+                    _this.voucherPrefix = _this.currentPrefix;
+                }, 200);
+                return;
+            }
+        }
+        this.currentPrefix = this.voucherPrefix;
+        this.masterService.voucherListsForBulkPrint = [];
         this.FROM = null;
         this.TO = null;
     };
@@ -12480,6 +12510,7 @@ var MasterNewAdditionalComponent = (function () {
         }
     };
     MasterNewAdditionalComponent.prototype.onRefBillSelected = function (value) {
+        var _this = this;
         // alert("reached")
         this.masterService.AdditionalPurchaseAcObj = '';
         this.masterService.AdditionalPurchaseCreditAcObj = '';
@@ -12497,7 +12528,18 @@ var MasterNewAdditionalComponent = (function () {
         this.masterService.RefObj.SupplierName = value.ACNAME;
         this._trnMainService.TrnMainObj.PARAC = value.PARAC;
         this._trnMainService.TrnMainObj.COSTCENTER = value.COSTCENTER;
-        this.getAdditionalCost(value);
+        this.masterService.checkPIInDebitNote(this._trnMainService.TrnMainObj.REFBILL).subscribe(function (data) {
+            if (data.result[0].debitedAmnt != null && data.result[0].purchaseAmnt != null) {
+                if (data.result[0].debitedAmnt == data.result[0].purchaseAmnt || data.result[0].debitedAmnt != data.result[0].purchaseAmnt) {
+                    _this.alertService.error("Additional Costing Cannot be done.This purchase has already been debited.");
+                    _this.additionalcostService.addtionalCostList = [];
+                    return;
+                }
+            }
+            else {
+                _this.getAdditionalCost(value);
+            }
+        });
         this.masterService.focusAnyControl("_AdditioanlCostRate" + 0);
         // if(this.masterService.RefObj.PURCHASE_TYPE=="LOCALPURCHASE"){
         //     this.masterService.PIVoucherDetail(value.VCHRNO).subscribe(res => {
@@ -19671,14 +19713,14 @@ module.exports = "<style>\r\n  .modal-content {\r\n    padding: 1px;\r\n    marg
 /***/ 1303:
 /***/ (function(module, exports) {
 
-module.exports = ".table td, .table th{\r\n    padding: 0px !important;\r\n  }\r\n\r\ntbody {\r\n    /* display:block; */\r\n    height:53vh;\r\n    overflow:scroll;\r\n}\r\n\r\nthead, tbody tr {\r\n  display:table;\r\n  width:100%;\r\n  table-layout:fixed;/* even columns width , fix width of table too*/\r\n}\r\n\r\nth{\r\n  font-size: 15px;\r\n  font-weight: bold;\r\n  font-family: Roboto,Arial,sans-serif;\r\n}\r\n\r\ntd{\r\n  font-size: 13px;\r\n  font-family: Roboto,Arial,sans-serif;\r\n\r\n}\r\n\r\n.table tbody tr td{\r\n  line-height: 40px;\r\n}\r\n\r\ninput,select{\r\n    height: 28px;\r\n}\r\n\r\n.form-control{\r\n    font-size: 13px !important;\r\n}\r\n\r\n.date-field{\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n}\r\n\r\n.filter-label{\r\n  width: 100px; \r\n  padding-top: 5px;\r\n}"
+module.exports = ".table td, .table th{\r\n    padding: 0px !important;\r\n  }\r\n\r\ntbody {\r\n    /* display:block; */\r\n    height:53vh;\r\n    overflow:scroll;\r\n}\r\n\r\nthead, tbody tr {\r\n  display:table;\r\n  width:100%;\r\n  table-layout:fixed;/* even columns width , fix width of table too*/\r\n}\r\n\r\nth{\r\n  font-size: 15px;\r\n  font-weight: bold;\r\n  font-family: Roboto,Arial,sans-serif;\r\n}\r\n\r\ntd{\r\n  font-size: 13px;\r\n  font-family: Roboto,Arial,sans-serif;\r\n\r\n}\r\n\r\n.table tbody tr td{\r\n  line-height: 40px;\r\n}\r\n\r\ninput,select{\r\n    height: 28px;\r\n}\r\n\r\n.form-control{\r\n    font-size: 13px !important;\r\n}\r\n\r\n.date-field{\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n}\r\n\r\n.filter-label{\r\n  width: 100px; \r\n  padding-top: 5px;\r\n}\r\n\r\n.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {\r\n  pointer-events: none; /* Prevents interaction with the disabled rows */\r\n  background-color: #C0C0C0 !important; \r\n  color: black;\r\n}"
 
 /***/ }),
 
 /***/ 1304:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"sticky-top\">\r\n    <div class=\"clearfix\">\r\n      <div class=\"col-md-4\">\r\n        <!-- <h2 style=\"color: black;\">Bank Reconciliation </h2> -->\r\n        <label style=\"font-family: Segoe UI Light;font-weight: bold;font-size: 20px;padding-left: 5%;padding-top: 1%;width: 100%;\">Multiple Voucher Print (Bulk Print)</label>\r\n      </div>\r\n      <!-- <div class=\"col-md-7\">\r\n        <button style=\"margin: 4px 4px;\" class=\"btn btn-info pull-right\" (click)='SaveRenum()'>\r\n          Update\r\n        </button>\r\n  \r\n      </div> -->\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"main-container\">\r\n      <div class=\"row\" style=\"margin: 0px 15px ; border: 1px solid #e6e6e6; padding: 10px 10px;\">\r\n        <div class=\"col-md-10\">\r\n          <div class=\"row\">\r\n         \r\n            <div class=\"col-md-12\">\r\n                <div class=\"form-group row\">\r\n                    \r\n                  <div class=\"col-md-3\">\r\n                    <div class=\"date-field\">\r\n                      <label class=\"form-control-label filter-label\">Voucher: </label>\r\n                      <select class=\"form-control\" [(ngModel)]=\"voucherPrefix\">\r\n                        <option value=\"\" disabled selected hidden>Select Voucher</option>\r\n                        <option value=\"JV\">Journal Voucher</option>\r\n                        <option value=\"CV\">Contra Voucher</option>\r\n                        <option value=\"PV\">Payment Voucher</option>\r\n                        <option value=\"RV\">Receipt Voucher</option>\r\n        \r\n                    </select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-md-3\">\r\n                  <div class=\"date-field\">\r\n                    <label class=\"form-control-label filter-label\" style=\"margin-right: 10px;\" for=\"\">From</label>\r\n                    <input class=\"form-control\" type=\"number\" min=\"1\"  [(ngModel)]=\"FROM\" placeholder=\"Enter Voucher No.\">\r\n                  </div>\r\n\r\n                </div>\r\n                <div class=\"col-md-3\">\r\n                  <div class=\"date-field\">\r\n                    <label class=\"form-control-label filter-label\" for=\"\">To</label>\r\n                    <input class=\"form-control\" type=\"number\" min=\"1\" [(ngModel)]=\"TO\" placeholder=\"Enter Voucher No.\">\r\n                  </div>\r\n\r\n                </div>\r\n                <div class=\"col-md-1\">\r\n                  <button [disabled]=\"voucherPrefix == ''\" (click)=\"LoadVoucherWiseList(voucherPrefix)\" class=\"btn btn-info\">LOAD</button>\r\n               </div>\r\n               <div class=\"col-md-1\">\r\n                <button [disabled]=\"masterService.voucherListsForBulkPrint.length==0\" (click)=\"onPrintClicked()\" class=\"btn btn-info\">PRINT</button>\r\n             </div>\r\n             <div class=\"col-md-1\">\r\n              <button (click)=\"onReset()\" class=\"btn btn-info\">RESET</button>\r\n           </div>\r\n                </div>\r\n    \r\n            </div>\r\n    \r\n          </div>\r\n    \r\n          \r\n        </div>\r\n\r\n       <!-- <div class=\"col-md-1\" style=\"margin: 0px 30px;\">\r\n        <button (click)=\"exportTOExcel(voucherLists, 'VoucherList')\" class=\"btn btn-info pull-right\">Export Renumering</button>\r\n     </div> -->\r\n      </div>\r\n\r\n      <div class=\"clearfix\" style=\"margin-top: 5px;\">\r\n        <div class=\"card-header\" style=\"    background: #4472C4;\r\n        color: #ffff;\">\r\n\r\n        <span class=\"col-md-6\">Voucher Lists</span>\r\n\r\n\r\n      </div>\r\n\r\n        <div class=\"row\" style=\"height: 60vh;\">\r\n            <table class=\"table table-striped\" style=\"width: 98%;\">\r\n            <thead>\r\n                <tr style=\"position: sticky; top:0;line-height: 2.4rem; border-bottom: 1px solid #E6E6E6; border-top: 1px solid #E6E6E6;\r\n                background:#C0C0C0;\r\n                color: black;\">\r\n                    <th scope=\"col\" style=\"width: 5%;\" *ngIf=\"masterService.voucherListsForBulkPrint && masterService.voucherListsForBulkPrint.length > 0\"><input (change)=\"onSelectAllClicked()\" class=\"form-check-input\" type=\"checkbox\" [(ngModel)]=\"SelectAll\" style=\"margin-left: 7px;\"> <label for=\"\" style=\" width: 20px; font-size: 16px; font-weight: 600;margin-left: 30px;height: 10px;\">All</label></th>\r\n                    <th scope=\"col\" style=\"width: 5%;\">S.N</th>\r\n                    <th scope=\"col\" style=\"width: 10%;\">TRN DATE</th>\r\n                    <th scope=\"col\" style=\"width: 10%;\">VOUCHER NO</th>\r\n                    <!-- <th scope=\"col\" style=\"width: 10%;\">TRNDATE</th> -->\r\n                    <!-- <th scope=\"col\" style=\"width: 10%;\">TRN_BSDATE</th> -->\r\n                    <th scope=\"col\" style=\"width: 10%;\">AMOUNT</th>\r\n                    <th scope=\"col\" style=\"width: 10%;\">REF NO</th>\r\n                    <!-- <th scope=\"col\" style=\"width: 10%;\">TRNAC</th> -->\r\n                    <th scope=\"col\" style=\"width: 20%;\">REMARKS</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n                <ng-container *ngIf=\"masterService.voucherListsForBulkPrint && masterService.voucherListsForBulkPrint.length > 0\">\r\n                <tr *ngFor=\"let voucher of (masterService.voucherListsForBulkPrint|searchData:filter:'' | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage, totalItems: totalCount }); let i = index\">\r\n                    <td style=\"width: 5%;\"><input type=\"checkbox\" [(ngModel)]=\"voucher.IS_CHECKED\" (change)=\"PrepareVoucherListForPrint(voucher);\" class=\"form-check-input\"></td>\r\n                    <td style=\"width: 5%;\">{{currentPage>1?((currentPage-1)*10)+i+1:i+1}}</td>\r\n                    <!-- <td style=\"width: 10%;\">{{voucher.VCHRNO}}</td> -->\r\n                    <td style=\"width: 10%;\">{{voucher.TRNDATE}}</td>\r\n                    <td style=\"width: 10%;\">{{voucher.VCHRNO}}</td>\r\n                    <!-- <td style=\"width: 10%;\">{{voucher.TRNDATE}}</td> -->\r\n                    <td style=\"width: 10%;\">{{voucher.NETAMNT}}</td>\r\n                    <td style=\"width: 10%;\">{{voucher.PREFIXREMOVECHALANNO}}</td>\r\n                    <!-- <td style=\"width: 10%;\">{{voucher.TRNAC}}</td> -->\r\n                    <td style=\"width: 20%;\">{{voucher.REMARKS}}</td>\r\n\r\n                </tr>\r\n                </ng-container>\r\n                <ng-container *ngIf=\"masterService.voucherListsForBulkPrint && masterService.voucherListsForBulkPrint.length === 0\">\r\n                    <tr>\r\n                      <td colspan=\"7\">\r\n                        <div class=\"font-weight-bold\">Voucher List Information are unavailable.</div>\r\n                      </td>\r\n                    </tr>\r\n                  </ng-container> \r\n            </tbody>\r\n            </table>\r\n            <div class=\"pagination\" style=\"margin-top: 0rem;\" *ngIf=\"masterService.voucherListsForBulkPrint && (masterService.voucherListsForBulkPrint | searchData: filter:'').length > itemsPerPage\">\r\n              <div style=\"margin:auto\">\r\n                  <pagination-controls class=\"my-pagination\" (pageChange)=\"VoucherPagination($event)\"></pagination-controls>\r\n              </div>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n\r\n  </div>\r\n  <div class=\"reportpopup\" style=\"width: 90%;\">\r\n    <generic-popup-grid #genericGridVoucherList (onItemSelected)=\"PrepareVoucherListForPrint($event,i)\" [popupsettings]=\"gridVoucherListPopupSettings\"></generic-popup-grid>\r\n  </div>"
+module.exports = "<div class=\"sticky-top\">\r\n    <div class=\"clearfix\">\r\n      <div class=\"col-md-4\">\r\n        <!-- <h2 style=\"color: black;\">Bank Reconciliation </h2> -->\r\n        <label style=\"font-family: Segoe UI Light;font-weight: bold;font-size: 20px;padding-left: 5%;padding-top: 1%;width: 100%;\">Multiple Voucher Print (Bulk Print)</label>\r\n      </div>\r\n      <!-- <div class=\"col-md-7\">\r\n        <button style=\"margin: 4px 4px;\" class=\"btn btn-info pull-right\" (click)='SaveRenum()'>\r\n          Update\r\n        </button>\r\n  \r\n      </div> -->\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"main-container\">\r\n      <div class=\"row\" style=\"margin: 0px 15px ; border: 1px solid #e6e6e6; padding: 10px 10px;\">\r\n        <div class=\"col-md-10\">\r\n          <div class=\"row\">\r\n         \r\n            <div class=\"col-md-12\">\r\n                <div class=\"form-group row\">\r\n                    \r\n                  <div class=\"col-md-3\">\r\n                    <div class=\"date-field\">\r\n                      <label class=\"form-control-label filter-label\">Voucher: </label>\r\n                      <select class=\"form-control\" [(ngModel)]=\"voucherPrefix\" (change)=\"onVoucherTypeChange($event)\">\r\n                        <option value=\"\" disabled selected hidden>Select Voucher</option>\r\n                        <option value=\"JV\">Journal Voucher</option>\r\n                        <option value=\"CV\">Contra Voucher</option>\r\n                        <option value=\"PV\">Payment Voucher</option>\r\n                        <option value=\"RV\">Receipt Voucher</option>\r\n        \r\n                    </select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-md-3\">\r\n                  <div class=\"date-field\">\r\n                    <label class=\"form-control-label filter-label\" style=\"margin-right: 10px;\" for=\"\">From</label>\r\n                    <input class=\"form-control\" type=\"number\" min=\"1\"  [(ngModel)]=\"FROM\" placeholder=\"Enter Voucher No.\">\r\n                  </div>\r\n\r\n                </div>\r\n                <div class=\"col-md-3\">\r\n                  <div class=\"date-field\">\r\n                    <label class=\"form-control-label filter-label\" for=\"\">To</label>\r\n                    <input class=\"form-control\" type=\"number\" min=\"1\" [(ngModel)]=\"TO\" placeholder=\"Enter Voucher No.\">\r\n                  </div>\r\n\r\n                </div>\r\n                <div class=\"col-md-1\">\r\n                  <button [disabled]=\"voucherPrefix == ''\" (click)=\"LoadVoucherWiseList(voucherPrefix)\" class=\"btn btn-info\">LOAD</button>\r\n               </div>\r\n               <div class=\"col-md-1\">\r\n                <button [disabled]=\"masterService.voucherListsForBulkPrint.length==0\" (click)=\"onPrintClicked()\" class=\"btn btn-info\">PRINT</button>\r\n             </div>\r\n             <div class=\"col-md-1\">\r\n              <button (click)=\"onReset()\" class=\"btn btn-info\">RESET</button>\r\n           </div>\r\n                </div>\r\n    \r\n            </div>\r\n    \r\n          </div>\r\n    \r\n          \r\n        </div>\r\n\r\n       <!-- <div class=\"col-md-1\" style=\"margin: 0px 30px;\">\r\n        <button (click)=\"exportTOExcel(voucherLists, 'VoucherList')\" class=\"btn btn-info pull-right\">Export Renumering</button>\r\n     </div> -->\r\n      </div>\r\n\r\n      <div class=\"clearfix\" style=\"margin-top: 5px;\">\r\n        <div class=\"card-header\" style=\"    background: #4472C4;\r\n        color: #ffff;\">\r\n\r\n        <span class=\"col-md-6\">Voucher Lists</span>\r\n\r\n\r\n      </div>\r\n\r\n        <div class=\"row\" style=\"height: 60vh;\">\r\n            <table class=\"table table-striped\" style=\"width: 98%;\">\r\n            <thead>\r\n                <tr style=\"position: sticky; top:0;line-height: 2.4rem; border-bottom: 1px solid #E6E6E6; border-top: 1px solid #E6E6E6;\r\n                background:#C0C0C0;\r\n                color: black;\">\r\n                    <th scope=\"col\" style=\"width: 5%;\" *ngIf=\"masterService.voucherListsForBulkPrint && masterService.voucherListsForBulkPrint.length > 0\"><input (change)=\"onSelectAllClicked()\" class=\"form-check-input\" type=\"checkbox\" [(ngModel)]=\"SelectAll\" style=\"margin-left: 7px;\"> <label for=\"\" style=\" width: 20px; font-size: 16px; font-weight: 600;margin-left: 30px;height: 10px;\">All</label></th>\r\n                    <th scope=\"col\" style=\"width: 5%;\">S.N</th>\r\n                    <th scope=\"col\" style=\"width: 10%;\">TRN DATE</th>\r\n                    <th scope=\"col\" style=\"width: 10%;\">VOUCHER NO</th>\r\n                    <!-- <th scope=\"col\" style=\"width: 10%;\">TRNDATE</th> -->\r\n                    <!-- <th scope=\"col\" style=\"width: 10%;\">TRN_BSDATE</th> -->\r\n                    <th scope=\"col\" style=\"width: 10%;\">AMOUNT</th>\r\n                    <th scope=\"col\" style=\"width: 10%;\">REF NO</th>\r\n                    <!-- <th scope=\"col\" style=\"width: 10%;\">TRNAC</th> -->\r\n                    <th scope=\"col\" style=\"width: 20%;\">REMARKS</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n                <ng-container *ngIf=\"masterService.voucherListsForBulkPrint && masterService.voucherListsForBulkPrint.length > 0\">\r\n                <tr *ngFor=\"let voucher of (masterService.voucherListsForBulkPrint|searchData:filter:'' | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage, totalItems: totalCount }); let i = index\">\r\n                    <td style=\"width: 5%;\"><input type=\"checkbox\" [(ngModel)]=\"voucher.IS_CHECKED\" (change)=\"PrepareVoucherListForPrint(voucher);\" class=\"form-check-input\"></td>\r\n                    <td style=\"width: 5%;\">{{currentPage>1?((currentPage-1)*10)+i+1:i+1}}</td>\r\n                    <!-- <td style=\"width: 10%;\">{{voucher.VCHRNO}}</td> -->\r\n                    <td style=\"width: 10%;\">{{voucher.TRNDATE}}</td>\r\n                    <td style=\"width: 10%;\">{{voucher.VCHRNO}}</td>\r\n                    <!-- <td style=\"width: 10%;\">{{voucher.TRNDATE}}</td> -->\r\n                    <td style=\"width: 10%;\">{{voucher.NETAMNT}}</td>\r\n                    <td style=\"width: 10%;\">{{voucher.PREFIXREMOVECHALANNO}}</td>\r\n                    <!-- <td style=\"width: 10%;\">{{voucher.TRNAC}}</td> -->\r\n                    <td style=\"width: 20%;\">{{voucher.REMARKS}}</td>\r\n\r\n                </tr>\r\n                </ng-container>\r\n                <ng-container *ngIf=\"masterService.voucherListsForBulkPrint && masterService.voucherListsForBulkPrint.length === 0\">\r\n                    <tr>\r\n                      <td colspan=\"7\">\r\n                        <div class=\"font-weight-bold\">Voucher List Information are unavailable.</div>\r\n                      </td>\r\n                    </tr>\r\n                  </ng-container> \r\n            </tbody>\r\n            </table>\r\n            <div class=\"pagination\" style=\"margin-top: 0rem;\" *ngIf=\"masterService.voucherListsForBulkPrint && (masterService.voucherListsForBulkPrint | searchData: filter:'').length > itemsPerPage\">\r\n              <div style=\"margin:auto\">\r\n                  <pagination-controls class=\"my-pagination\" (pageChange)=\"VoucherPagination($event)\"></pagination-controls>\r\n              </div>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n\r\n  </div>\r\n  <div class=\"reportpopup\" style=\"width: 90%;\">\r\n    <generic-popup-grid #genericGridVoucherList (onItemSelected)=\"PrepareVoucherListForPrint($event,i)\" [popupsettings]=\"gridVoucherListPopupSettings\"></generic-popup-grid>\r\n  </div>"
 
 /***/ }),
 
