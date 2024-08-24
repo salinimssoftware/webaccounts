@@ -1,3 +1,57 @@
+--2024/08/22 
+IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'ReportColumnFormat' AND COLUMN_NAME = 'PROJECT')
+ ALTER TABLE ReportColumnFormat ADD PROJECT VARCHAR(200);
+ IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'DefaultReportFormat' AND COLUMN_NAME = 'PROJECT')
+ ALTER TABLE DefaultReportFormat ADD PROJECT VARCHAR(200);
+ IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'REPORTCONTEXTMENU' AND COLUMN_NAME = 'PROJECT')
+ ALTER TABLE REPORTCONTEXTMENU ADD PROJECT VARCHAR(200);
+ --END
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'log_RenumRMDJournal') 
+CREATE TABLE [dbo].[log_RenumRMDJournal](
+	[VCHRNO] [varchar](25) NULL,
+	[ACID] [varchar](25) NULL,
+	[FILONO] [varchar](50) NULL,
+	[DRAMNT] [numeric](18, 0) NULL,
+	[CRAMNT] [numeric](18, 0) NULL,
+	[DIVISION] [char](3) NULL,
+	[SNO] [int] NULL,
+	[NARRATION] [varchar](1000) NULL,
+	[VoucherType] [varchar](2) NULL,
+	[ChequeNo] [varchar](20) NULL,
+	[ChequeDate] [varchar](20) NULL,
+	[FCurrency] [varchar](20) NULL,
+	[FCurAmount] [numeric](18, 0) NULL,
+	[CostCenter] [varchar](100) NULL,
+	[MultiJournalSno] [numeric](18, 0) NULL,
+	[OppAcid] [varchar](20) NULL,
+	[OppRemarks] [varchar](200) NULL,
+	[OppChequeNo] [varchar](50) NULL,
+	[OppChequeDate] [varchar](20) NULL,
+	[OppCostCenter] [varchar](50) NULL,
+	[PhiscalID] [varchar](20) NULL,
+	[VTRACKID] [float] NULL,
+	[TOACID] [varchar](25) NULL,
+	[STAMP] [float] NULL,
+	[guid] [varchar](100) NULL,
+	[companyid] [varchar](25) NULL,
+	[NARATION1] [varchar](1000) NULL,
+	[SL_ACID] [varchar](25) NULL,
+	[ChequeDateBS] [varchar](20) NULL,
+	[OPPNAME] [varchar](100) NULL,
+	[ISTAXABLE] [tinyint] NULL,
+	[CPTYPE] [tinyint] NULL,
+	[DISAMNT] [numeric](18, 0) NULL,
+	[SALESMAN] [varchar](500) NULL,
+	[BUDGETNAME] [varchar](200) NULL,
+	[COSTCENTERGROUP_NAME] [varchar](100) NULL,
+	[CCG_ID] [varchar](10) NULL,
+	[old_vchrno] [varchar](100) NULL,
+	[SUBDIVIDED_BY] [varchar](50) NULL,
+	[Bankname] [varchar](100) NULL
+) 
+
+IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'log_RenumRMDJournal' AND COLUMN_NAME = 'Bankname')
+ ALTER TABLE log_RenumRMDJournal ADD Bankname VARCHAR(100);
 IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE COLUMN_NAME = 'DisableBackDateEntry' AND TABLE_NAME = 'Setting')
 Alter table Setting Add DisableBackDateEntry tinyint DEFAULT 0 WITH VALUES
 IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE COLUMN_NAME = 'salesman' AND TABLE_NAME = 'purtran_lpost')

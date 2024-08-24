@@ -1,6 +1,6 @@
 webpackJsonpac__name_([7],{
 
-/***/ 1159:
+/***/ 1160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,9 +9,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dashboard_component__ = __webpack_require__(1401);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dashboard_routing__ = __webpack_require__(1558);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__fiscalyear_fiscalyear_component__ = __webpack_require__(1559);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dashboard_component__ = __webpack_require__(1405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dashboard_routing__ = __webpack_require__(1568);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__fiscalyear_fiscalyear_component__ = __webpack_require__(1569);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardModule", function() { return DashboardModule; });
 
 
@@ -53,7 +53,7 @@ DashboardModule = __decorate([
 
 /***/ }),
 
-/***/ 1401:
+/***/ 1405:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62,7 +62,7 @@ DashboardModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories_index__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_alert_alert_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_chart_js__ = __webpack_require__(1617);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_chart_js__ = __webpack_require__(1631);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_chart_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_moment__ = __webpack_require__(2);
@@ -126,7 +126,7 @@ var Dashboard = (function () {
             this.getoverallchartapidata();
         }
         if (this.userSetting.DisableBackDateEntry == 1) {
-            this.minDate = new Date();
+            this.minDate = this.masterService.ConfigureBackDateEntry();
         }
     }
     Dashboard.prototype.IncomeExpensesAccounting = function () {
@@ -520,8 +520,8 @@ __decorate([
 Dashboard = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'dashboard',
-        styles: [__webpack_require__(1687)],
-        template: __webpack_require__(1805)
+        styles: [__webpack_require__(1702)],
+        template: __webpack_require__(1820)
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__global_state__["a" /* GlobalState */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"],
         __WEBPACK_IMPORTED_MODULE_3__common_repositories_index__["a" /* MasterRepo */],
@@ -533,11 +533,11 @@ Dashboard = __decorate([
 
 /***/ }),
 
-/***/ 1452:
+/***/ 1462:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* MIT license */
-var cssKeywords = __webpack_require__(1453);
+var cssKeywords = __webpack_require__(1463);
 
 // NOTE: conversions should only return primitive values (i.e. arrays, or
 //       values that give correct `typeof` results).
@@ -1401,7 +1401,7 @@ convert.rgb.gray = function (rgb) {
 
 /***/ }),
 
-/***/ 1453:
+/***/ 1463:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -1557,12 +1557,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1558:
+/***/ 1568:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dashboard_component__ = __webpack_require__(1401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dashboard_component__ = __webpack_require__(1405);
 /* unused harmony export routes */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 
@@ -1582,7 +1582,7 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["RouterModule"].forC
 
 /***/ }),
 
-/***/ 1559:
+/***/ 1569:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1648,7 +1648,7 @@ var fiscalyearComponent = (function () {
 fiscalyearComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'fiscalyear',
-        template: __webpack_require__(1806),
+        template: __webpack_require__(1821),
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__common_services_permission_authService_service__["a" /* AuthService */]])
 ], fiscalyearComponent);
@@ -1657,65 +1657,65 @@ fiscalyearComponent = __decorate([
 
 /***/ }),
 
-/***/ 1617:
+/***/ 1631:
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * @namespace Chart
  */
-var Chart = __webpack_require__(1638)();
+var Chart = __webpack_require__(1652)();
 
-__webpack_require__(1636)(Chart);
-__webpack_require__(1632)(Chart);
-__webpack_require__(1635)(Chart);
-__webpack_require__(1631)(Chart);
-__webpack_require__(1633)(Chart);
-__webpack_require__(1634)(Chart);
-__webpack_require__(1639)(Chart);
-__webpack_require__(1643)(Chart);
-__webpack_require__(1641)(Chart);
-__webpack_require__(1644)(Chart);
-__webpack_require__(1642)(Chart);
-__webpack_require__(1645)(Chart);
-__webpack_require__(1640)(Chart);
-__webpack_require__(1637)(Chart);
+__webpack_require__(1650)(Chart);
 __webpack_require__(1646)(Chart);
-
+__webpack_require__(1649)(Chart);
+__webpack_require__(1645)(Chart);
 __webpack_require__(1647)(Chart);
 __webpack_require__(1648)(Chart);
-__webpack_require__(1649)(Chart);
-__webpack_require__(1650)(Chart);
-
 __webpack_require__(1653)(Chart);
-__webpack_require__(1651)(Chart);
-__webpack_require__(1652)(Chart);
-__webpack_require__(1654)(Chart);
+__webpack_require__(1657)(Chart);
 __webpack_require__(1655)(Chart);
+__webpack_require__(1658)(Chart);
 __webpack_require__(1656)(Chart);
+__webpack_require__(1659)(Chart);
+__webpack_require__(1654)(Chart);
+__webpack_require__(1651)(Chart);
+__webpack_require__(1660)(Chart);
+
+__webpack_require__(1661)(Chart);
+__webpack_require__(1662)(Chart);
+__webpack_require__(1663)(Chart);
+__webpack_require__(1664)(Chart);
+
+__webpack_require__(1667)(Chart);
+__webpack_require__(1665)(Chart);
+__webpack_require__(1666)(Chart);
+__webpack_require__(1668)(Chart);
+__webpack_require__(1669)(Chart);
+__webpack_require__(1670)(Chart);
 
 // Controllers must be loaded after elements
 // See Chart.core.datasetController.dataElementType
-__webpack_require__(1625)(Chart);
-__webpack_require__(1626)(Chart);
-__webpack_require__(1627)(Chart);
-__webpack_require__(1628)(Chart);
-__webpack_require__(1629)(Chart);
-__webpack_require__(1630)(Chart);
+__webpack_require__(1639)(Chart);
+__webpack_require__(1640)(Chart);
+__webpack_require__(1641)(Chart);
+__webpack_require__(1642)(Chart);
+__webpack_require__(1643)(Chart);
+__webpack_require__(1644)(Chart);
 
-__webpack_require__(1618)(Chart);
-__webpack_require__(1619)(Chart);
-__webpack_require__(1620)(Chart);
-__webpack_require__(1621)(Chart);
-__webpack_require__(1622)(Chart);
-__webpack_require__(1623)(Chart);
-__webpack_require__(1624)(Chart);
+__webpack_require__(1632)(Chart);
+__webpack_require__(1633)(Chart);
+__webpack_require__(1634)(Chart);
+__webpack_require__(1635)(Chart);
+__webpack_require__(1636)(Chart);
+__webpack_require__(1637)(Chart);
+__webpack_require__(1638)(Chart);
 
 window.Chart = module.exports = Chart;
 
 
 /***/ }),
 
-/***/ 1618:
+/***/ 1632:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1734,7 +1734,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1619:
+/***/ 1633:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1752,7 +1752,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1620:
+/***/ 1634:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1771,7 +1771,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1621:
+/***/ 1635:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1790,7 +1790,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1622:
+/***/ 1636:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1809,7 +1809,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1623:
+/***/ 1637:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1828,7 +1828,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1624:
+/***/ 1638:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1883,7 +1883,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1625:
+/***/ 1639:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2441,7 +2441,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1626:
+/***/ 1640:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2571,7 +2571,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1627:
+/***/ 1641:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2882,7 +2882,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1628:
+/***/ 1642:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3227,7 +3227,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1629:
+/***/ 1643:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3450,7 +3450,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1630:
+/***/ 1644:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3639,7 +3639,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1631:
+/***/ 1645:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3786,7 +3786,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1632:
+/***/ 1646:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3898,7 +3898,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1633:
+/***/ 1647:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4709,7 +4709,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1634:
+/***/ 1648:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5026,7 +5026,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1635:
+/***/ 1649:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5130,7 +5130,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1636:
+/***/ 1650:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5138,7 +5138,7 @@ module.exports = function(Chart) {
 /* global document: false */
 
 
-var color = __webpack_require__(1658);
+var color = __webpack_require__(1672);
 
 module.exports = function(Chart) {
 	// Global Chart helpers object for utility methods and classes
@@ -6194,7 +6194,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1637:
+/***/ 1651:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6497,7 +6497,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1638:
+/***/ 1652:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6561,7 +6561,7 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 1639:
+/***/ 1653:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6908,7 +6908,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1640:
+/***/ 1654:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7415,7 +7415,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1641:
+/***/ 1655:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7552,7 +7552,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1642:
+/***/ 1656:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8311,7 +8311,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1643:
+/***/ 1657:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8359,7 +8359,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1644:
+/***/ 1658:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8569,7 +8569,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1645:
+/***/ 1659:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8784,7 +8784,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1646:
+/***/ 1660:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9669,7 +9669,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1647:
+/***/ 1661:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9781,7 +9781,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1648:
+/***/ 1662:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9973,7 +9973,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1649:
+/***/ 1663:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10059,7 +10059,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1650:
+/***/ 1664:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10243,7 +10243,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1651:
+/***/ 1665:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10380,7 +10380,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1652:
+/***/ 1666:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10556,7 +10556,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1653:
+/***/ 1667:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10662,7 +10662,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1654:
+/***/ 1668:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10896,7 +10896,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1655:
+/***/ 1669:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11320,7 +11320,7 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1656:
+/***/ 1670:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11788,11 +11788,11 @@ module.exports = function(Chart) {
 
 /***/ }),
 
-/***/ 1657:
+/***/ 1671:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* MIT license */
-var colorNames = __webpack_require__(1453);
+var colorNames = __webpack_require__(1463);
 
 module.exports = {
    getRgba: getRgba,
@@ -12032,12 +12032,12 @@ for (var name in colorNames) {
 
 /***/ }),
 
-/***/ 1658:
+/***/ 1672:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* MIT license */
-var convert = __webpack_require__(1659);
-var string = __webpack_require__(1657);
+var convert = __webpack_require__(1673);
+var string = __webpack_require__(1671);
 
 var Color = function (obj) {
 	if (obj instanceof Color) {
@@ -12524,11 +12524,11 @@ module.exports = Color;
 
 /***/ }),
 
-/***/ 1659:
+/***/ 1673:
 /***/ (function(module, exports, __webpack_require__) {
 
-var conversions = __webpack_require__(1452);
-var route = __webpack_require__(1660);
+var conversions = __webpack_require__(1462);
+var route = __webpack_require__(1674);
 
 var convert = {};
 
@@ -12609,10 +12609,10 @@ module.exports = convert;
 
 /***/ }),
 
-/***/ 1660:
+/***/ 1674:
 /***/ (function(module, exports, __webpack_require__) {
 
-var conversions = __webpack_require__(1452);
+var conversions = __webpack_require__(1462);
 
 /*
 	this function routes a model to all other models.
@@ -12714,21 +12714,21 @@ module.exports = function (fromModel) {
 
 /***/ }),
 
-/***/ 1687:
+/***/ 1702:
 /***/ (function(module, exports) {
 
-module.exports = "@media screen and (min-width: 1620px) {\n  .row.shift-up > * {\n    margin-top: -573px; } }\n\n@media screen and (max-width: 1620px) {\n  .card.feed-panel.large-card {\n    height: 824px; } }\n\n.user-stats-card .card-title {\n  padding: 0 0 15px; }\n\n.blurCalendar {\n  height: 475px; }\n\n@media screen and (min-width: 1620px) {\n  .row.shift-up > * {\n    margin-top: -573px; } }\n\n@media screen and (max-width: 1620px) {\n  .card.feed-panel.large-card {\n    height: 824px; } }\n\n.user-stats-card .card-title {\n  padding: 0 0 15px; }\n\n.blurCalendar {\n  height: 475px; }\n\n.dashboard-wrapper {\n  padding: 0 32px 0 40px;\n  overflow-x: hidden;\n  background-color: #fff;\n  padding-top: 3px; }\n  .dashboard-wrapper .top-right {\n    margin-top: 15px; }\n    .dashboard-wrapper .top-right .col-lg-12 {\n      text-align: right; }\n    .dashboard-wrapper .top-right span {\n      font-size: 14px; }\n    .dashboard-wrapper .top-right .date {\n      border: 1px solid #ddd;\n      padding: 5px 8px;\n      margin: 0 15px;\n      border-radius: 3px; }\n    .dashboard-wrapper .top-right .print {\n      background-color: #0ca171;\n      padding: 5px 8px;\n      color: #fff;\n      border-radius: 3px; }\n  .dashboard-wrapper .top-rectangles p {\n    margin-bottom: 0.5rem !important; }\n  .dashboard-wrapper .top-rectangles .row {\n    justify-content: space-between; }\n  .dashboard-wrapper .top-rectangles .rectangle-item {\n    flex: 0 0 18.5%;\n    height: 110px;\n    margin-bottom: 15px; }\n    @media screen and (max-width: 1199px) {\n      .dashboard-wrapper .top-rectangles .rectangle-item {\n        flex: 0 0 32.5%; } }\n    @media screen and (max-width: 767px) {\n      .dashboard-wrapper .top-rectangles .rectangle-item {\n        flex: 0 0 49.5%; } }\n  .dashboard-wrapper .top-rectangles .rectangle {\n    padding: 10px 16px;\n    border-radius: 3px;\n    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;\n    border: 1px solid #ddd;\n    height: 100%; }\n    .dashboard-wrapper .top-rectangles .rectangle.color-blue {\n      background-color: #58A6FE;\n      color: #fff; }\n      .dashboard-wrapper .top-rectangles .rectangle.color-blue img {\n        filter: invert(1); }\n    .dashboard-wrapper .top-rectangles .rectangle.color-white {\n      color: #000;\n      background-color: #fff; }\n    .dashboard-wrapper .top-rectangles .rectangle.color-pink {\n      background-color: #FF788D;\n      color: #fff; }\n      .dashboard-wrapper .top-rectangles .rectangle.color-pink img {\n        filter: invert(1); }\n    .dashboard-wrapper .top-rectangles .rectangle.color-green {\n      background-color: #47DCBE;\n      color: #fff; }\n      .dashboard-wrapper .top-rectangles .rectangle.color-green img {\n        filter: invert(1); }\n    .dashboard-wrapper .top-rectangles .rectangle.color-yellow {\n      background-color: #FEC470;\n      color: #fff; }\n      .dashboard-wrapper .top-rectangles .rectangle.color-yellow img {\n        filter: invert(1); }\n    .dashboard-wrapper .top-rectangles .rectangle.border-pink {\n      border: 1px solid #e06dde;\n      color: #e06dde; }\n    .dashboard-wrapper .top-rectangles .rectangle.border-green {\n      border: 1px solid #0c9b6d;\n      color: #0c9b6d; }\n    .dashboard-wrapper .top-rectangles .rectangle .icon {\n      text-align: right;\n      margin-top: -20px; }\n      .dashboard-wrapper .top-rectangles .rectangle .icon img {\n        width: 33px; }\n    .dashboard-wrapper .top-rectangles .rectangle p {\n      margin-bottom: 5px;\n      font-size: 14px; }\n    .dashboard-wrapper .top-rectangles .rectangle i {\n      font-size: 20px; }\n    @media screen and (max-width: 1289px) {\n      .dashboard-wrapper .top-rectangles .rectangle {\n        height: auto;\n        padding: 10px 5px; }\n        .dashboard-wrapper .top-rectangles .rectangle .icon {\n          margin-top: 2px; } }\n\n.charts .pad {\n  padding-top: 30px; }\n  @media screen and (max-width: 1289px) {\n    .charts .pad {\n      padding-top: 60px; } }\n\n.canvas-wrapper {\n  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;\n  padding: 10px;\n  border-radius: 5px;\n  position: relative; }\n  .canvas-wrapper .date-fields {\n    position: absolute;\n    top: 10px;\n    right: 15px; }\n    .canvas-wrapper .date-fields select {\n      margin-right: 10px;\n      border: 1px solid #ddd;\n      padding: 2px 6px;\n      border-radius: 4px; }\n  .canvas-wrapper .quantity_value_button {\n    position: absolute;\n    top: 10px;\n    right: 15px; }\n    .canvas-wrapper .quantity_value_button .dataType {\n      width: 80px;\n      height: 20px;\n      background: #bdc3c7;\n      -webkit-appearance: none;\n      border-radius: 20px;\n      outline: none;\n      transition: 0.4s;\n      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);\n      cursor: pointer; }\n    .canvas-wrapper .quantity_value_button .dataType:checked[type=\"checkbox\"] {\n      background: #31378f; }\n    .canvas-wrapper .quantity_value_button .dataType::before {\n      z-index: 2;\n      position: absolute;\n      content: \"\";\n      margin-top: 2.2px;\n      left: 3px;\n      width: 35px;\n      height: 15px;\n      background: #fff;\n      /* border-radius: 15%; */\n      border-top-left-radius: 20px;\n      border-bottom-left-radius: 20px;\n      transform: scale(1.1);\n      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n      transition: 0.4s; }\n    .canvas-wrapper .quantity_value_button .dataType:checked::before {\n      border-top-left-radius: 0px;\n      border-bottom-left-radius: 0px;\n      border-top-right-radius: 20px;\n      border-bottom-right-radius: 20px;\n      left: 42px; }\n    .canvas-wrapper .quantity_value_button .toggle {\n      position: relative;\n      display: inline; }\n    .canvas-wrapper .quantity_value_button .dailybtn {\n      float: left;\n      margin-left: -42px; }\n    .canvas-wrapper .quantity_value_button .yearlybtn {\n      float: right;\n      margin-left: 15px; }\n    .canvas-wrapper .quantity_value_button .monthlybtn {\n      float: right;\n      margin-left: 15px; }\n    .canvas-wrapper .quantity_value_button label {\n      width: auto !important; }\n    .canvas-wrapper .quantity_value_button button {\n      border: 1px solid #ddd;\n      border-radius: 3px;\n      font-size: 14px; }\n      .canvas-wrapper .quantity_value_button button:focus {\n        outline: none;\n        background-color: #ff6384;\n        color: #fff; }\n      .canvas-wrapper .quantity_value_button button.active {\n        background-color: #ff6384;\n        color: #fff; }\n  .canvas-wrapper .incomeexpensesbtns .monthlybtn {\n    float: left;\n    margin-left: -60px; }\n  .canvas-wrapper .expensesgraphmode .monthlybtn {\n    float: left;\n    margin-left: -60px; }\n  .canvas-wrapper .loadingGraphRight {\n    position: absolute;\n    top: 61%;\n    left: 55%;\n    transform: translate(-50%, -50%); }\n    .canvas-wrapper .loadingGraphRight img {\n      width: 88%; }\n  .canvas-wrapper .canvas-title {\n    border-bottom: 1px solid #ddd; }\n    .canvas-wrapper .canvas-title h4 {\n      font-size: 17px; }\n\n#no-data {\n  display: none;\n  position: absolute;\n  padding: 90px 0;\n  top: 30%;\n  width: 100%; }\n\n#no-data-stock {\n  display: none;\n  position: absolute;\n  padding: 90px 0;\n  top: 30%;\n  width: 100%; }\n\n.card-title {\n  font-weight: bold;\n  color: #16448f; }\n\n.dasboardtitle h5 {\n  font-weight: 600;\n  font-size: 19px;\n  line-height: 28px;\n  color: #FF5D0D;\n  border-left: 3px solid #ff5d0d;\n  padding-left: 15px;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  margin-left: -10px; }\n\n.dateCard input {\n  padding: 7px;\n  border: 1px solid #ddd; }\n\n.cardWrapper > span {\n  font-weight: 600;\n  font-size: 20px;\n  line-height: 29px;\n  color: #24A70F; }\n\n.cardWrapper {\n  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;\n  padding: 23px;\n  margin-bottom: 25px;\n  background: #fff; }\n  .cardWrapper h5 {\n    font-weight: 600;\n    font-size: 18px;\n    line-height: 22px;\n    /* identical to box height */\n    color: #3F4488; }\n  .cardWrapper img {\n    width: 50px;\n    position: absolute;\n    right: 60px;\n    bottom: 70px; }\n\n.cardWrapper > span {\n  font-weight: 600;\n  font-size: 20px;\n  line-height: 29px;\n  color: #24A70F; }\n\n.cardWrapper > p {\n  font-weight: 600;\n  font-size: 12px;\n  line-height: 15px;\n  margin-top: 5px;\n  color: #A9A6A6;\n  margin-bottom: 0; }\n  .cardWrapper > p span {\n    font-weight: 700;\n    font-size: 12px;\n    line-height: 15px;\n    color: #927E7E; }\n\n.pad-0 {\n  padding: 0 !important; }\n"
+module.exports = "@media screen and (min-width: 1620px) {\n  .row.shift-up > * {\n    margin-top: -573px; } }\n\n@media screen and (max-width: 1620px) {\n  .card.feed-panel.large-card {\n    height: 824px; } }\n\n.user-stats-card .card-title {\n  padding: 0 0 15px; }\n\n.blurCalendar {\n  height: 475px; }\n\n@media screen and (min-width: 1620px) {\n  .row.shift-up > * {\n    margin-top: -573px; } }\n\n@media screen and (max-width: 1620px) {\n  .card.feed-panel.large-card {\n    height: 824px; } }\n\n.user-stats-card .card-title {\n  padding: 0 0 15px; }\n\n.blurCalendar {\n  height: 475px; }\n\n.dashboard-wrapper {\n  padding: 0 32px 0 40px;\n  overflow-x: hidden;\n  background-color: #fff;\n  padding-top: 3px; }\n  .dashboard-wrapper .top-right {\n    margin-top: 15px; }\n    .dashboard-wrapper .top-right .col-lg-12 {\n      text-align: right; }\n    .dashboard-wrapper .top-right span {\n      font-size: 14px; }\n    .dashboard-wrapper .top-right .date {\n      border: 1px solid #ddd;\n      padding: 5px 8px;\n      margin: 0 15px;\n      border-radius: 3px; }\n    .dashboard-wrapper .top-right .print {\n      background-color: #0ca171;\n      padding: 5px 8px;\n      color: #fff;\n      border-radius: 3px; }\n  .dashboard-wrapper .top-rectangles p {\n    margin-bottom: 0.5rem !important; }\n  .dashboard-wrapper .top-rectangles .row {\n    justify-content: space-between; }\n  .dashboard-wrapper .top-rectangles .rectangle-item {\n    flex: 0 0 18.5%;\n    margin-bottom: 15px; }\n    @media screen and (max-width: 1199px) {\n      .dashboard-wrapper .top-rectangles .rectangle-item {\n        flex: 0 0 32.5%; } }\n    @media screen and (max-width: 767px) {\n      .dashboard-wrapper .top-rectangles .rectangle-item {\n        flex: 0 0 49.5%; } }\n  .dashboard-wrapper .top-rectangles .rectangle {\n    padding: 10px 16px;\n    border-radius: 3px;\n    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;\n    border: 1px solid #ddd;\n    height: 100%; }\n    .dashboard-wrapper .top-rectangles .rectangle.color-blue {\n      background-color: #58A6FE;\n      color: #fff; }\n      .dashboard-wrapper .top-rectangles .rectangle.color-blue img {\n        filter: invert(1); }\n    .dashboard-wrapper .top-rectangles .rectangle.color-white {\n      color: #000;\n      background-color: #fff; }\n    .dashboard-wrapper .top-rectangles .rectangle.color-pink {\n      background-color: #FF788D;\n      color: #fff; }\n      .dashboard-wrapper .top-rectangles .rectangle.color-pink img {\n        filter: invert(1); }\n    .dashboard-wrapper .top-rectangles .rectangle.color-green {\n      background-color: #47DCBE;\n      color: #fff; }\n      .dashboard-wrapper .top-rectangles .rectangle.color-green img {\n        filter: invert(1); }\n    .dashboard-wrapper .top-rectangles .rectangle.color-yellow {\n      background-color: #FEC470;\n      color: #fff; }\n      .dashboard-wrapper .top-rectangles .rectangle.color-yellow img {\n        filter: invert(1); }\n    .dashboard-wrapper .top-rectangles .rectangle.border-pink {\n      border: 1px solid #e06dde;\n      color: #e06dde; }\n    .dashboard-wrapper .top-rectangles .rectangle.border-green {\n      border: 1px solid #0c9b6d;\n      color: #0c9b6d; }\n    .dashboard-wrapper .top-rectangles .rectangle .icon {\n      text-align: right;\n      margin-top: -20px; }\n      .dashboard-wrapper .top-rectangles .rectangle .icon img {\n        width: 33px; }\n    .dashboard-wrapper .top-rectangles .rectangle p {\n      margin-bottom: 5px;\n      font-size: 14px; }\n    .dashboard-wrapper .top-rectangles .rectangle i {\n      font-size: 20px; }\n    @media screen and (max-width: 1289px) {\n      .dashboard-wrapper .top-rectangles .rectangle {\n        height: auto;\n        padding: 10px 5px; }\n        .dashboard-wrapper .top-rectangles .rectangle .icon {\n          margin-top: 2px; } }\n\n.charts .pad {\n  padding-top: 30px; }\n  @media screen and (max-width: 1289px) {\n    .charts .pad {\n      padding-top: 60px; } }\n\n.canvas-wrapper {\n  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;\n  padding: 10px;\n  border-radius: 5px;\n  position: relative; }\n  .canvas-wrapper .date-fields {\n    position: absolute;\n    top: 10px;\n    right: 15px; }\n    .canvas-wrapper .date-fields select {\n      margin-right: 10px;\n      border: 1px solid #ddd;\n      padding: 2px 6px;\n      border-radius: 4px; }\n  .canvas-wrapper .quantity_value_button {\n    position: absolute;\n    top: 10px;\n    right: 15px; }\n    .canvas-wrapper .quantity_value_button .dataType {\n      width: 80px;\n      height: 20px;\n      background: #bdc3c7;\n      -webkit-appearance: none;\n      border-radius: 20px;\n      outline: none;\n      transition: 0.4s;\n      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);\n      cursor: pointer; }\n    .canvas-wrapper .quantity_value_button .dataType:checked[type=\"checkbox\"] {\n      background: #31378f; }\n    .canvas-wrapper .quantity_value_button .dataType::before {\n      z-index: 2;\n      position: absolute;\n      content: \"\";\n      margin-top: 2.2px;\n      left: 3px;\n      width: 35px;\n      height: 15px;\n      background: #fff;\n      /* border-radius: 15%; */\n      border-top-left-radius: 20px;\n      border-bottom-left-radius: 20px;\n      transform: scale(1.1);\n      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n      transition: 0.4s; }\n    .canvas-wrapper .quantity_value_button .dataType:checked::before {\n      border-top-left-radius: 0px;\n      border-bottom-left-radius: 0px;\n      border-top-right-radius: 20px;\n      border-bottom-right-radius: 20px;\n      left: 42px; }\n    .canvas-wrapper .quantity_value_button .toggle {\n      position: relative;\n      display: inline; }\n    .canvas-wrapper .quantity_value_button .dailybtn {\n      float: left;\n      margin-left: -42px; }\n    .canvas-wrapper .quantity_value_button .yearlybtn {\n      float: right;\n      margin-left: 15px; }\n    .canvas-wrapper .quantity_value_button .monthlybtn {\n      float: right;\n      margin-left: 15px; }\n    .canvas-wrapper .quantity_value_button label {\n      width: auto !important; }\n    .canvas-wrapper .quantity_value_button button {\n      border: 1px solid #ddd;\n      border-radius: 3px;\n      font-size: 14px; }\n      .canvas-wrapper .quantity_value_button button:focus {\n        outline: none;\n        background-color: #ff6384;\n        color: #fff; }\n      .canvas-wrapper .quantity_value_button button.active {\n        background-color: #ff6384;\n        color: #fff; }\n  .canvas-wrapper .incomeexpensesbtns .monthlybtn {\n    float: left;\n    margin-left: -60px; }\n  .canvas-wrapper .expensesgraphmode .monthlybtn {\n    float: left;\n    margin-left: -60px; }\n  .canvas-wrapper .loadingGraphRight {\n    position: absolute;\n    top: 61%;\n    left: 55%;\n    transform: translate(-50%, -50%); }\n    .canvas-wrapper .loadingGraphRight img {\n      width: 88%; }\n  .canvas-wrapper .canvas-title {\n    border-bottom: 1px solid #ddd; }\n    .canvas-wrapper .canvas-title h4 {\n      font-size: 17px; }\n\n#no-data {\n  display: none;\n  position: absolute;\n  padding: 90px 0;\n  top: 30%;\n  width: 100%; }\n\n#no-data-stock {\n  display: none;\n  position: absolute;\n  padding: 90px 0;\n  top: 30%;\n  width: 100%; }\n\n.card-title {\n  font-weight: bold;\n  color: #16448f; }\n\n.dasboardtitle h5 {\n  font-weight: 600;\n  font-size: 19px;\n  line-height: 28px;\n  color: #FF5D0D;\n  border-left: 3px solid #ff5d0d;\n  padding-left: 15px;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  margin-left: -10px; }\n\n.dateCard input {\n  padding: 7px;\n  border: 1px solid #ddd; }\n\n.cardWrapper > span {\n  font-weight: 600;\n  font-size: 20px;\n  line-height: 29px;\n  color: #24A70F; }\n\n.cardWrapper {\n  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;\n  padding: 23px;\n  margin-bottom: 25px;\n  background: #fff; }\n  .cardWrapper h5 {\n    font-weight: 600;\n    font-size: 18px;\n    line-height: 22px;\n    /* identical to box height */\n    color: #3F4488; }\n  .cardWrapper img {\n    width: 50px;\n    position: absolute;\n    right: 60px;\n    bottom: 70px; }\n\n.cardWrapper > span {\n  font-weight: 600;\n  font-size: 20px;\n  line-height: 29px;\n  color: #24A70F; }\n\n.cardWrapper > p {\n  font-weight: 600;\n  font-size: 12px;\n  line-height: 15px;\n  margin-top: 5px;\n  color: #A9A6A6;\n  margin-bottom: 0; }\n  .cardWrapper > p span {\n    font-weight: 700;\n    font-size: 12px;\n    line-height: 15px;\n    color: #927E7E; }\n\n.pad-0 {\n  padding: 0 !important; }\n"
 
 /***/ }),
 
-/***/ 1805:
+/***/ 1820:
 /***/ (function(module, exports) {
 
 module.exports = "<style>\r\n  .nodata-bg {\r\n    /* background-image: url('assets/nodata.png'); */\r\n    background-size: cover;\r\n    background-position: center;\r\n    background-image: url(\"assets/nodata.png\");\r\n  }\r\n\r\n  #no-data {\r\n\r\n    display: none;\r\n    position: absolute;\r\n    padding: 90px 0;\r\n    top: 30%;\r\n    width: 100%;\r\n  }\r\n\r\n  a:link {\r\n    color: #777A6F;\r\n    background-color: transparent;\r\n    text-decoration: none;\r\n  }\r\n\r\n  a:visited {\r\n    color: #339c91;\r\n    background-color: transparent;\r\n    text-decoration: none;\r\n  }\r\n\r\n  a:hover {\r\n    color: #16448f;\r\n    background-color: transparent;\r\n    text-decoration: underline;\r\n  }\r\n\r\n  a:active {\r\n    color: yellow;\r\n    background-color: transparent;\r\n    text-decoration: underline;\r\n  }\r\n\r\n  .rTableHeading {\r\n    /* display: table-header-group; */\r\n    background-color: #ddd;\r\n    color: #009879;\r\n  }\r\n\r\n  .mainhead {\r\n    font-weight: bold;\r\n    background-color: #C5C5C5;\r\n  }\r\n\r\n  .nodata-bg {\r\n    /* background-image: url('assets/nodata.png'); */\r\n    background-size: cover;\r\n    background-position: center;\r\n    background-image: url('assets/nodata.png');\r\n\r\n  }\r\n\r\n  /* .border{\r\n    border-color: rgb(201, 76, 76);} */\r\n  .content-table {\r\n    border-collapse: collapse;\r\n    margin: 0px 0;\r\n    font-size: 0.9em;\r\n    width: 100%;\r\n    overflow: hidden;\r\n    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);\r\n\r\n  }\r\n\r\n  .content-table thead tr {\r\n    background-color: #009879;\r\n    color: #ffffff;\r\n    text-align: left;\r\n    font-weight: bold;\r\n  }\r\n\r\n  .content-table th,\r\n  .content-table td {\r\n    padding: 5px 15px;\r\n  }\r\n\r\n  .loginImage {\r\n    /* changed here for dashboard image to minified image  */\r\n    /* background-image: url('assets/inventoryPage.jpg'); */\r\n    background-image: url('../../../assets/img/dashboardbg.png');\r\n    background-size: cover;\r\n    height: 100vh;\r\n  }\r\n</style>\r\n\r\n\r\n\r\n\r\n<ng-container>\r\n  <div class=\"loginImage\" *ngIf=\"showDashboard == 0\">\r\n\r\n  </div>\r\n\r\n</ng-container>\r\n<div *ngIf=\"showDashboard == 1\" class=\"row\" style=\"height: 90vh; overflow: scroll; background-color: #fff;\">\r\n  <div class=\"row dasboardtitle\" style=\"margin: 0 12px;padding-top: 10px; margin-bottom: 10px;\">\r\n    <div class=\"col-lg-12\" style=\"width: 100%;\">\r\n      <div class=\"dashboardTitle d-flex\" style=\"justify-content:space-between;display: flex; align-items: center;\">\r\n        <div class=\"title\">\r\n          <h5>Dashboard</h5>\r\n        </div>\r\n        <div class=\"dateCard\">\r\n          <span>Business Flash Card:</span>\r\n          <input class=\"date\" type=\"date\" id=\"Date\" style=\"margin-right:0;\" [(ngModel)]=\"Currdate\"\r\n            (change)=\"getoverallchartapidata()\" min=\"{{minDate | date:'yyyy-MM-dd'}}\"/>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n\r\n  <div class=\"dashboard-wrapper\">\r\n\r\n\r\n    <div class=\"top-rectangles\">\r\n      <!-- <div class=\"row\" style=\" display:flex;\">\r\n   \r\n          <div class=\"rectangle-item\">\r\n            <div class=\"rectangle color-blue\" >\r\n                <p> Total Income</p>\r\n       <p> Rs. {{totalIncome | number:'1.2-2'}} </p>\r\n       \r\n        <div class=\"icon\">\r\n            \r\n             <img src=\"../../../assets/icon/dollar.png\" alt=\"Group\" >\r\n  \r\n        </div>\r\n     \r\n  \r\n            </div>\r\n  \r\n          </div>\r\n           <div class=\"rectangle-item\">\r\n            <div class=\"rectangle color-blue\">\r\n                <p>Total Expenses</p>\r\n       <p> Rs. {{totalexpenses | number:'1.2-2'}}</p>\r\n      \r\n        <div class=\"icon\">\r\n               <img src=\"../../../assets/icon/payable.png\" alt=\"Group\" >\r\n  \r\n        </div>\r\n     \r\n  \r\n            </div>\r\n  \r\n          </div>\r\n           <div class=\"rectangle-item\">\r\n            <div class=\"rectangle border-pink\">\r\n                <p>Net Sales Value : {{netsalesamount | number:'1.2-2'}}</p>\r\n       <p> Sales : Rs.  {{salesamount | number:'1.2-2'}}</p>\r\n        <p> Sales Return : Rs.  {{salesreturnamount | number:'1.2-2'}}</p>\r\n       \r\n        <div class=\"icon\">\r\n              <img src=\"../../../assets/icon/netsales.png\" alt=\"Group\" style=\"margin-top:-20px;\">\r\n  \r\n        </div>\r\n     \r\n  \r\n            </div>\r\n  \r\n          </div>\r\n           <div class=\"rectangle-item\">\r\n            <div class=\"rectangle color-pink\">\r\n                <p>Net Purchase Value : .......</p>\r\n       <p> Purchase : Rs. </p>\r\n       <p>Purchase Return : Rs.</p>\r\n     \r\n        <div class=\"icon\">\r\n         \r\n               <img src=\"../../../assets/icon/totalpurchase.png\" alt=\"Group\" style=\"margin-top:-20px;\" >\r\n  \r\n        </div>\r\n     \r\n  \r\n            </div>\r\n  \r\n          </div>\r\n          <div class=\"rectangle-item\">\r\n            <div class=\"rectangle border-green\">\r\n                <p>Cash & Bank Position</p>\r\n        <p> Cash : Rs. {{cashinhand | number:'1.2-2'}} </p>\r\n        <p> Bank : Rs. {{cashatbank | number:'1.2-2'}}</p>\r\n        <div class=\"icon\" >\r\n                  <img src=\"../../../assets/icon/money.png\" alt=\"Group\" style=\"margin-top: -20px;\" >\r\n  \r\n        </div>\r\n     \r\n  \r\n            </div>\r\n  \r\n          </div>\r\n\r\n        </div> -->\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-7\">\r\n          <div class=\"row\">\r\n            <div class=\"col-lg-4\">\r\n              <div class=\"col-lg-12 pad-0\">\r\n                <div class=\"rectangle-item\">\r\n                  <div class=\"rectangle color-blue  \">\r\n                    <p>Total Receipt</p>\r\n                    <p>Rs. {{receipt | number:'1.2-2'}}</p>\r\n                    <div class=\"icon\">\r\n\r\n                      <img src=\"../../../assets/icon/bill.png\" alt=\"Group\">\r\n\r\n                    </div>\r\n\r\n\r\n                  </div>\r\n\r\n                </div>\r\n              </div>\r\n\r\n              <div class=\"col-lg-12 pad-0\">\r\n                <div class=\"rectangle-item\">\r\n                  <div class=\"rectangle color-pink\">\r\n                    <p>Total Payment</p>\r\n                    <p> Rs. {{payment | number:'1.2-2'}} </p>\r\n\r\n                    <div class=\"icon\">\r\n                      <img src=\"../../../assets/icon/cargo.png\" alt=\"Group\">\r\n\r\n\r\n                    </div>\r\n\r\n\r\n                  </div>\r\n\r\n                </div>\r\n\r\n              </div>\r\n              <div class=\"col-lg-12 pad-0\">\r\n                <div class=\"rectangle-item\">\r\n                  <div class=\"rectangle border-green\">\r\n                    <p>VAT : Rs {{netvat | number:'1.2-2'}}</p>\r\n                    <p> VAT Payable : Rs {{vatpayable | number:'1.2-2'}} </p>\r\n                    <p>VAT Receivable : Rs {{vatreceivable | number:'1.2-2'}}</p>\r\n                    <div class=\"icon\">\r\n\r\n                      <img src=\"../../../assets/icon/money.png\" alt=\"Group\" style=\"margin-top: 10px;\">\r\n\r\n                    </div>\r\n\r\n\r\n                  </div>\r\n\r\n                </div>\r\n\r\n              </div>\r\n            </div>\r\n            <div class=\"col-lg-4\">\r\n\r\n\r\n              <div class=\"col-lg-12 pad-0\">\r\n                <div class=\"rectangle-item\">\r\n                  <div class=\"rectangle color-green\">\r\n                    <p>Total Receivable</p>\r\n                    <p>Rs. {{receivable | number:'1.2-2'}} </p>\r\n\r\n                    <div class=\"icon\">\r\n                      <img src=\"../../../assets/icon/dollar.png\" alt=\"Group\">\r\n\r\n                    </div>\r\n\r\n\r\n                  </div>\r\n\r\n                </div>\r\n\r\n              </div>\r\n              <div class=\"col-lg-12 pad-0\">\r\n                <div class=\"rectangle-item\">\r\n                  <div class=\"rectangle\">\r\n                    <p>Total Payable</p>\r\n                    <p>Rs. {{payable | number:'1.2-2'}} </p>\r\n\r\n                    <div class=\"icon\">\r\n                      <img src=\"../../../assets/icon/payable.png\" alt=\"Group\">\r\n\r\n                    </div>\r\n\r\n\r\n                  </div>\r\n\r\n                </div>\r\n\r\n              </div>\r\n              <div class=\"col-lg-12 pad-0\">\r\n                <div class=\"rectangle-item\">\r\n\r\n                  <div class=\"rectangle color-yellow\">\r\n                    <p>Total Income</p>\r\n                    <p>Rs. {{totalIncome | number:'1.2-2'}} </p>\r\n\r\n                    <div class=\"icon\">\r\n                      <img src=\"../../../assets/icon/netsales.png\" alt=\"Group\">\r\n\r\n                    </div>\r\n\r\n\r\n                  </div>\r\n\r\n                </div>\r\n\r\n              </div>\r\n            </div>\r\n            <div class=\"col-lg-4\">\r\n\r\n\r\n              <div class=\"col-lg-12 pad-0\">\r\n                <div class=\"rectangle-item\">\r\n                  <div class=\"rectangle color-green\">\r\n                    <p>Total Expenses</p>\r\n                    <p>Rs. {{totalexpenses | number:'1.2-2'}} </p>\r\n\r\n                    <div class=\"icon\">\r\n                      <img src=\"../../../assets/icon/bill.png\" alt=\"Group\">\r\n\r\n                    </div>\r\n\r\n\r\n                  </div>\r\n\r\n                </div>\r\n\r\n              </div>\r\n              <div class=\"col-lg-12 pad-0\">\r\n                <div class=\"rectangle-item\">\r\n                  <div class=\"rectangle\">\r\n                    <p>Cash In Hand</p>\r\n                    <p>Rs. {{cashinhand | number:'1.2-2'}} </p>\r\n\r\n                    <div class=\"icon\">\r\n                      <img src=\"../../../assets/icon/money.png\" alt=\"Group\">\r\n\r\n                    </div>\r\n\r\n\r\n                  </div>\r\n\r\n                </div>\r\n\r\n              </div>\r\n              <div class=\"col-lg-12 pad-0\">\r\n                <div class=\"rectangle-item\">\r\n\r\n                  <div class=\"rectangle color-green\">\r\n                    <p>Cash At Bank</p>\r\n                    <p>Rs. {{cashatbank | number:'1.2-2'}} </p>\r\n\r\n                    <div class=\"icon\">\r\n                      <img src=\"../../../assets/icon/money.png\" alt=\"Group\">\r\n\r\n                    </div>\r\n\r\n\r\n                  </div>\r\n\r\n\r\n                </div>\r\n\r\n              </div>\r\n            </div>\r\n          </div>\r\n\r\n        </div>\r\n\r\n\r\n\r\n        <div class=\"col-lg-5\" style=\"margin-bottom: 15px;\">\r\n          <!-- <div class=\"canvas-wrapper\" style=\"width:100%; height: 100%;\" >\r\n              <div class=\"canvas-title\">\r\n                <h4 (click)=\"onclickfunction\">Expenses Graph</h4>\r\n              </div>\r\n    \r\n            <canvas style=\"margin-top: 10px;\"  id=\"donutchart\" height=\"155\"   #donutchart ></canvas>\r\n            <div id=\"no-data-stock\" class=\"nodata-bg\"></div>\r\n            </div> -->\r\n\r\n          <div class=\"canvas-wrapper \" style=\"width: 100%; height: 100%;\">\r\n            <div class=\"canvas-title\">\r\n              <h4>Debtors Vs Creditors </h4>\r\n            </div>\r\n\r\n            <div>\r\n              <canvas id=\"chart4\" width=\"700\" height=\"340\" #chart4>\r\n\r\n\r\n              </canvas>\r\n              <div class=\"loadingGraphRight\" *ngIf=\"this.stockGraph\">\r\n                <img src=\"../../../assets/nodatapi.png\" alt=\"loading\" />\r\n                <!-- <p>Data is not Found</p> -->\r\n              </div>\r\n              <div id=\"no-data\" class=\"nodata-bg\"></div>\r\n            </div>\r\n\r\n\r\n\r\n          </div>\r\n\r\n\r\n        </div>\r\n\r\n      </div>\r\n\r\n\r\n    </div>\r\n\r\n\r\n    <div class=\"charts\">\r\n      <div class=\"row\" style=\"display: flex; flex-wrap: wrap;\">\r\n        <div class=\"col-lg-6 pad\">\r\n          <div class=\"canvas-wrapper\" style=\"width:100%;\">\r\n            <div class=\"canvas-title\">\r\n              <h4>Income & Expenses Graph </h4>\r\n            </div>\r\n\r\n\r\n\r\n            <div class=\"toggle quantity_value_button incomeexpensesbtns\">\r\n              <input class=\"dataType\" type=\"checkbox\" [(ngModel)]=\"incomeexpensereportmode\"\r\n                (change)=\"$event.target.checked?(incomeexpensereportmode=1):(incomeexpensereportmode=0); IncomeExpensesAccounting()\">\r\n\r\n\r\n\r\n\r\n              <label for=\"\" class=\"monthlybtn\">Monthly</label>\r\n              <label for=\"\" class=\"yearlybtn\">Yearly</label>\r\n            </div>\r\n\r\n            <canvas id=\"line\" width=\"700\" height=\"300\" #line></canvas>\r\n\r\n\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col-lg-6 pad\">\r\n\r\n          <div class=\"canvas-wrapper\" style=\"width:100%; overflow: hidden;\">\r\n            <div class=\"canvas-title\">\r\n              <h4>Receive & Payment </h4>\r\n            </div>\r\n\r\n            <div class=\"quantity_value_button\">\r\n              <input class=\"dataType\" type=\"checkbox\" [(ngModel)]=\"receivepayementreportmode\"\r\n                (change)=\"$event.target.checked?(receivepayementreportmode=1):(receivepayementreportmode=0); getReceivePaymentforchartata()\">\r\n\r\n\r\n              <label for=\"\" class=\"dailybtn\">Daily</label>\r\n              <label for=\"\" class=\"monthlybtn\">Monthly</label>\r\n            </div>\r\n\r\n            <canvas width=\"700\" height=\"300\" id=\"bar\" #bar> </canvas>\r\n            <div class=\"loadingGraphbar\" *ngIf=\"this.barGraph\" style=\"position: absolute;\r\n        top: 36px;\r\n        /* width: 60%; */\r\n        left: 1%;\">\r\n              <img style=\"width: 100%;\r\n          height: 90%;\" src=\"../../../assets/nodatabar.png\" alt=\"loading\" />\r\n              <!-- <p>Data is not Found</p> -->\r\n            </div>\r\n\r\n          </div>\r\n\r\n        </div>\r\n\r\n\r\n      </div>\r\n      <div class=\"row\" style=\"padding-bottom:30px;\">\r\n        <div class=\"col-lg-7 pad\">\r\n          <!-- <div class=\"canvas-wrapper\"  style=\"width:100%;\">\r\n             <div class=\"canvas-title\">\r\n               <h4>Receive & Payment </h4>\r\n             </div>\r\n             \r\n             <div class=\"quantity_value_button\">\r\n             <input class=\"dataType\" type=\"checkbox\" [(ngModel)]=\"receivepayementreportmode\" \r\n      \r\n             (change)=\"$event.target.checked?(receivepayementreportmode=1):(receivepayementreportmode=0); getReceivePaymentforchartata()\">\r\n          \r\n             \r\n             <label for=\"\" class=\"dailybtn\">Daily</label>\r\n             <label for=\"\" class=\"monthlybtn\">Monthly</label>\r\n           </div>\r\n             \r\n           <canvas  width=\"700\" height=\"250\" id=\"bar\"  #bar> </canvas>\r\n           \r\n             </div> -->\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n\r\n\r\n  </div>\r\n\r\n\r\n</div>\r\n\r\n<div class=\"modal-sticky\" *ngIf=\"authService.showfiscalPopup\"\r\n  style=\"overflow: auto;right: 40%;width: 30%;z-index: 9999999\">\r\n\r\n  <div class=\"modal-content modal-content-main-area\">\r\n    <div style=\"height: 28px; margin-top: 5px; \">\r\n      <div class=\"col-md-12\">\r\n        <h4 class=\"modal-title\" id=\"myModalLabel\">Fiscal Year Update Form</h4>\r\n      </div>\r\n\r\n    </div>\r\n    <div class=\"container\">\r\n      <form [formGroup]=\"fiscalForm\" (ngSubmit)=\"onSubmit()\">\r\n\r\n        <div class=\"form-group row\">\r\n          <label for=\"startDate\" class=\"col-sm-3 col-form-label\">Start Date</label>\r\n          <div class=\"col-sm-9\">\r\n            <input type=\"date\" class=\"form-control\" id=\"startDate\" formControlName=\"StartDate_AD\">\r\n          </div>\r\n        </div>\r\n        <div class=\"form-group row\">\r\n          <label for=\"endDate\" class=\"col-sm-3 col-form-label\">End Date</label>\r\n          <div class=\"col-sm-9\">\r\n            <input type=\"date\" class=\"form-control\" id=\"endDate\" placeholder=\"End Date\" formControlName=\"EndDate_AD\">\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"form-group row\">\r\n          <label for=\"fiscalID\" class=\"col-sm-3 col-form-label\">Fiscal ID</label>\r\n          <div class=\"col-sm-9\">\r\n            <input type=\"text\" class=\"form-control\" id=\"fiscalID\" placeholder=\"Fiscal ID\" formControlName=\"FiscalID\"\r\n              autocomplete=\"off\">\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"modal-footer\">\r\n          <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"fiscalForm.invalid\">Save</button>\r\n          <!-- <button type=\"button\" class=\"btn btn-primary\" (click)=\"cancelFiscalForm()\">Cancel</button> -->\r\n        </div>\r\n      </form>\r\n    </div>\r\n\r\n  </div>\r\n\r\n</div>\r\n<!-- \r\n<div class=\"print-modal-sticky modal-dialog\" *ngIf=\"showPosPrinterPreview\" style=\"display : block; padding: 0px;  margin-bottom: 25px;height: auto;\r\n  position: absolute;right: 30%;top: 5px;width: 30%;z-index: 9999999;   max-width: 300px;\r\n    position: absolute;\r\n    float: left;\r\n    left: 50%;\r\n    top: 50%;\r\n    transform: translate(-50%, -50%);\">\r\n  <div class=\"modal-content modal-content-main-area\" style=\"width: 100%;\">\r\n    <div class=\"modal-header\">\r\n      <h4 class=\"modal-title\" id=\"myModalLabel\">Print Preview</h4>\r\n    </div>\r\n    <div class=\"modal-body\" style=\"height:300px;overflow:scroll\">\r\n      <pre style=\"overflow: hidden;\">\r\n        {{printStringForPos}}\r\n      </pre>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n      <button type=\"button\" class=\"btn btn-info\" data-dismiss=\"modal\" (click)=\"canclePreview()\">Close</button>\r\n      <button type=\"button\" class=\"btn btn-info\" (click)=\"printDayEndBill()\">Print</button>\r\n    </div>\r\n  </div>\r\n</div> -->\r\n\r\n<!-- <div class=\"modal-sticky\" *ngIf=\"authService.showfiscalPopup\"\r\n  style=\"overflow: auto;right: 40%;width: 40%;z-index: 9999999\">\r\n\r\n  <div class=\"modal-content modal-content-main-area\">\r\n    <div style=\"height: 28px; margin-top: 5px; \">\r\n      <div class=\"col-md-12\">\r\n        <h6 class=\"modal-title\" id=\"myModalLabel\">\r\n         Current fiscal year has been completed,Please save the new Fiscal year.        \r\n        </h6>\r\n      </div>\r\n\r\n    </div>\r\n      <div class=\"container\">\r\n        <form [formGroup] =\"fiscalForm\" (ngSubmit) = \"onSubmit()\">\r\n\r\n      <div style=\"display:flex;  margin-top:22px ;\">\r\n        <label for=\"endDate\" class=\"col-sm-3 col-form-label\">Start Date</label>\r\n        <div class=\"col-sm-9\">\r\n          <input type=\"date\" class=\"form-control\" \r\n          [disabled]=\"true\"\r\n          id=\"startDate\" placeholder=\"Start Date\" formControlName=\"StartDate_AD\">\r\n        </div>\r\n      </div>\r\n\r\n      <div style=\"display:flex;  margin-top:22px ;\">\r\n        <label for=\"endDate\" class=\"col-sm-3 col-form-label\">End Date</label>\r\n        <div class=\"col-sm-9\">\r\n          <input type=\"date\" \r\n          [disabled]=\"true\"\r\n          class=\"form-control\" id=\"endDate\" placeholder=\"End Date\" formControlName=\"EndDate_AD\">\r\n        </div>\r\n      </div>\r\n\r\n      \r\n\r\n      <div style=\"display:flex;  margin-top:22px ;\">\r\n        <label for=\"fiscalID\" class=\"col-sm-3 col-form-label\">Fiscal ID</label>\r\n        <div class=\"col-sm-9\">\r\n          <input type=\"text\" class=\"form-control\" \r\n          [disabled]=\"true\"\r\n          id=\"fiscalID\" placeholder=\"Fiscal ID\" formControlName=\"FiscalID\" autocomplete=\"off\">\r\n        </div>\r\n      </div>\r\n\r\n      <div style=\"display:flex;  margin-top:22px ;\">\r\n        <label for=\"carriedon\" class=\"col-sm-10 col-form-label\">Carried on Opening Stock</label>\r\n        <div class=\"col-sm-2\">\r\n          <input type=\"checkbox\" class=\"form-control\" \r\n          \r\n          id=\"carriedon\"  formControlName=\"ISCarreidOn\" >\r\n        </div>\r\n      </div>\r\n      \r\n      <div class=\"modal-footer\">\r\n        <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"fiscalForm.invalid\" >Save</button>\r\n        <button type=\"button\" class=\"btn btn-primary\" (click)=\"cancelFiscalForm()\">Cancel</button>\r\n      </div>\r\n      </form>\r\n      </div>\r\n\r\n  </div>\r\n\r\n</div> -->\r\n<!-- [disabled]=\"fiscalForm.invalid\" -->\r\n\r\n\r\n<!--<div class=\"row\">\r\n  <div class=\"col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12\">\r\n    <pie-chart></pie-chart>\r\n  </div>\r\n</div>-->\r\n\r\n<!--<div class=\"row\">\r\n  <ba-card class=\"col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-xs-12\"\r\n                     title=\"Acquisition Channels\" baCardClass=\"traffic-panel medium-card\">\r\n    <traffic-chart></traffic-chart>\r\n  </ba-card>\r\n\r\n  <ba-card class=\"col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-xs-12\"\r\n           title=\"Users by Country\" baCardClass=\"medium-card\">\r\n    <users-map></users-map>\r\n  </ba-card>\r\n</div>-->\r\n\r\n<!--<div class=\"row\">\r\n  <div class=\"col-xlg-9 col-xl-6 col-lg-6  col-md-12 col-sm-12 col-xs-12\">\r\n    <div class=\"row\">\r\n      <ba-card class=\"col-xlg-8 col-xl-12 col-lg-12 col-md-7 col-sm-12 col-xs-12\"\r\n               title=\"Revenue\" baCardClass=\"medium-card\">\r\n        <line-chart></line-chart>\r\n      </ba-card>\r\n      <ba-card class=\"col-xlg-4 col-xl-12 col-lg-12 col-md-5 col-sm-12 col-xs-12\"\r\n               baCardClass=\"popular-app medium-card\">\r\n        <popular-app></popular-app>\r\n      </ba-card>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col-xlg-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12\">\r\n    <ba-card title=\"Feed\"\r\n             baCardClass=\"large-card with-scroll feed-panel\">\r\n      <feed></feed>\r\n    </ba-card>\r\n  </div>\r\n\r\n</div>-->\r\n<!-- <div class=\"row shift-up\"> -->\r\n<!-- <ba-card class=\"col-xlg-3 col-lg-6 col-md-12 col-sm-12 col-xs-12\" style=\"height:50px\"> -->\r\n<!-- <todo></todo> //Todolist -->\r\n<!-- <div class=\"col-md-3\">Check Vehcile &nbsp;&nbsp;</div>\r\n    <div class=\"col-md-9\"><td colspan=\"2\" style=\"width: 253px;\">\r\n      <input ngui-auto-complete class=\"form-control\" [source]=\"dropListItem.bind(this)\"\r\n          max-num-list=\"10\" list-formatter=\"vehicleno\" display-property-name=\"vehicleno\"\r\n          style=\"margin-bottom:5px;width:234px\" placeholder=\"BA 68 PA 96**\" [(ngModel)]=\"selectedVehicle\"\r\n           [ngModelOptions]=\"{standalone: true}\" [disabled]=\"modeTitle=='View JobCard'\"></td></div>\r\n   -->\r\n<!-- </ba-card> -->\r\n\r\n<!-- </div> -->\r\n<!-- <style>\r\n    a:link {\r\n      color:#777A6F;\r\n      background-color: transparent;\r\n      text-decoration: none;\r\n    }\r\n\r\n    a:visited {\r\n      color:#339c91;\r\n      background-color: transparent;\r\n      text-decoration: none;\r\n    }\r\n\r\n    a:hover {\r\n      color: #16448f;\r\n      background-color: transparent;\r\n      text-decoration: underline;\r\n    }\r\n\r\n    a:active {\r\n      color: yellow;\r\n      background-color: transparent;\r\n      text-decoration: underline;\r\n    }\r\n    .responsive_image {\r\n      width: 100vw;\r\n      height: 88vh;\r\n      background-color: white;\r\n      position: absolute;\r\n      padding-top: 2px;\r\n    }\r\n    </style> -->\r\n<!-- <ba-card>\r\n      <div class=\"row\">\r\n        <div class=\"col-md-5 plainBackGround\" style=\"height: 200px;border: 1px solid #c5c5c5;padding:0px;border-bottom-right-radius: 30px;\">\r\n          <div class=\"col-md-12\" style=\"background-color: #c5c5c5;height:30px;padding-top: 6px\">\r\n            <i class=\"glyphicon glyphicon-link\" style=\"color:#209e91;\"></i>&nbsp;<a style=\"color: #209e91;;\">Quick Access</a>\r\n          </div>\r\n          <div class=\"col-md-12\" style=\"height:30px;padding-top: 6px\">\r\n            <div class=\"row\" style=\"padding-top:20px\">\r\n              <div class=\"col-md-4\"><a class=\"glyphicon glyphicon-open-file\"> Product Master</a></div>\r\n              <div class=\"col-md-4\"><a class=\"glyphicon glyphicon-plus-sign\"> Purchase(PI)</a></div>\r\n              <div class=\"col-md-4\"><a class=\"glyphicon glyphicon-minus-sign\"> Sales(SI)</a></div>\r\n            </div>\r\n            <div class=\"row\" style=\"padding-top:20px\">\r\n              <div class=\"col-md-4\"><a class=\"glyphicon glyphicon-open-file\"> Branch In</a></div>\r\n              <div class=\"col-md-4\"><a class=\"glyphicon glyphicon-plus-sign\"> Branch-Out</a></div>\r\n              <div class=\"col-md-4\"><a class=\"glyphicon glyphicon-minus-sign\"> Stock Issue</a></div>\r\n            </div>\r\n            <div class=\"row\" style=\"padding-top:20px\">\r\n              <div class=\"col-md-4\"><a class=\"glyphicon glyphicon-open-file\"> Journal</a></div>\r\n              <div class=\"col-md-4\"><a class=\"glyphicon glyphicon-plus-sign\"> Income</a></div>\r\n              <div class=\"col-md-4\"><a class=\"glyphicon glyphicon-minus-sign\"> Expenses</a></div>\r\n            </div> -->\r\n<!-- routerLink=\"/pages/masters/JobDescriptionList\" -->\r\n\r\n\r\n<!-- </div>\r\n        </div> -->\r\n<!-- <div class=\"col-md-6 plainBackGround\" style=\"height: 200px;border: 1px solid #c5c5c5;padding:0px;float:right;width:55.5%;border-bottom-left-radius: 30px;\">\r\n          <div class=\"col-md-12\" style=\"background-color: #c5c5c5;height:30px;padding-top: 6px\">\r\n            <i class=\"glyphicon glyphicon-tasks\" style=\"color:#209e91;\"></i>&nbsp;<a style=\"color: #209e91;;\">Details</a>\r\n          </div>\r\n          <div class=\"col-md-12\">\r\n              <div class=\"row\" style=\"padding:30px\">\r\n\r\n                  <div class=\"col-md-4\">\r\n                    <div class=\"col-md-12\" style=\"padding:0px\"><a style=\"color: #8cccfb; font-size:25px;\">Purchase</a></div>\r\n                    <div class=\"col-md-12\" style=\"padding-top:30px\"><a style=\"color: #924a10; font-size:35px\"><span>5000</span></a></div>\r\n\r\n                  </div>\r\n                  <div class=\"col-md-4\">\r\n                      <div class=\"col-md-12\" style=\"padding:0px\"><a style=\"color: #8cccfb; font-size:25px;\">Sales</a></div>\r\n                      <div class=\"col-md-12\" style=\"padding-top:30px\"><a style=\"color: #924a10; font-size:35px\"><span>2890</span></a></div>\r\n\r\n                    </div>\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"col-md-12\" style=\"padding:0px\"><a style=\"color: #8cccfb; font-size:25px\">Stock</a></div>\r\n                        <div class=\"col-md-12\" style=\"padding-top:30px\"><a style=\"color: #924a10; font-size:35px\"><span>32730</span></a></div>\r\n\r\n                      </div>\r\n\r\n              </div>\r\n            </div>\r\n        </div> -->\r\n<!-- </div>\r\n      <div class=\"row\" style=\"margin-top:60px\">\r\n          <div class=\"col-md-12 plainBackGround\" style=\"height: 300px;border: 1px solid #c5c5c5;padding:0px;border-bottom-right-radius:30px;border-bottom-left-radius:30px\">\r\n              <div class=\"col-md-12\" style=\"background-color: #c5c5c5;height:30px;padding-top: 6px\">\r\n                <i class=\"glyphicon glyphicon-info-sign\" style=\"color:#209e91;\"></i>&nbsp;<a style=\"color: #209e91;;\">Getting Started</a>\r\n              </div>\r\n              <div class=\"col-md-12\" style=\"height:30px;padding-top: 6px\"> -->\r\n<!-- <ng2-odometer [number]=\"number\" [config]=\"{ }\"></ng2-odometer> -->\r\n<!-- <div style=\"padding:10px\"><p style=\"text-align: justify;\"><span style=\"font-size: 11pt;\">Quick Tips:</span></p>\r\n                    <ol>\r\n                    <li style=\"text-align: justify;\"><span style=\"font-size: 11pt;\">Product Master added new items</span></li>\r\n                    <li style=\"text-align: justify;\"><span style=\"font-size: 11pt;\">Define schedule for the scheme inside Configuration</span></li>\r\n                    <li style=\"text-align: justify;\"><span style=\"font-size: 11pt;\">Product Master added new items</span></li>\r\n                    <li style=\"text-align: justify;\"><span style=\"font-size: 11pt;\">Define schedule for the scheme inside Configuration</span></li>\r\n                    <li style=\"text-align: justify;\"><span style=\"font-size: 11pt;\">Product Master added new items</span></li>\r\n                    <li style=\"text-align: justify;\"><span style=\"font-size: 11pt;\">Define schedule for the scheme inside Configuration</span></li>\r\n                    <li style=\"text-align: justify;\"><span style=\"font-size: 11pt;\">Product Master added new items</span></li>\r\n                    <li style=\"text-align: justify;\"><span style=\"font-size: 11pt;\">Define schedule for the scheme inside Configuration</span></li>\r\n                   \r\n                    </ol></div>\r\n\r\n\r\n              </div>\r\n            </div>\r\n      </div>\r\n    </ba-card> -->\r\n\r\n\r\n<!-- <div class=\"row\">\r\n      <div class=\"col-md-12\">\r\n          <img src=\"assets/img/DashBoard_A.jpg\" class=\"responsive_image\" alt=\"Dashboard\">\r\n        </div>\r\n    </div> -->\r\n"
 
 /***/ }),
 
-/***/ 1806:
+/***/ 1821:
 /***/ (function(module, exports) {
 
 module.exports = "a"

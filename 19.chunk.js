@@ -1,275 +1,344 @@
 webpackJsonpac__name_([19],{
 
-/***/ 1175:
+/***/ 1432:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(62);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ReportBodyComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GenericReportListSettings; });
-/* unused harmony export ColumnSettings */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_common_service__ = __webpack_require__(579);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_repositories_masterRepo_service__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_services_alert_alert_service__ = __webpack_require__(12);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CostCentercategoryFormComponent; });
 
 
 
-var ReportBodyComponent = (function () {
-    function ReportBodyComponent(router, document) {
+
+
+
+
+
+var CostCentercategoryFormComponent = (function () {
+    function CostCentercategoryFormComponent(masterService, authService, router, _commonservice, _activatedRoute, fb, alertService) {
+        var _this = this;
+        this.masterService = masterService;
+        this.authService = authService;
+        this._commonservice = _commonservice;
+        this._activatedRoute = _activatedRoute;
+        this.fb = fb;
+        this.alertService = alertService;
+        this.DialogMessage = "Saving data please wait ...";
+        this.mode = "add";
+        this.costCenterCategory = {};
+        this.costCenterCategoryList = [];
+        this.userProfile = {};
+        this.subcriptions = [];
+        this.userProfile = authService.getUserProfile();
         this.router = router;
-        this.document = document;
-        this.tabindex = "list";
-        this.selectedRowIndex = 0;
-    }
-    ReportBodyComponent.prototype.ngOnChanges = function (changes) {
-        if (changes.reportType) {
-            this.reportType = changes.reportType.currentValue;
-        }
-        if (changes.listSetting) {
-            this.listSetting = changes.listSetting.currentValue;
-        }
-        if (changes.particularsRow) {
-            this.dataList = changes.particularsRow.currentValue;
-        }
-        if (changes.totalRow) {
-            this.dataListTotal = changes.totalRow.currentValue;
-        }
-        if (changes.ACNAME) {
-            this.ACNAME = changes.ACNAME.currentValue;
-        }
-        if (changes.DATE1) {
-            this.DATE1 = changes.DATE1.currentValue;
-        }
-        if (changes.DATE2) {
-            this.DATE2 = changes.DATE2.currentValue;
-        }
-        if (changes.voucherName) {
-            this.voucherName = changes.voucherName.currentValue;
-        }
-    };
-    ReportBodyComponent.prototype.updown = function ($event) {
-        if ($event.code == "ArrowDown") {
-            this.dataTable.nativeElement.scrollTop = this.dataTable.nativeElement.scrollTop + 26;
-            $event.preventDefault();
-            this.selectedRowIndex++;
-            if (this.selectedRowIndex == this.dataList.length) {
-                this.selectedRowIndex = this.dataList.length - 1;
-            }
-        }
-        else if ($event.code == "ArrowUp") {
-            $event.preventDefault();
-            if (this.dataTable.nativeElement.scrollTop > 0) {
-                this.dataTable.nativeElement.scrollTop = this.dataTable.nativeElement.scrollTop - 26;
-            }
-            this.selectedRowIndex--;
-            if (this.selectedRowIndex == -1) {
-                this.selectedRowIndex = 0;
-            }
-        }
-        else if ($event.ctrlKey && $event.code == "Enter" &&
-            this.selectedRowIndex >= 0 &&
-            this.selectedRowIndex < this.dataList.length) {
-            $event.preventDefault();
-        }
-        else if ($event.code == "Enter" && this.selectedRowIndex >= 0 && this.selectedRowIndex < this.dataList.length) {
-            $event.preventDefault();
-            if (this.reportType == 'Ledger Voucher') {
-                var invoicePrefix = this.dataList[this.selectedRowIndex]['VCH TYPE'];
-                if (this.isDrillableVoucher(invoicePrefix)) {
-                    {
-                        this.loadInvoiceFromVoucherType(invoicePrefix, this.dataList[this.selectedRowIndex]);
+        if (!!this._activatedRoute.snapshot.params['returnUrl']) {
+            this.returnUrl = this._activatedRoute.snapshot.params['returnUrl'];
+            var CostCenterCategoryName = "";
+            if (this._activatedRoute.snapshot.params['COSTCENTERGROUPNAME']) {
+                CostCenterCategoryName = this._activatedRoute.snapshot.params['COSTCENTERGROUPNAME'];
+                this.masterService.getCostCenterGroup(CostCenterCategoryName)
+                    .subscribe(function (data) {
+                    if (data.status == 'ok') {
+                        _this.form.setValue({
+                            COSTCENTERGROUPNAME: data.result.COSTCENTERGROUPNAME || '',
+                            DIVISION: data.result.DIVISIOLN || '',
+                            TYPE: data.result.TYPE || '',
+                            COMPANYID: data.result.COMPANYID || '',
+                        });
+                        _this.mode = _this._activatedRoute.snapshot.params['mode'];
+                        if (_this.mode == 'view') {
+                            _this.form.get('COSTCENTERGROUPNAME').disable();
+                            // this.form.get('COSTCENTERGROUPNAME').disable();
+                        }
+                        else {
+                            _this.form.get('COSTCENTERGROUPNAME').enable();
+                            // this.form.get('COSTCENTERGROUPNAME').enable();
+                        }
+                        _this.ccgid = data.result.ccgid;
                     }
+                }, function (error) {
+                    _this.mode = '';
+                    //  this.modeTitle = "Edit2 -Error in CostCenter";
+                    _this.form.get('COSTCENTERGROUPNAME').enable();
+                    _this.masterService.resolveError(error, "costCenterCategoryForm - getCostCenterCategory");
+                });
+            }
+        }
+        else {
+            this.mode = "add";
+            // this.modeTitle = "Add CostCenter";
+            this.form.get('COSTCENTERGROUPNAME').enable();
+            // this.initialTextReadOnly = false;
+        }
+    }
+    CostCentercategoryFormComponent.prototype.ngOnInit = function () {
+        try {
+            this.form = this.fb.group({
+                COSTCENTERGROUPNAME: [''],
+                DIVISION: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["Validators"].required],
+                TYPE: [''],
+                COMPANYID: [''],
+            });
+            this.form.patchValue({
+                DIVISION: this.userProfile.division,
+                TYPE: 'A',
+                COMPANYID: this.userProfile.CompanyInfo.ACID
+            });
+            //   this.masterService.getDivisions().subscribe(res => { this.divisionList.push(<IDivision>res); });
+            // this.masterService.getCostCenter().subscribe(res => { this.costCenterList.push(<CostCenter>res); });
+        }
+        catch (ex) {
+            //console.log(ex);
+            alert(ex);
+        }
+    };
+    CostCentercategoryFormComponent.prototype.onSave = function () {
+        //validate before Saving
+        try {
+            if (!this.masterService.getRequestOption()) {
+                return;
+            }
+            // this.DialogMessage = "Saving Data please wait..."
+            // this.childModal.show();
+            this.onsubmit();
+        }
+        catch (ex) {
+            //console.log(ex);
+            alert(ex);
+        }
+    };
+    CostCentercategoryFormComponent.prototype.onsubmit = function () {
+        var _this = this;
+        try {
+            console.log("submit call", this.form.value.DIVISION);
+            var costCenterCategory = {};
+            if (this.form.value.COSTCENTERGROUPNAME == null || this.form.value.COSTCENTERGROUPNAME == '') {
+                this.alertService.info("Cost Center Group Name cannot be empty");
+                return;
+            }
+            if (this.form.value.COSTCENTERGROUPNAME.trim() == "") {
+                this.alertService.info("Cost Center Group Name cannot be empty");
+                return;
+            }
+            costCenterCategory.COSTCENTERGROUPNAME = this.form.value.COSTCENTERGROUPNAME;
+            costCenterCategory.DIVISION = this.form.value.DIVISION;
+            costCenterCategory.TYPE = "A";
+            costCenterCategory.COMPANYID = this.form.value.COMPANYID;
+            if (this.mode == "edit") {
+                costCenterCategory.ccgid = this.ccgid;
+            }
+            var sub = this.masterService.saveCostCenterCategory(this.mode, costCenterCategory)
+                .subscribe(function (data) {
+                // alert("returnStatus "+ data);
+                console.log("data", data);
+                if (data.status == 'ok') {
+                    //Displaying dialog message for save with timer of 1 secs
+                    // this.DialogMessage = "Data Saved Successfully"
+                    _this.alertService.info("Data Saved Successfully");
+                    setTimeout(function () {
+                        // this.childModal.hide();
+                        _this.router.navigate([_this.returnUrl]);
+                    }, 1000);
                 }
-            }
+                else {
+                    //alert(data.result);
+                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                    if (data.result._body == "The ConnectionString property has not been initialized.") {
+                        _this.router.navigate(['/login', _this.router.url]);
+                        return;
+                    }
+                    //Some other issues need to check
+                    //this.DialogMessage = "!!!Error in Saving Data:" + data.result._body;
+                    alert("!!!Error in Saving Data:" + data.result._body);
+                    setTimeout(function () {
+                        _this.childModal.hide();
+                    }, 3000);
+                }
+            }, function (error) { alert(error); });
+            this.subcriptions.push(sub);
+        }
+        catch (e) {
+            alert(e);
         }
     };
-    ReportBodyComponent.prototype.doubleClicked = function (index) {
-        this.selectedRowIndex = index;
-        if (this.reportType == 'Ledger Voucher') {
-            var invoicePrefix = this.dataList[this.selectedRowIndex]['VCH TYPE'];
-            if (this.isDrillableVoucher(invoicePrefix)) {
-                this.loadInvoiceFromVoucherType(invoicePrefix, this.dataList[this.selectedRowIndex]);
-            }
-        }
-    };
-    ReportBodyComponent.prototype.isDrillableVoucher = function (invoicePrefix) {
-        switch (invoicePrefix) {
-            case 'SALES':
-                return true;
-            case 'INCOME':
-                return true;
-            case 'EXPENSE':
-                return true;
-            case 'PURCHASE':
-                return true;
-            case 'JOURNAL':
-                return false;
-            case 'DEBITNOTE':
-                return false;
-            case 'CREDITNOTE':
-                return false;
-            case 'CONTRA':
-                return false;
-            default:
-                return false;
-        }
-    };
-    ReportBodyComponent.prototype.loadInvoiceFromVoucherType = function (invoicePrefix, invoiceDataObj) {
-        window.open(window.location.origin + this.resolveRouteUrl(invoicePrefix)
-            + "?voucherNumber=" + invoiceDataObj['VCH NO'] + "&from=Ledger", "_self");
-    };
-    ReportBodyComponent.prototype.resolveRouteUrl = function (prefix) {
-        switch (prefix) {
-            case 'SALES':
-                return "/#/pages/transaction/sales/addsientry";
-            case 'INCOME':
-                return "/account/#/pages/account/acvouchers/income-voucher";
-            case 'EXPENSE':
-                return "/account/#/pages/account/acvouchers/expense-voucher";
-            case 'PURCHASE':
-                return "/#/pages/transaction/purchases/add-purchase-invoice";
-            case 'JOURNAL':
-                return "/account/#/pages/account/acvouchers/journal-voucher";
-            case 'DEBITNOTE':
-                return;
-            case 'CREDITNOTE':
-                return;
-            case 'CONTRA':
-                return "/account/#/pages/account/acvouchers/contra-voucher";
-            default:
-                break;
-        }
-    };
-    return ReportBodyComponent;
+    return CostCentercategoryFormComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-    __metadata("design:type", Object)
-], ReportBodyComponent.prototype, "particularsRow", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-    __metadata("design:type", String)
-], ReportBodyComponent.prototype, "ACNAME", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-    __metadata("design:type", String)
-], ReportBodyComponent.prototype, "DATE1", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-    __metadata("design:type", String)
-], ReportBodyComponent.prototype, "DATE2", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-    __metadata("design:type", Object)
-], ReportBodyComponent.prototype, "totalRow", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-    __metadata("design:type", GenericReportListSettings)
-], ReportBodyComponent.prototype, "listSetting", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-    __metadata("design:type", String)
-], ReportBodyComponent.prototype, "reportType", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-    __metadata("design:type", String)
-], ReportBodyComponent.prototype, "voucherName", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('dataTable'),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])
-], ReportBodyComponent.prototype, "dataTable", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])("document : keydown", ["$event"]),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [KeyboardEvent]),
-    __metadata("design:returntype", void 0)
-], ReportBodyComponent.prototype, "updown", null);
-ReportBodyComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__["b" /* ModalDirective */])
+], CostCentercategoryFormComponent.prototype, "childModal", void 0);
+CostCentercategoryFormComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: "report-body",
-        template: __webpack_require__(1234),
+        selector: 'CostCenterCategoryFormSelector',
+        template: __webpack_require__(1843),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__common_services_common_service__["a" /* CommonService */], __WEBPACK_IMPORTED_MODULE_2__common_repositories_masterRepo_service__["a" /* MasterRepo */]],
+        styles: [__webpack_require__(120), __webpack_require__(1464)],
     }),
-    __param(1, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DOCUMENT"])),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["Router"], Object])
-], ReportBodyComponent);
-
-var GenericReportListSettings = (function () {
-    function GenericReportListSettings() {
-        this.columns = [];
-    }
-    return GenericReportListSettings;
-}());
-
-var ColumnSettings = (function () {
-    function ColumnSettings() {
-    }
-    return ColumnSettings;
-}());
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_4__angular_router__["Router"], __WEBPACK_IMPORTED_MODULE_1__common_services_common_service__["a" /* CommonService */], __WEBPACK_IMPORTED_MODULE_4__angular_router__["ActivatedRoute"], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormBuilder"],
+        __WEBPACK_IMPORTED_MODULE_7__common_services_alert_alert_service__["a" /* AlertService */]])
+], CostCentercategoryFormComponent);
 
 
 
 /***/ }),
 
-/***/ 1225:
+/***/ 1433:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__report_body_component__ = __webpack_require__(1175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(10);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportBodyModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_repositories__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__ = __webpack_require__(563);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_services_alert_alert_service__ = __webpack_require__(12);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CostCenterCategoryListComponent; });
 
 
 
 
-var ReportBodyModule = ReportBodyModule_1 = (function () {
-    function ReportBodyModule() {
+
+
+var CostCenterCategoryListComponent = (function () {
+    function CostCenterCategoryListComponent(masterService, _authService, router, alertService) {
+        this.masterService = masterService;
+        this._authService = _authService;
+        this.router = router;
+        this.alertService = alertService;
+        this.source = new __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__["b" /* LocalDataSource */]();
+        this.getAllCostCenterGroupList();
     }
-    ReportBodyModule.forRoot = function () {
-        return {
-            ngModule: ReportBodyModule_1,
-        };
+    // }
+    CostCenterCategoryListComponent.prototype.AddCostCategoryCenter = function () {
+        try {
+            if (!this.masterService.getRequestOption()) {
+                return;
+            }
+            if (this.masterService.validateMasterCreation("create") == false) {
+                return;
+            }
+            this.router.navigate(["./pages/account/AccountLedger/cost-center-category/add-cost-category-center", { mode: "add", returnUrl: this.router.url }]);
+        }
+        catch (ex) {
+            //console.log(ex);
+            alert(ex);
+        }
     };
-    return ReportBodyModule;
+    CostCenterCategoryListComponent.prototype.onEditClick = function (event) {
+        try {
+            if (this.masterService.validateMasterCreation("edit") == false) {
+                return;
+            }
+            this.router.navigate(["./pages/account/AccountLedger/cost-center-category/add-cost-category-center", { COSTCENTERGROUPNAME: event.COSTCENTERGROUPNAME, DIVISION: event.DIVISION, mode: "edit", returnUrl: this.router.url }]);
+            // if (this._authService.checkMenuRight("cost-center", "add") == true) {
+            //   this.router.navigate(["./pages/account/AccountLedger/cost-center/add-cost-center", { costcenterName: event.COSTCENTERNAME, mode: "edit", returnUrl: this.router.url }]);
+            // } else {
+            //   this.messageSubject.next("You are not authorized to Edit.");
+            //   this.openAuthDialog();
+            // } 
+        }
+        catch (ex) {
+            //console.log(ex);
+            alert(ex);
+        }
+    };
+    CostCenterCategoryListComponent.prototype.onViewClick = function (event) {
+        this.router.navigate(["./pages/account/AccountLedger/cost-center-category/add-cost-category-center", { COSTCENTERGROUPNAME: event.COSTCENTERGROUPNAME, DIVISION: event.DIVISION, mode: "view", returnUrl: this.router.url }]);
+    };
+    CostCenterCategoryListComponent.prototype.onDeleteClick = function (event) {
+        var _this = this;
+        try {
+            try {
+                if (this.masterService.validateMasterCreation("delete") == false) {
+                    return;
+                }
+                this.masterService.deleteCostCenterGroup(event.ccgid).subscribe(function (response) {
+                    if (response.status == 'ok') {
+                        _this.alertService.info(response.result);
+                        _this.getAllCostCenterGroupList();
+                    }
+                }, function (error) {
+                    console.log(error);
+                    _this.alertService.info(error._body);
+                });
+            }
+            catch (ex) {
+                //console.log(ex);
+                alert(ex);
+            }
+        }
+        catch (ex) {
+            //console.log(ex);
+            alert(ex);
+        }
+    };
+    CostCenterCategoryListComponent.prototype.getAllCostCenterGroupList = function () {
+        var _this = this;
+        try {
+            var data_1 = [];
+            this.masterService.getAllCostCenterGroupList()
+                .subscribe(function (res) {
+                console.log("cost getAllCostCenterGroupList", res);
+                data_1 = res;
+                _this.source.load(data_1);
+            }, function (error) {
+                _this.alertService.info(error.result._body);
+                //console.log(error);
+            });
+        }
+        catch (ex) {
+            //console.log(ex);
+            alert(ex);
+        }
+    };
+    return CostCenterCategoryListComponent;
 }());
-ReportBodyModule = ReportBodyModule_1 = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-        imports: [
-            __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
-            __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"]
-        ],
-        declarations: [__WEBPACK_IMPORTED_MODULE_2__report_body_component__["b" /* ReportBodyComponent */]],
-        exports: [__WEBPACK_IMPORTED_MODULE_2__report_body_component__["b" /* ReportBodyComponent */]]
-    })
-], ReportBodyModule);
+CostCenterCategoryListComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'CostCenterCategoryListSelector',
+        template: __webpack_require__(1844),
+        providers: [],
+        styles: [__webpack_require__(120), __webpack_require__(1464)]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_2__common_services_permission__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["Router"], __WEBPACK_IMPORTED_MODULE_5__common_services_alert_alert_service__["a" /* AlertService */]])
+], CostCenterCategoryListComponent);
 
-var ReportBodyModule_1;
 
 
 /***/ }),
 
-/***/ 1234:
+/***/ 1464:
 /***/ (function(module, exports) {
 
-module.exports = "<style>\r\n  .table tr th {\r\n    text-align: center !important;\r\n    vertical-align: middle;\r\n\r\n  }\r\n\r\n  tr {\r\n    font-size: 12px;\r\n  }\r\n\r\n  .page-header-space {\r\n    height: 100px;\r\n  }\r\n\r\n  .text-justify {\r\n    text-align: justify;\r\n  }\r\n\r\n  table {\r\n    width: 100%;\r\n  }\r\n\r\n\r\n  th {\r\n    font-size: 12px;\r\n    font-weight: bold;\r\n  }\r\n\r\n  .custom-td {\r\n    border: 1px solid #e6e6e6;\r\n    width: 20px;\r\n    text-align: center !important;\r\n  }\r\n\r\n  .row-even {\r\n    background-color: #E6E6E6\r\n  }\r\n\r\n  .row-odd {\r\n    background-color: rgb(197, 197, 196)\r\n  }\r\n\r\n  .thead-padding {\r\n    padding: 10px;\r\n  }\r\n\r\n  .selected-row {\r\n    background-color: #787878 !important;\r\n    color: white;\r\n    font-size: 14px;\r\n  }\r\n\r\n  td {\r\n    padding: 5px !important;\r\n  }\r\n\r\n  .border {\r\n    border-top: 1px solid #e6e6e6 !important;\r\n  }\r\n\r\n  .header{\r\n    min-height: 62px !important\r\n  }\r\n\r\n</style>\r\n<ng-container *ngIf=\"dataList.length\">\r\n  <div id=\"reportTable\" #dataTable *ngIf=\"listSetting\" class=\"row\"\r\n    style=\"height: 470px !important;overflow-y:scroll;overflow-x: hidden;width: 100%;background:#ffffff;margin: 0\">\r\n    <div class=\"header\" style=\"padding: 0px;position: sticky;top: 0\">\r\n      <table id=\"report-header\">\r\n        <thead>\r\n          <tr style=\"border-bottom: 1px solid;height: 30px;\r\n            background: #c5e3ed; \r\n            color: black;\">\r\n            <ng-container *ngIf=\"reportType=='Ledger Voucher'\">\r\n              <td class=\"thead-padding\"><b>Ledger</b></td>\r\n              <td class=\"thead-padding\">{{ACNAME}}</td>\r\n            </ng-container>\r\n            <ng-container *ngIf=\"reportType=='Voucher Register'\">\r\n              <td colspan=\"2\" class=\"thead-padding\"><b>List of All {{voucherName}}</b></td>\r\n            </ng-container>\r\n            <ng-container *ngIf=\"reportType=='Day Book'\">\r\n              <td colspan=\"2\" class=\"thead-padding\"><b>Day Book of {{voucherName}}</b></td>\r\n            </ng-container>\r\n            <td class=\"thead-padding\"></td>\r\n            <td class=\"thead-padding\"></td>\r\n            <td class=\"thead-padding text-right\" colspan=\"3\"> <strong>{{DATE1 |date}} to {{DATE2 |date}}</strong></td>\r\n          </tr>\r\n          <tr style=\"border-bottom: 1px solid;height: 30px;\r\n            background: #c5e3ed; \r\n            color: black;\">\r\n            <ng-container *ngFor=\"let col of listSetting.columns;let i=index\">\r\n              <th *ngIf=\"col.key=='GROUP NAME'\" style=\"width: 7% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='MAIN GROUP NAME'\" style=\"width: 7% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='LEDGER NAME'\" style=\"width: 7% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='TRNDATE'\" style=\"width: 7% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='DATE'\" style=\"width: 7% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='PARTICULARS'\" style=\"width: 30% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='VCH TYPE'\" style=\"width: 10% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='VCH NO'\" style=\"width: 10% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='DEBIT' || col.key=='DRAMNT'\" style=\"width: 7% !important\" class=\"text-right\">\r\n                {{col.title}}</th>\r\n              <th *ngIf=\"col.key=='CREDIT' || col.key=='CRAMNT'\" style=\"width: 7% !important\" class=\"text-right\">\r\n                {{col.title}}</th>\r\n              <th *ngIf=\"col.key=='BALANCE'\" style=\"width: 10% !important\" class=\"text-right\">\r\n                {{col.title}}</th>\r\n            </ng-container>\r\n          </tr>\r\n\r\n        </thead>\r\n      </table>\r\n    </div>\r\n\r\n    <table id=\"report-body\">\r\n      <tbody>\r\n        <ng-container *ngFor=\"let itm of dataList;let i = index;\">\r\n          <tr class=\"highlight\" [class.selected-row]=\"selectedRowIndex == i\" (dblclick)=\"doubleClicked(i)\"\r\n            style=\"max-height:25px;\" [class.border]=\"itm['DATE']!=null && itm['FLG']!='B'\">\r\n\r\n            <ng-container *ngFor=\"let col of listSetting.columns\">\r\n              <td *ngIf=\"col.key=='DATE'\" class=\"text-left\" style=\"width:7% !important\">\r\n                {{itm[col.key] | date:'shortDate'}}\r\n              </td>\r\n              <td *ngIf=\"col.key=='PARTICULARS'\" class=\"text-left\" style=\"width:30% !important;white-space: pre\"\r\n                [innerHtml]=\"itm[col.key]\">\r\n              </td>\r\n              <td *ngIf=\"col.key=='VCH TYPE'\" class=\"text-left\" style=\"width:10% !important\">\r\n                {{itm[col.key]}}\r\n              </td>\r\n              <td *ngIf=\"col.key=='VCH NO'\" class=\"text-left\" style=\"width:10% !important\">\r\n                {{itm[col.key]}}\r\n              </td>\r\n              <td *ngIf=\"col.key=='GROUP NAME'\" class=\"text-left\" style=\"width:10% !important\">\r\n                {{itm[col.key]}}\r\n              </td>\r\n              <td *ngIf=\"col.key=='MAIN GROUP NAME'\" class=\"text-left\" style=\"width:10% !important\">\r\n                {{itm[col.key]}}\r\n              </td>\r\n              <td *ngIf=\"col.key=='LEDGER NAME'\" class=\"text-left\" style=\"width:10% !important\">\r\n                {{itm[col.key]}}\r\n              </td>\r\n              <td *ngIf=\"col.key=='TRNDATE'\" class=\"text-left\" style=\"width:10% !important\">\r\n                {{itm[col.key]}}\r\n              </td>\r\n\r\n              <td *ngIf=\"col.key=='DEBIT' || col.key=='DRAMNT'\" style=\"width:7% !important\" class=\"text-right\">\r\n                {{itm[col.key] | number:'1.2-2'}}\r\n              </td>\r\n              <td *ngIf=\"col.key== 'CREDIT' || col.key=='CRAMNT'\" style=\"width:7% !important\" class=\"text-right\">\r\n                {{itm[col.key] | number:'1.2-2'}}\r\n              </td>\r\n              <td *ngIf=\"col.key== 'BALANCE'\" style=\"width:10% !important\" class=\"text-right\">\r\n                {{itm[col.key] | number:'1.2-2'}}\r\n              </td>\r\n            </ng-container>\r\n\r\n          </tr>\r\n          <tr *ngIf=\"selectedRowIndex == i\">\r\n            <td [attr.colspan]=\"listSetting.columns.length+1\">\r\n              <div id=\"row{{i}}\"></div>\r\n            </td>\r\n          </tr>\r\n        </ng-container>\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n</ng-container>\r\n\r\n\r\n\r\n<div class=\"clearfix\" *ngIf=\"dataList.length\" style=\"width: 100% !important\">\r\n  <div class=\"col-md-12\" style=\"position: sticky;bottom:0;padding: 0px;background: #c5e3ed; \r\n  color: black;\">\r\n    <table id=\"report-footer\" style=\"table-layout:fixed;\">\r\n      <tfoot>\r\n        <ng-container>\r\n          <tr *ngFor=\"let total of dataListTotal\">\r\n            <td  style=\"width:7%\" >\r\n              &nbsp;\r\n            </td>\r\n            <td  style=\"width:30%\"></td>\r\n            <td style=\"width:10%\"></td>\r\n            <td class=\"text-left\"  style=\"width:10%\"><b>{{total.PARTICULARS}}</b></td>\r\n            <td style=\"width: 7% !important\" class=\"text-right\">\r\n              <b>{{total.DRAMNT |number:'1.2-2' }}</b></td>\r\n            <td style=\"width: 7% !important\" class=\"text-right\">\r\n              <b>{{total.CRAMNT |number:'1.2-2' }}</b>\r\n            </td>\r\n            <td style=\"width:10%\"></td>\r\n          </tr>\r\n        </ng-container>\r\n\r\n      </tfoot>\r\n    </table>\r\n  </div>\r\n</div>\r\n"
+module.exports = ".Cost-Center-Category-section {\n  position: relative;\n  height: 40px;\n  background: #d9e5e7;\n  padding-right: 8px; }\n  .Cost-Center-Category-section .title-section {\n    position: absolute;\n    font-family: \"Segoe UI Light\";\n    height: 25px;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 18px;\n    line-height: 25px;\n    color: #000000;\n    left: 4%;\n    top: 50%;\n    transform: translate(0, -50%); }\n  .Cost-Center-Category-section .save-btn,\n  .Cost-Center-Category-section .back-btn {\n    background-color: #336799;\n    color: white;\n    font-size: 12px;\n    margin-left: 6px;\n    margin-top: 2px; }\n  .Cost-Center-Category-section .disabled-button {\n    background-color: #336799a6; }\n\n.Cost-Center-Category-body {\n  padding: 0;\n  color: #000000;\n  font-family: \"Segoe UI Light\";\n  box-sizing: border-box;\n  min-height: 155px;\n  margin-top: 35px;\n  border: 1px solid #7b7979;\n  border-radius: 5px; }\n  .Cost-Center-Category-body .node-rate,\n  .Cost-Center-Category-body .node-mapping {\n    margin-top: 8px; }\n    .Cost-Center-Category-body .node-rate input,\n    .Cost-Center-Category-body .node-mapping input {\n      width: 15%; }\n  .Cost-Center-Category-body .node-header {\n    padding: 10px 20px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    background-color: #4472c4;\n    box-sizing: border-box;\n    height: 45px;\n    border-radius: 5px 5px 0px 0px; }\n    .Cost-Center-Category-body .node-header .node-title {\n      color: #ffffff;\n      height: 25px;\n      display: block;\n      width: 250px;\n      font-style: normal;\n      font-weight: 600;\n      font-size: 16px; }\n    @media screen and (max-width: 320px) {\n      .Cost-Center-Category-body .node-header .node-title {\n        font-size: 80%; } }\n    .Cost-Center-Category-body .node-header .choose-node {\n      box-sizing: border-box;\n      width: 40%;\n      height: 30px;\n      background: #ffffff;\n      border: 1px solid #9c9b9b;\n      padding-top: 1px;\n      border-radius: 5px;\n      font-size: 14px;\n      font-style: normal;\n      font-weight: bold;\n      color: black; }\n      .Cost-Center-Category-body .node-header .choose-node option {\n        font-weight: bold; }\n  .Cost-Center-Category-body .node-body {\n    margin-left: 5%;\n    margin-top: 2%;\n    padding-bottom: 10px; }\n    .Cost-Center-Category-body .node-body label {\n      font-weight: bold;\n      font-size: 14px;\n      width: 150px; }\n    .Cost-Center-Category-body .node-body input {\n      height: 25px;\n      display: inline-block;\n      width: 40%; }\n    .Cost-Center-Category-body .node-body .depr {\n      margin-top: 8px; }\n"
 
 /***/ }),
 
-/***/ 1360:
+/***/ 1591:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_popupLists_report_filter_report_filter_module__ = __webpack_require__(1176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_permission_guard_service__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voucher_register_component__ = __webpack_require__(1418);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__voucher_register_routing_module__ = __webpack_require__(1568);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__voucher_register_service__ = __webpack_require__(1419);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__report_body_module__ = __webpack_require__(1225);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VoucherRegisterModule", function() { return VoucherRegisterModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_ng2_smart_table_src_ng2_smart_table_module__ = __webpack_require__(1173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular_tree_component__ = __webpack_require__(557);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_popupLists_generic_grid_generic_popup_grid_module__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__theme_nga_module__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__costCenterCategoryList_component__ = __webpack_require__(1433);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__cost_center_category_routing__ = __webpack_require__(1592);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__costCenterCategoryForm_component__ = __webpack_require__(1432);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_forms__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__search_pipe__ = __webpack_require__(1593);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CostCenterCategoryModule", function() { return CostCenterCategoryModule; });
 
 
 
@@ -279,251 +348,119 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var VoucherRegisterModule = (function () {
-    function VoucherRegisterModule() {
+
+
+
+var CostCenterCategoryModule = (function () {
+    function CostCenterCategoryModule() {
     }
-    return VoucherRegisterModule;
+    return CostCenterCategoryModule;
 }());
-VoucherRegisterModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+CostCenterCategoryModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
-            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormsModule"],
-            __WEBPACK_IMPORTED_MODULE_6__voucher_register_routing_module__["a" /* VoucherRegisterRoutingModule */],
-            __WEBPACK_IMPORTED_MODULE_3__common_popupLists_report_filter_report_filter_module__["a" /* ReportFilterModule */].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_8__report_body_module__["a" /* ReportBodyModule */].forRoot()
+            __WEBPACK_IMPORTED_MODULE_2_angular_tree_component__["d" /* default */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_common__["CommonModule"],
+            __WEBPACK_IMPORTED_MODULE_10__angular_forms__["FormsModule"],
+            __WEBPACK_IMPORTED_MODULE_10__angular_forms__["ReactiveFormsModule"],
+            __WEBPACK_IMPORTED_MODULE_8__cost_center_category_routing__["a" /* CostCenterCategoryRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_4__common_popupLists_generic_grid_generic_popup_grid_module__["a" /* GenericPopupGridModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_5__theme_nga_module__["a" /* NgaModule */],
+            __WEBPACK_IMPORTED_MODULE_0__node_modules_ng2_smart_table_src_ng2_smart_table_module__["Ng2SmartTableModule"],
+            __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["a" /* ModalModule */].forRoot(),
         ],
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_5__voucher_register_component__["a" /* VoucherRegisterComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__costCenterCategoryList_component__["a" /* CostCenterCategoryListComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__costCenterCategoryForm_component__["a" /* CostCentercategoryFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__search_pipe__["a" /* SearchPipe */],
         ],
-        providers: [
-            __WEBPACK_IMPORTED_MODULE_4__common_services_permission_guard_service__["a" /* CanActivateTeam */],
-            __WEBPACK_IMPORTED_MODULE_7__voucher_register_service__["a" /* VoucherRegisterService */]
-        ]
     })
-], VoucherRegisterModule);
+], CostCenterCategoryModule);
 
 
 
 /***/ }),
 
-/***/ 1418:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_popupLists_report_filter_report_filter_component__ = __webpack_require__(1180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_spinner_spinner_service__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_services_alert_alert_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__report_body_component__ = __webpack_require__(1175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voucher_register_service__ = __webpack_require__(1419);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_popupLists_report_filter_report_filter_service__ = __webpack_require__(555);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VoucherRegisterComponent; });
-
-
-
-
-
-
-
-var VoucherRegisterComponent = (function () {
-    function VoucherRegisterComponent(_reportFilterService, _alertService, _ledgerService, _spinnerService) {
-        this._reportFilterService = _reportFilterService;
-        this._alertService = _alertService;
-        this._ledgerService = _ledgerService;
-        this._spinnerService = _spinnerService;
-        this.listSetting = new __WEBPACK_IMPORTED_MODULE_4__report_body_component__["a" /* GenericReportListSettings */]();
-        this.reportType = "Voucher Register";
-        this.ReportDataObj = {};
-        this.listSetting = {
-            title: "Voucher Register",
-            columns: [
-                {
-                    key: "DATE",
-                    title: "Date"
-                },
-                {
-                    key: "PARTICULARS",
-                    title: "Particulars"
-                },
-                {
-                    key: "VCH TYPE",
-                    title: "VCH TYPE"
-                },
-                {
-                    key: "VCH NO",
-                    title: "VCH NO"
-                },
-                {
-                    key: "DRAMNT",
-                    title: "DEBIT"
-                },
-                {
-                    key: "CRAMNT",
-                    title: "CREDIT"
-                }
-            ]
-        };
-    }
-    VoucherRegisterComponent.prototype.ngOnInit = function () {
-        this.loadFilter();
-    };
-    VoucherRegisterComponent.prototype.loadFilter = function () {
-        this.reportFilter.show();
-    };
-    VoucherRegisterComponent.prototype.ExportReportInExcel = function () {
-        this._reportFilterService.exportTableToExcel("reportTable", this.filterObj.VOUCHERNAME);
-    };
-    VoucherRegisterComponent.prototype.print = function () {
-        this._reportFilterService.print();
-    };
-    VoucherRegisterComponent.prototype.applyFilter = function (filterObj) {
-        var _this = this;
-        this.filterObj = filterObj;
-        this.reportFilter.popupClose();
-        this._spinnerService.show(' Please Wait! Getting Report Data.');
-        try {
-            this._ledgerService.getVoucherRegisterData(filterObj.VTYPE, filterObj.DATE1, filterObj.DATE2, filterObj.SHOWNARRATION, filterObj.DIV).subscribe(function (res) {
-                _this._spinnerService.hide();
-                if (res.status == "ok") {
-                    if (res.result.length == 0) {
-                        _this._alertService.warning("No Result Found");
-                    }
-                    ////console.log("CheckVoucher",res.result)
-                    _this.ReportDataObj.particularsRow = res.result;
-                    _this.ReportDataObj.totalRow = res.result2 == null ? [] : res.result2;
-                }
-                else {
-                    _this._alertService.error(res.result);
-                }
-            }, function (error) {
-                _this._alertService.error(error);
-            });
-        }
-        catch (ex) {
-            this._alertService.error(ex);
-        }
-    };
-    return VoucherRegisterComponent;
-}());
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('reportFilter'),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__common_popupLists_report_filter_report_filter_component__["a" /* ReportFilterComponent */])
-], VoucherRegisterComponent.prototype, "reportFilter", void 0);
-VoucherRegisterComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'voucher-register',
-        template: __webpack_require__(1815),
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6__common_popupLists_report_filter_report_filter_service__["a" /* ReportFilterService */], __WEBPACK_IMPORTED_MODULE_3__common_services_alert_alert_service__["a" /* AlertService */], __WEBPACK_IMPORTED_MODULE_5__voucher_register_service__["a" /* VoucherRegisterService */], __WEBPACK_IMPORTED_MODULE_2__common_services_spinner_spinner_service__["a" /* SpinnerService */]])
-], VoucherRegisterComponent);
-
-
-
-/***/ }),
-
-/***/ 1419:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_services_permission__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__global_state__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VoucherRegisterService; });
-
-
-
-
-
-
-var VoucherRegisterService = (function () {
-    function VoucherRegisterService(http, activatedRoute, authService, state) {
-        this.http = http;
-        this.activatedRoute = activatedRoute;
-        this.authService = authService;
-        this.state = state;
-    }
-    Object.defineProperty(VoucherRegisterService.prototype, "apiUrl", {
-        get: function () {
-            var url = this.state.getGlobalSetting("apiUrl");
-            var apiUrl = "";
-            if (!!url && url.length > 0) {
-                apiUrl = url[0];
-            }
-            ;
-            return apiUrl;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    VoucherRegisterService.prototype.getVoucherRegisterData = function (vtype, from, to, showNarration, div) {
-        return this.http.get(this.apiUrl + "/getVoucherRegisterData?VTYPE=" + vtype + "&DATE1=" + from + "&DATE2=" + to + "&SHOWNARATION=" + showNarration + "&DIV=" + div, this.getRequestOption())
-            .map(this.extractData)
-            .catch(this.handleError);
-    };
-    VoucherRegisterService.prototype.extractData = function (res) {
-        var response = res.json();
-        return response || {};
-    };
-    VoucherRegisterService.prototype.handleError = function (error) {
-        return __WEBPACK_IMPORTED_MODULE_5_rxjs__["Observable"].throw(error);
-    };
-    VoucherRegisterService.prototype.getRequestOption = function () {
-        var headers = new __WEBPACK_IMPORTED_MODULE_0__angular_http__["Headers"]({ 'Content-type': 'application/json', 'Authorization': this.authService.getAuth().token });
-        //console.log({ headers: headers });
-        return new __WEBPACK_IMPORTED_MODULE_0__angular_http__["RequestOptions"]({ headers: headers });
-    };
-    return VoucherRegisterService;
-}());
-VoucherRegisterService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_http__["Http"], __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"], __WEBPACK_IMPORTED_MODULE_3__common_services_permission__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_4__global_state__["a" /* GlobalState */]])
-], VoucherRegisterService);
-
-
-
-/***/ }),
-
-/***/ 1568:
+/***/ 1592:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voucher_register_component__ = __webpack_require__(1418);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VoucherRegisterRoutingModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__costCenterCategoryList_component__ = __webpack_require__(1433);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__costCenterCategoryForm_component__ = __webpack_require__(1432);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CostCenterCategoryRoutingModule; });
 
 
 
 
 var routes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_3__voucher_register_component__["a" /* VoucherRegisterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_2__costCenterCategoryList_component__["a" /* CostCenterCategoryListComponent */] },
+    { path: 'add-cost-category-center', component: __WEBPACK_IMPORTED_MODULE_3__costCenterCategoryForm_component__["a" /* CostCentercategoryFormComponent */] },
 ];
-var VoucherRegisterRoutingModule = (function () {
-    function VoucherRegisterRoutingModule() {
+var CostCenterCategoryRoutingModule = (function () {
+    function CostCenterCategoryRoutingModule() {
     }
-    return VoucherRegisterRoutingModule;
+    return CostCenterCategoryRoutingModule;
 }());
-VoucherRegisterRoutingModule = __decorate([
+CostCenterCategoryRoutingModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         imports: [__WEBPACK_IMPORTED_MODULE_0__angular_router__["RouterModule"].forChild(routes)],
         exports: [__WEBPACK_IMPORTED_MODULE_0__angular_router__["RouterModule"]]
     })
-], VoucherRegisterRoutingModule);
+], CostCenterCategoryRoutingModule);
 
 
 
 /***/ }),
 
-/***/ 1815:
+/***/ 1593:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPipe; });
+
+var SearchPipe = (function () {
+    function SearchPipe() {
+    }
+    SearchPipe.prototype.transform = function (data, query) {
+        if (data) {
+            if (query) {
+                return data.filter(function (item) {
+                    var searchedQuery = query.replace(/[^A-Z0-9]/ig, '').toLowerCase();
+                    var comId = (item.COSTCENTERGROUPNAME) ? (item.COSTCENTERGROUPNAME).replace(/[^A-Z0-9]/ig, '').toLowerCase() : '';
+                    if (comId.indexOf(searchedQuery) !== -1) {
+                        return item;
+                    }
+                });
+            }
+            else {
+                return data;
+            }
+        }
+    };
+    return SearchPipe;
+}());
+SearchPipe = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'searchData', pure: false })
+], SearchPipe);
+
+
+
+/***/ }),
+
+/***/ 1843:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"clearfix\">\r\n  <div class=\"col-md-12\" style=\"padding-left: 0;padding-right: 0px\">\r\n    <div class=\"col-md-1\" style=\"padding: 0;width: 30px !important\">\r\n      <table>\r\n        <tr>\r\n          <td style=\"border: 1pt solid black;\">\r\n            <i (click)=\"loadFilter()\" tooltip-placement=\"right\" tooltip=\"Main filters\" style=\"margin:5px\"><span\r\n                class=\"glyphicon glyphicon-filter\" tooltip=\"Main filters\"></span></i>\r\n          </td>\r\n        </tr>\r\n        <tr>\r\n          <td style=\"border: 1pt solid black;\">\r\n\r\n            <i (click)=\"ExportReportInExcel()\" style=\"margin:5px\"> <span class=\"glyphicon glyphicon-export\"></span></i>\r\n          </td>\r\n        </tr>\r\n        <tr>\r\n          <td style=\"border: 1pt solid black;\">\r\n            <i (click)=\"print()\" style=\"margin:5px\"> <span class=\"glyphicon glyphicon-print\"></span></i>\r\n          </td>\r\n        </tr>\r\n        \r\n      </table>\r\n    </div>\r\n    <div id=\"report\" class=\"col-md-11\" style=\"padding: 0;width:96.66% !important\">\r\n      <report-body *ngIf=\"ReportDataObj.particularsRow\" [listSetting]=\"listSetting\" [reportType]=\"reportType\"\r\n        [voucherName]=\"filterObj.VOUCHERNAME\" [particularsRow]=\"ReportDataObj.particularsRow\"\r\n        [totalRow]=\"ReportDataObj.totalRow\" [ACNAME]=\"filterObj.ACNAME\" [DATE1]=\"filterObj.DATE1\"\r\n        [DATE2]=\"filterObj.DATE2\"></report-body>\r\n\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n<report-filter #reportFilter (filterEmiiter)=\"applyFilter($event)\" [reportType]=\"reportType\"></report-filter>\r\n"
+module.exports = "<form class=\"row\" class=\"form-horizontal\" [formGroup]=\"form\"  style=\"margin-top: 15px;\">\r\n<div class=\"Cost-Center-Category-section\">\r\n    <span class=\"title-section\">COST CENTER CATEGORY MASTER</span>\r\n    <button type=\"button\" routerLink=\"/pages/dashboard/dashboard\" class=\"btn back-btn pull-right\">Back</button>\r\n    <button type=\"submit\" [disabled]=\"mode=='view'\" class=\"btn save-btn pull-right\" (click)=\" onSave() \">Save</button>\r\n</div>\r\n\r\n\r\n    <ba-card [title]=\"modeTitle\" baCardClass=\"with-scroll\">\r\n\r\n   <div class=\"form-group row\">\r\n    <label  class=\"col-sm-2 form-control-label\">Name:</label>\r\n    <div class=\"col-sm-5\">\r\n    <input type=\"text\" id=\"Parent\" formControlName=\"COSTCENTERGROUPNAME\"  class=\"form-control\"   placeholder=\"Name\" autocomplete=\"off\">\r\n    </div>\r\n  </div>\r\n\r\n  <!-- <button (click)=\"onSave()\" title=\"Save\" class=\"btn btn-info\" [disabled]=\"mode=='view'\">Save</button>\r\n\r\n  <button type=\"button\"  routerLink=\"/pages/dashboard/dashboard\" title=\"Cancel\" class=\"btn btn-info\">Back</button> -->\r\n     \r\n    </ba-card>\r\n    \r\n\r\n\r\n             \r\n  </form>\r\n \r\n\r\n<!-- <form class=\"row\" class=\"form-horizontal\"  [formGroup]=\"addCostCenterForm\"  style=\"margin-top: 15px;\">\r\n\r\n<div class=\"Cost-Center-Category-section\">\r\n    <span class=\"title-section\">COST CENTER CATEGORY MASTER</span>\r\n    <button type=\"button\" routerLink=\"/pages/dashboard/dashboard\" class=\"btn back-btn pull-right\">Back</button>\r\n    <button type=\"submit\" class=\"btn save-btn pull-right\" (click)=\" onSave() \">Save</button>\r\n</div>\r\n\r\n\r\n\r\n<div class=\"row d-flex justify-content-around\">\r\n\r\n\r\n    <div class=\" offset-md-4 col-lg-5 col-md-5 col-sm-10 col-10\">\r\n        <div class=\"Cost-Center-Category-body\">\r\n            <div class=\"node-header\"><label class=\"node-title\">Add Cost Center Category</label></div>\r\n            <div class=\"node-body\">\r\n                \r\n                    <div class=\"sv\"><label for=\"categoryName\">Category Name:\r\n                        </label>\r\n                        <input type=\"text\" formControlName=\"COSTCENTERGROUPNAME\"\r\n                            class=\"form-control categoryName ng-untouched ng-pristine ng-invalid\">\r\n                    </div>\r\n               \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n</form> -->\r\n"
+
+/***/ }),
+
+/***/ 1844:
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<style>\r\n    .table-striped > tbody > tr:nth-of-type(odd) {\r\n    background-color: #CFD5EA;\r\n}\r\n.table-striped > tbody > tr:nth-of-type(even) {\r\n    background-color: #E9EBF5;\r\n}\r\n</style>\r\n<div class=\"row col-md-12\" style=\"margin-top: 20px;\">\r\n    <div class=\"col-md-4\">\r\n        <h5 style=\"font-weight: bold;font-size: 1.1rem;\">Cost Center Category  Master</h5>\r\n  \r\n    </div>\r\n    <div class=\"col-md-8\">\r\n        <button class=\"btn btn-info pull-right\" style=\"font-size: 12px;\" routerLink=\"/pages/dashboard/dashboard\">Back</button>\r\n        <button type=\"button\" class=\"btn btn-info pull pull-right\" (click)=\"AddCostCategoryCenter()\" style=\"font-size: 12px; margin-right:10px;\">Add Category </button>\r\n  \r\n    </div>\r\n  </div>\r\n\r\n  \r\n<div class=\"row\" style=\"align-items: center;\">\r\n    <div class=\"col-md-12 col-sm-8\" style=\"margin-top:0.5rem\">\r\n  \r\n      <div class=\"card\" style=\"margin: auto; width: 63rem;\">\r\n        <div class=\"card-header\" style=\"    background: #4472C4;\r\n        color: #ffff;\">\r\n          \r\n          <span class=\"col-md-6\" >Cost Center Category  Lists</span>\r\n          <div style=\"margin-left: 45rem; margin-top: -6px;\">\r\n            <input type=\"text\" name=\"search\" [(ngModel)]=\"filter\"  class=\"form-control\" placeholder=\"Search...\" style=\"width: 15rem; height: 1.7rem; padding: 0px 6px;\">\r\n          </div>\r\n         \r\n          \r\n        </div>\r\n  \r\n        <div class=\"card-body\">\r\n          <table class=\"table table-striped\">\r\n            <thead style=\"    background: #FFF;\r\n            box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);\">\r\n                <tr style=\"position: sticky; top:0;line-height: 1.5rem;\">\r\n                    <th scope=\"col\" style=\"width:3%; font-weight: bold;\">S.N</th>\r\n                    <th scope=\"col\" style=\"width:40%; font-weight: bold\">Cost Center Category Name</th>\r\n                    <th scope=\"col\" style=\"text-align:center;width:18%; font-weight: bold \">Action</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n\r\n              <ng-container *ngIf=\"this.source\">\r\n                <tr *ngFor=\"let costcenterCategory of(this.source.data|searchData:filter); let i=index\">\r\n                  <td style=\"width:3%;\">{{i+1}}</td>\r\n                  <td style=\"width:40%;\">{{costcenterCategory.COSTCENTERGROUPNAME}}</td>\r\n                  <td style=\"width:18%;text-align: center;\">\r\n                  <button style=\"width: 60px;\" type=\"button\" class=\"btn btn-sm btn-info mr-1 btn-sm\" data-toggle=\"modal\" (click)=\"onViewClick(costcenterCategory)\">View</button>\r\n                  <button style=\"width: 60px;\" type=\"button\" class=\"btn btn-sm btn-info mr-1 btn-sm\" data-toggle=\"modal\" (click)=\"onEditClick(costcenterCategory)\">Edit</button>\r\n                  <button style=\"width: 60px;\" type=\"button\" class=\"btn btn-sm btn-info mr-1 btn-sm\" data-toggle=\"modal\" (click)=\"onDeleteClick(costcenterCategory)\">Delete</button>\r\n  \r\n                  </td> \r\n                </tr>\r\n              </ng-container>\r\n               <!-- <ng-container >\r\n                <tr>\r\n                  <td style=\"width:3%;\">1</td>\r\n                  <td style=\"width:40%;\">COSTCENTERNAME</td>\r\n                  <td style=\"width:18%;text-align: center;\">\r\n\r\n                  <button style=\"width: 60px;\" type=\"button\" class=\"btn btn-sm btn-info mr-1 btn-sm\" data-toggle=\"modal\" (click)=\"onEditClick($event)\">Edit</button>\r\n                  <button style=\"width: 60px;\" type=\"button\" class=\"btn btn-sm btn-info mr-1 btn-sm\" data-toggle=\"modal\" (click)=\"onDeleteClick($event)\">Delete</button>\r\n  \r\n                  </td> \r\n                </tr>\r\n                <tr>\r\n                    <td style=\"width:3%;\">1</td>\r\n                    <td style=\"width:40%;\">COSTCENTERNAME</td>\r\n                    <td style=\"width:18%;text-align: center;\">\r\n  \r\n                    <button style=\"width: 60px;\" type=\"button\" class=\"btn btn-sm btn-info mr-1 btn-sm\" data-toggle=\"modal\" (click)=\"onEditClick($event)\">Edit</button>\r\n                    <button style=\"width: 60px;\" type=\"button\" class=\"btn btn-sm btn-info mr-1 btn-sm\" data-toggle=\"modal\" (click)=\"onDeleteClick($event)\">Delete</button>\r\n    \r\n                    </td> \r\n                  </tr>\r\n              </ng-container> -->\r\n              <!-- <ng-container *ngIf=\"this.source.data && (this.source.data|searchData:filter).length === 0\">\r\n                <tr>\r\n                  <td colspan=\"3\">\r\n                    <div class=\"font-weight-bold\">Cost Center Information are unavailable.</div>\r\n                  </td>\r\n                </tr>\r\n            </ng-container>  -->\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n  \r\n      </div>\r\n    </div>\r\n  </div>"
 
 /***/ })
 

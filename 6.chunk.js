@@ -1,25 +1,25 @@
 webpackJsonpac__name_([6],{
 
-/***/ 1161:
+/***/ 1163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__userManager_component__ = __webpack_require__(1451);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__userManager_component__ = __webpack_require__(1461);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_guard_service__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_userManger_adduser_component__ = __webpack_require__(1449);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_userManger_userList_component__ = __webpack_require__(1450);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_userManger_adduser_component__ = __webpack_require__(1459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_userManger_userList_component__ = __webpack_require__(1460);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_forms__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__theme_nga_module__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__node_modules_ng2_smart_table_src_ng2_smart_table_module__ = __webpack_require__(1171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__node_modules_ng2_smart_table_src_ng2_smart_table_module__ = __webpack_require__(1173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_bootstrap__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__userManager_routing__ = __webpack_require__(1615);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_angular_tree_component__ = __webpack_require__(556);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__login_login_module__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_role_master_role_master_list_component__ = __webpack_require__(1448);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_role_master_add_role_master_add_role_mater_demo_comopnent__ = __webpack_require__(1447);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__userManager_routing__ = __webpack_require__(1629);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_angular_tree_component__ = __webpack_require__(557);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__login_login_module__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_role_master_role_master_list_component__ = __webpack_require__(1458);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_role_master_add_role_master_add_role_mater_demo_comopnent__ = __webpack_require__(1457);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserManagerModule", function() { return UserManagerModule; });
 
 
@@ -67,14 +67,14 @@ UserManagerModule = __decorate([
 
 /***/ }),
 
-/***/ 1162:
+/***/ 1164:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_set_data_set__ = __webpack_require__(1221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_set_data_set__ = __webpack_require__(1223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers__ = __webpack_require__(1170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers__ = __webpack_require__(1172);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Grid; });
 
 
@@ -297,7 +297,7 @@ var Grid = (function () {
 
 /***/ }),
 
-/***/ 1164:
+/***/ 1166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -343,13 +343,13 @@ Cell.PREPARE = function (value) { return value; };
 
 /***/ }),
 
-/***/ 1165:
+/***/ 1167:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1166);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DefaultEditor", function() { return DefaultEditor; });
 
 
@@ -386,7 +386,7 @@ __decorate([
 
 /***/ }),
 
-/***/ 1166:
+/***/ 1168:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -500,7 +500,7 @@ var DataSource = (function () {
 
 /***/ }),
 
-/***/ 1167:
+/***/ 1169:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -574,11 +574,11 @@ var Column = (function () {
 
 /***/ }),
 
-/***/ 1168:
+/***/ 1170:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cell__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cell__ = __webpack_require__(1166);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Row; });
 
 var Row = (function () {
@@ -628,12 +628,12 @@ var Row = (function () {
 
 /***/ }),
 
-/***/ 1169:
+/***/ 1171:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_column__ = __webpack_require__(1167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_column__ = __webpack_require__(1169);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DefaultFilter; });
 
 
@@ -672,7 +672,7 @@ __decorate([
 
 /***/ }),
 
-/***/ 1170:
+/***/ 1172:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -820,7 +820,7 @@ function getDeepFromObject(object, name, defaultValue) {
 
 /***/ }),
 
-/***/ 1171:
+/***/ 1173:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -829,16 +829,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_completer__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng2_smart_table_directives__ = __webpack_require__(1178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ng2_smart_table_components_cell_cell_component__ = __webpack_require__(1195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng2_smart_table_components_cell_cell_view_mode__ = __webpack_require__(1193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng2_smart_table_components_cell_cell_edit_mode__ = __webpack_require__(1185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ng2_smart_table_components_cell_cell_editors__ = __webpack_require__(1188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ng2_smart_table_components_filter_filter_component__ = __webpack_require__(1201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ng2_smart_table_components_filter_filter_types__ = __webpack_require__(1198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ng2_smart_table_components_pager_pager_component__ = __webpack_require__(1202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ng2_smart_table_components_thead_thead_directives__ = __webpack_require__(1220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ng2_smart_table_components_tbody_tbody_directives__ = __webpack_require__(1207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng2_smart_table_directives__ = __webpack_require__(1180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ng2_smart_table_components_cell_cell_component__ = __webpack_require__(1197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng2_smart_table_components_cell_cell_view_mode__ = __webpack_require__(1195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng2_smart_table_components_cell_cell_edit_mode__ = __webpack_require__(1187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ng2_smart_table_components_cell_cell_editors__ = __webpack_require__(1190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ng2_smart_table_components_filter_filter_component__ = __webpack_require__(1203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ng2_smart_table_components_filter_filter_types__ = __webpack_require__(1200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ng2_smart_table_components_pager_pager_component__ = __webpack_require__(1204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ng2_smart_table_components_thead_thead_directives__ = __webpack_require__(1222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ng2_smart_table_components_tbody_tbody_directives__ = __webpack_require__(1209);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ng2SmartTableModule", function() { return Ng2SmartTableModule; });
 
 
@@ -894,22 +894,22 @@ Ng2SmartTableModule = __decorate([
 
 /***/ }),
 
-/***/ 1172:
+/***/ 1174:
 /***/ (function(module, exports) {
 
 module.exports = "input, textarea {\n  width: 100%;\n  line-height: normal;\n  padding: .375rem .75rem; }\n"
 
 /***/ }),
 
-/***/ 1173:
+/***/ 1175:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__local_sorter__ = __webpack_require__(1224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_filter__ = __webpack_require__(1222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__local_pager__ = __webpack_require__(1223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_source__ = __webpack_require__(1166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__helpers__ = __webpack_require__(1170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__local_sorter__ = __webpack_require__(1226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_filter__ = __webpack_require__(1224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__local_pager__ = __webpack_require__(1225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_source__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__helpers__ = __webpack_require__(1172);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalDataSource; });
 
 
@@ -1149,12 +1149,12 @@ var LocalDataSource = (function (_super) {
 
 /***/ }),
 
-/***/ 1174:
+/***/ 1176:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1166);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditCellDefault; });
 
 
@@ -1193,7 +1193,7 @@ __decorate([
 
 /***/ }),
 
-/***/ 1177:
+/***/ 1179:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1201,24 +1201,24 @@ __decorate([
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(1178));
-__export(__webpack_require__(1179));
-__export(__webpack_require__(1269));
-__export(__webpack_require__(1171));
-var cell_1 = __webpack_require__(1164);
+__export(__webpack_require__(1180));
+__export(__webpack_require__(1181));
+__export(__webpack_require__(1272));
+__export(__webpack_require__(1173));
+var cell_1 = __webpack_require__(1166);
 exports.Cell = cell_1.Cell;
-var default_editor_1 = __webpack_require__(1165);
+var default_editor_1 = __webpack_require__(1167);
 exports.DefaultEditor = default_editor_1.DefaultEditor;
 //# sourceMappingURL=ng2-smart-table.js.map
 
 /***/ }),
 
-/***/ 1178:
+/***/ 1180:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ng2_smart_table_ng2_smart_table_component__ = __webpack_require__(1179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ng2_smart_table_ng2_smart_table_component__ = __webpack_require__(1181);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NG2_SMART_TABLE_DIRECTIVES", function() { return NG2_SMART_TABLE_DIRECTIVES; });
 
 var NG2_SMART_TABLE_DIRECTIVES = [__WEBPACK_IMPORTED_MODULE_0__ng2_smart_table_ng2_smart_table_component__["Ng2SmartTableComponent"]];
@@ -1226,16 +1226,16 @@ var NG2_SMART_TABLE_DIRECTIVES = [__WEBPACK_IMPORTED_MODULE_0__ng2_smart_table_n
 
 /***/ }),
 
-/***/ 1179:
+/***/ 1181:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_source_data_source__ = __webpack_require__(1166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_helpers__ = __webpack_require__(1170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_data_source_local_local_data_source__ = __webpack_require__(1173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_source_data_source__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_helpers__ = __webpack_require__(1172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_data_source_local_local_data_source__ = __webpack_require__(1175);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ng2SmartTableComponent", function() { return Ng2SmartTableComponent; });
 
 
@@ -1457,8 +1457,8 @@ __decorate([
 Ng2SmartTableComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'ng2-smart-table',
-        styles: [__webpack_require__(1229)],
-        template: __webpack_require__(1233)
+        styles: [__webpack_require__(1231)],
+        template: __webpack_require__(1235)
     })
 ], Ng2SmartTableComponent);
 
@@ -1466,12 +1466,12 @@ Ng2SmartTableComponent = __decorate([
 
 /***/ }),
 
-/***/ 1182:
+/***/ 1184:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__edit_cell_default__ = __webpack_require__(1174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__edit_cell_default__ = __webpack_require__(1176);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomEditComponent; });
 
 
@@ -1518,12 +1518,12 @@ CustomEditComponent = __decorate([
 
 /***/ }),
 
-/***/ 1183:
+/***/ 1185:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__edit_cell_default__ = __webpack_require__(1174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__edit_cell_default__ = __webpack_require__(1176);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DefaultEditComponent; });
 
 
@@ -1540,7 +1540,7 @@ var DefaultEditComponent = (function (_super) {
 DefaultEditComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'table-cell-default-editor',
-        template: __webpack_require__(1230),
+        template: __webpack_require__(1232),
     }),
     __metadata("design:paramtypes", [])
 ], DefaultEditComponent);
@@ -1549,12 +1549,12 @@ DefaultEditComponent = __decorate([
 
 /***/ }),
 
-/***/ 1184:
+/***/ 1186:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1166);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditCellComponent; });
 
 
@@ -1595,15 +1595,15 @@ EditCellComponent = __decorate([
 
 /***/ }),
 
-/***/ 1185:
+/***/ 1187:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__custom_edit_component__ = __webpack_require__(1182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__custom_edit_component__ = __webpack_require__(1184);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__custom_edit_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_edit_component__ = __webpack_require__(1183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_edit_component__ = __webpack_require__(1185);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__default_edit_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__edit_cell_component__ = __webpack_require__(1184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__edit_cell_component__ = __webpack_require__(1186);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__edit_cell_component__["a"]; });
 
 
@@ -1612,12 +1612,12 @@ EditCellComponent = __decorate([
 
 /***/ }),
 
-/***/ 1186:
+/***/ 1188:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1167);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxEditorComponent; });
 
 
@@ -1636,7 +1636,7 @@ var CheckboxEditorComponent = (function (_super) {
 CheckboxEditorComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'checkbox-editor',
-        styles: [__webpack_require__(1172)],
+        styles: [__webpack_require__(1174)],
         template: "\n    <input [ngClass]=\"inputClass\"\n           type=\"checkbox\"\n           class=\"form-control\"\n           [name]=\"cell.getId()\"\n           [disabled]=\"!cell.isEditable()\"\n           [checked]=\"cell.getValue() == (cell.getColumn().getConfig()?.true || true)\"\n           (click)=\"onClick.emit($event)\"\n           (change)=\"onChange($event)\">\n    ",
     }),
     __metadata("design:paramtypes", [])
@@ -1646,13 +1646,13 @@ CheckboxEditorComponent = __decorate([
 
 /***/ }),
 
-/***/ 1187:
+/***/ 1189:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_completer__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_editor__ = __webpack_require__(1165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_editor__ = __webpack_require__(1167);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterEditorComponent; });
 
 
@@ -1690,19 +1690,19 @@ CompleterEditorComponent = __decorate([
 
 /***/ }),
 
-/***/ 1188:
+/***/ 1190:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__completer_editor_component__ = __webpack_require__(1187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__completer_editor_component__ = __webpack_require__(1189);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__completer_editor_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__input_editor_component__ = __webpack_require__(1189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__input_editor_component__ = __webpack_require__(1191);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__input_editor_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_editor_component__ = __webpack_require__(1190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_editor_component__ = __webpack_require__(1192);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__select_editor_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__textarea_editor_component__ = __webpack_require__(1191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__textarea_editor_component__ = __webpack_require__(1193);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__textarea_editor_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__checkbox_editor_component__ = __webpack_require__(1186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__checkbox_editor_component__ = __webpack_require__(1188);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__checkbox_editor_component__["a"]; });
 
 
@@ -1713,12 +1713,12 @@ CompleterEditorComponent = __decorate([
 
 /***/ }),
 
-/***/ 1189:
+/***/ 1191:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1167);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InputEditorComponent; });
 
 
@@ -1732,7 +1732,7 @@ var InputEditorComponent = (function (_super) {
 InputEditorComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'input-editor',
-        styles: [__webpack_require__(1172)],
+        styles: [__webpack_require__(1174)],
         template: "\n    <input [ngClass]=\"inputClass\"\n           class=\"form-control\"\n           [(ngModel)]=\"cell.newValue\"\n           [name]=\"cell.getId()\"\n           [placeholder]=\"cell.getTitle()\"\n           [disabled]=\"!cell.isEditable()\"\n           (click)=\"onClick.emit($event)\"\n           (keydown.enter)=\"onEdited.emit($event)\"\n           (keydown.esc)=\"onStopEditing.emit()\">\n    ",
     }),
     __metadata("design:paramtypes", [])
@@ -1742,12 +1742,12 @@ InputEditorComponent = __decorate([
 
 /***/ }),
 
-/***/ 1190:
+/***/ 1192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1167);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectEditorComponent; });
 
 
@@ -1770,12 +1770,12 @@ SelectEditorComponent = __decorate([
 
 /***/ }),
 
-/***/ 1191:
+/***/ 1193:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1167);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextareaEditorComponent; });
 
 
@@ -1789,7 +1789,7 @@ var TextareaEditorComponent = (function (_super) {
 TextareaEditorComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'textarea-editor',
-        styles: [__webpack_require__(1172)],
+        styles: [__webpack_require__(1174)],
         template: "\n    <textarea [ngClass]=\"inputClass\"\n              class=\"form-control\"\n              [(ngModel)]=\"cell.newValue\"\n              [name]=\"cell.getId()\"\n              [disabled]=\"!cell.isEditable()\"\n              [placeholder]=\"cell.getTitle()\"\n              (click)=\"onClick.emit($event)\"\n              (keydown.enter)=\"onEdited.emit($event)\"\n              (keydown.esc)=\"onStopEditing.emit()\">\n    </textarea>\n    ",
     }),
     __metadata("design:paramtypes", [])
@@ -1799,12 +1799,12 @@ TextareaEditorComponent = __decorate([
 
 /***/ }),
 
-/***/ 1192:
+/***/ 1194:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1166);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomViewComponent; });
 
 
@@ -1847,13 +1847,13 @@ CustomViewComponent = __decorate([
 
 /***/ }),
 
-/***/ 1193:
+/***/ 1195:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__custom_view_component__ = __webpack_require__(1192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__custom_view_component__ = __webpack_require__(1194);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__custom_view_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__view_cell_component__ = __webpack_require__(1194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__view_cell_component__ = __webpack_require__(1196);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__view_cell_component__["a"]; });
 
 
@@ -1861,12 +1861,12 @@ CustomViewComponent = __decorate([
 
 /***/ }),
 
-/***/ 1194:
+/***/ 1196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1166);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ViewCellComponent; });
 
 
@@ -1890,14 +1890,14 @@ ViewCellComponent = __decorate([
 
 /***/ }),
 
-/***/ 1195:
+/***/ 1197:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_cell__ = __webpack_require__(1164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_data_set_row__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_cell__ = __webpack_require__(1166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_data_set_row__ = __webpack_require__(1170);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CellComponent; });
 
 
@@ -1971,13 +1971,13 @@ CellComponent = __decorate([
 
 /***/ }),
 
-/***/ 1196:
+/***/ 1198:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(1169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(1171);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxFilterComponent; });
 
 
@@ -2023,7 +2023,7 @@ CheckboxFilterComponent = __decorate([
 
 /***/ }),
 
-/***/ 1197:
+/***/ 1199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2031,7 +2031,7 @@ CheckboxFilterComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_completer__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__default_filter__ = __webpack_require__(1169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__default_filter__ = __webpack_require__(1171);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterFilterComponent; });
 
 
@@ -2080,17 +2080,17 @@ CompleterFilterComponent = __decorate([
 
 /***/ }),
 
-/***/ 1198:
+/***/ 1200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__input_filter_component__ = __webpack_require__(1199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__input_filter_component__ = __webpack_require__(1201);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__input_filter_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__select_filter_component__ = __webpack_require__(1200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__select_filter_component__ = __webpack_require__(1202);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__select_filter_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkbox_filter_component__ = __webpack_require__(1196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkbox_filter_component__ = __webpack_require__(1198);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__checkbox_filter_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__completer_filter_component__ = __webpack_require__(1197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__completer_filter_component__ = __webpack_require__(1199);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__completer_filter_component__["a"]; });
 
 
@@ -2100,13 +2100,13 @@ CompleterFilterComponent = __decorate([
 
 /***/ }),
 
-/***/ 1199:
+/***/ 1201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(1169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(1171);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InputFilterComponent; });
 
 
@@ -2139,13 +2139,13 @@ InputFilterComponent = __decorate([
 
 /***/ }),
 
-/***/ 1200:
+/***/ 1202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(1169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(1171);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectFilterComponent; });
 
 
@@ -2178,13 +2178,13 @@ SelectFilterComponent = __decorate([
 
 /***/ }),
 
-/***/ 1201:
+/***/ 1203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(1166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_column__ = __webpack_require__(1167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_column__ = __webpack_require__(1169);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilterComponent; });
 
 
@@ -2232,7 +2232,7 @@ __decorate([
 FilterComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'ng2-smart-table-filter',
-        styles: [__webpack_require__(1226)],
+        styles: [__webpack_require__(1228)],
         template: "\n    <div class=\"ng2-smart-filter\" *ngIf=\"column.isFilterable\" [ngSwitch]=\"column.getFilterType()\">\n      <select-filter *ngSwitchCase=\"'list'\"\n                     [query]=\"query\"\n                     [ngClass]=\"inputClass\"\n                     [column]=\"column\"\n                     (filter)=\"onFilter($event)\">\n      </select-filter>\n      <checkbox-filter *ngSwitchCase=\"'checkbox'\"\n                       [query]=\"query\"\n                       [ngClass]=\"inputClass\"\n                       [column]=\"column\"\n                       (filter)=\"onFilter($event)\">\n      </checkbox-filter>\n      <completer-filter *ngSwitchCase=\"'completer'\"\n                        [query]=\"query\"\n                        [ngClass]=\"inputClass\"\n                        [column]=\"column\"\n                        (filter)=\"onFilter($event)\">\n      </completer-filter>\n      <input-filter *ngSwitchDefault\n                    [query]=\"query\"\n                    [ngClass]=\"inputClass\"\n                    [column]=\"column\"\n                    (filter)=\"onFilter($event)\">\n      </input-filter>\n    </div>\n  "
     })
 ], FilterComponent);
@@ -2241,12 +2241,12 @@ FilterComponent = __decorate([
 
 /***/ }),
 
-/***/ 1202:
+/***/ 1204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(1166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(1168);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagerComponent; });
 
 
@@ -2335,7 +2335,7 @@ __decorate([
 PagerComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'ng2-smart-table-pager',
-        styles: [__webpack_require__(1227)],
+        styles: [__webpack_require__(1229)],
         template: "\n    <nav *ngIf=\"shouldShow()\" class=\"ng2-smart-pagination-nav\">\n      <ul class=\"ng2-smart-pagination pagination\">\n        <li class=\"ng2-smart-page-item page-item\" [ngClass]=\"{disabled: getPage() == 1}\">\n          <a class=\"ng2-smart-page-link page-link\" href=\"#\" \n          (click)=\"getPage() == 1 ? false : paginate(1)\" aria-label=\"First\">\n            <span aria-hidden=\"true\">&laquo;</span>\n            <span class=\"sr-only\">First</span>\n          </a>\n        </li>\n        <li class=\"ng2-smart-page-item page-item\" \n        [ngClass]=\"{active: getPage() == page}\" *ngFor=\"let page of getPages()\">\n          <span class=\"ng2-smart-page-link page-link\" \n          *ngIf=\"getPage() == page\">{{ page }} <span class=\"sr-only\">(current)</span></span>\n          <a class=\"ng2-smart-page-link page-link\" href=\"#\" \n          (click)=\"paginate(page)\" *ngIf=\"getPage() != page\">{{ page }}</a>\n        </li>\n  \n        <li class=\"ng2-smart-page-item page-item\" \n        [ngClass]=\"{disabled: getPage() == getLast()}\">\n          <a class=\"ng2-smart-page-link page-link\" href=\"#\" \n          (click)=\"getPage() == getLast() ? false : paginate(getLast())\" aria-label=\"Last\">\n            <span aria-hidden=\"true\">&raquo;</span>\n            <span class=\"sr-only\">Last</span>\n          </a>\n        </li>\n      </ul>\n    </nav>\n  "
     })
 ], PagerComponent);
@@ -2344,13 +2344,13 @@ PagerComponent = __decorate([
 
 /***/ }),
 
-/***/ 1203:
+/***/ 1205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(1170);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TbodyCreateCancelComponent; });
 
 
@@ -2393,13 +2393,13 @@ TbodyCreateCancelComponent = __decorate([
 
 /***/ }),
 
-/***/ 1204:
+/***/ 1206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(1170);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TbodyEditDeleteComponent; });
 
 
@@ -2510,13 +2510,13 @@ TbodyEditDeleteComponent = __decorate([
 
 /***/ }),
 
-/***/ 1205:
+/***/ 1207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__edit_delete_component__ = __webpack_require__(1204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__edit_delete_component__ = __webpack_require__(1206);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__edit_delete_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__create_cancel_component__ = __webpack_require__(1203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__create_cancel_component__ = __webpack_require__(1205);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__create_cancel_component__["a"]; });
 
 
@@ -2524,12 +2524,12 @@ TbodyEditDeleteComponent = __decorate([
 
 /***/ }),
 
-/***/ 1206:
+/***/ 1208:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Ng2SmartTableTbodyComponent; });
 
 
@@ -2611,7 +2611,7 @@ __decorate([
 Ng2SmartTableTbodyComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: '[ng2-st-tbody]',
-        template: __webpack_require__(1231)
+        template: __webpack_require__(1233)
     })
 ], Ng2SmartTableTbodyComponent);
 
@@ -2619,12 +2619,12 @@ Ng2SmartTableTbodyComponent = __decorate([
 
 /***/ }),
 
-/***/ 1207:
+/***/ 1209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cells__ = __webpack_require__(1205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tbody_component__ = __webpack_require__(1206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cells__ = __webpack_require__(1207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tbody_component__ = __webpack_require__(1208);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NG2_SMART_TABLE_TBODY_DIRECTIVES; });
 
 
@@ -2637,12 +2637,12 @@ var NG2_SMART_TABLE_TBODY_DIRECTIVES = [
 
 /***/ }),
 
-/***/ 1208:
+/***/ 1210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionsTitleComponent; });
 
 
@@ -2671,12 +2671,12 @@ ActionsTitleComponent = __decorate([
 
 /***/ }),
 
-/***/ 1209:
+/***/ 1211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionsComponent; });
 
 
@@ -2705,12 +2705,12 @@ ActionsComponent = __decorate([
 
 /***/ }),
 
-/***/ 1210:
+/***/ 1212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddButtonComponent; });
 
 
@@ -2759,12 +2759,12 @@ AddButtonComponent = __decorate([
 
 /***/ }),
 
-/***/ 1211:
+/***/ 1213:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxSelectAllComponent; });
 
 
@@ -2796,12 +2796,12 @@ CheckboxSelectAllComponent = __decorate([
 
 /***/ }),
 
-/***/ 1212:
+/***/ 1214:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_column__ = __webpack_require__(1167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_column__ = __webpack_require__(1169);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ColumnTitleComponent; });
 
 
@@ -2834,21 +2834,21 @@ ColumnTitleComponent = __decorate([
 
 /***/ }),
 
-/***/ 1213:
+/***/ 1215:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__title_title_component__ = __webpack_require__(1214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__title_title_component__ = __webpack_require__(1216);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_0__title_title_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_title_component__ = __webpack_require__(1208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_title_component__ = __webpack_require__(1210);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__actions_title_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_component__ = __webpack_require__(1209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_component__ = __webpack_require__(1211);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__actions_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_button_component__ = __webpack_require__(1210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_button_component__ = __webpack_require__(1212);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_3__add_button_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__checkbox_select_all_component__ = __webpack_require__(1211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__checkbox_select_all_component__ = __webpack_require__(1213);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_4__checkbox_select_all_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__column_title_component__ = __webpack_require__(1212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__column_title_component__ = __webpack_require__(1214);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_5__column_title_component__["a"]; });
 
 
@@ -2860,13 +2860,13 @@ ColumnTitleComponent = __decorate([
 
 /***/ }),
 
-/***/ 1214:
+/***/ 1216:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(1166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_column__ = __webpack_require__(1167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_column__ = __webpack_require__(1169);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TitleComponent; });
 
 
@@ -2927,7 +2927,7 @@ __decorate([
 TitleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'ng2-smart-table-title',
-        styles: [__webpack_require__(1228)],
+        styles: [__webpack_require__(1230)],
         template: "\n    <a href=\"#\" *ngIf=\"column.isSortable\"\n                (click)=\"_sort($event, column)\" \n                class=\"ng2-smart-sort-link sort\"\n                [ngClass]=\"currentDirection\">\n      {{ column.title }}\n    </a>\n    <span class=\"ng2-smart-sort\" *ngIf=\"!column.isSortable\">{{ column.title }}</span>\n  "
     })
 ], TitleComponent);
@@ -2936,15 +2936,15 @@ TitleComponent = __decorate([
 
 /***/ }),
 
-/***/ 1215:
+/***/ 1217:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thead_filters_row_component__ = __webpack_require__(1216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thead_filters_row_component__ = __webpack_require__(1218);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__thead_filters_row_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__thead_form_row_component__ = __webpack_require__(1217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__thead_form_row_component__ = __webpack_require__(1219);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__thead_form_row_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__thead_titles_row_component__ = __webpack_require__(1218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__thead_titles_row_component__ = __webpack_require__(1220);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__thead_titles_row_component__["a"]; });
 
 
@@ -2953,12 +2953,12 @@ TitleComponent = __decorate([
 
 /***/ }),
 
-/***/ 1216:
+/***/ 1218:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TheadFitlersRowComponent; });
 
 
@@ -2996,13 +2996,13 @@ TheadFitlersRowComponent = __decorate([
 
 /***/ }),
 
-/***/ 1217:
+/***/ 1219:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(1170);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TheadFormRowComponent; });
 
 
@@ -3044,12 +3044,12 @@ TheadFormRowComponent = __decorate([
 
 /***/ }),
 
-/***/ 1218:
+/***/ 1220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TheadTitlesRowComponent; });
 
 
@@ -3091,12 +3091,12 @@ TheadTitlesRowComponent = __decorate([
 
 /***/ }),
 
-/***/ 1219:
+/***/ 1221:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Ng2SmartTableTheadComponent; });
 
 
@@ -3144,7 +3144,7 @@ __decorate([
 Ng2SmartTableTheadComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: '[ng2-st-thead]',
-        template: __webpack_require__(1232)
+        template: __webpack_require__(1234)
     })
 ], Ng2SmartTableTheadComponent);
 
@@ -3152,13 +3152,13 @@ Ng2SmartTableTheadComponent = __decorate([
 
 /***/ }),
 
-/***/ 1220:
+/***/ 1222:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cells__ = __webpack_require__(1213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__rows__ = __webpack_require__(1215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__thead_component__ = __webpack_require__(1219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cells__ = __webpack_require__(1215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__rows__ = __webpack_require__(1217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__thead_component__ = __webpack_require__(1221);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NG2_SMART_TABLE_THEAD_DIRECTIVES; });
 
 
@@ -3179,12 +3179,12 @@ var NG2_SMART_TABLE_THEAD_DIRECTIVES = [
 
 /***/ }),
 
-/***/ 1221:
+/***/ 1223:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__row__ = __webpack_require__(1168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__column__ = __webpack_require__(1167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__row__ = __webpack_require__(1170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__column__ = __webpack_require__(1169);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataSet; });
 
 
@@ -3309,7 +3309,7 @@ var DataSet = (function () {
 
 /***/ }),
 
-/***/ 1222:
+/***/ 1224:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3334,7 +3334,7 @@ LocalFilter.FILTER = function (value, search) {
 
 /***/ }),
 
-/***/ 1223:
+/***/ 1225:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3352,7 +3352,7 @@ var LocalPager = (function () {
 
 /***/ }),
 
-/***/ 1224:
+/***/ 1226:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3383,63 +3383,63 @@ LocalSorter.COMPARE = function (direction, a, b) {
 
 /***/ }),
 
-/***/ 1226:
+/***/ 1228:
 /***/ (function(module, exports) {
 
 module.exports = "/deep/ .ng2-smart-filter input, /deep/ .ng2-smart-filter select {\n  width: 100%;\n  line-height: normal;\n  padding: 0.3rem 0.5rem;\n  font-weight: normal; }\n\n/deep/ .ng2-smart-filter input[type=\"search\"] {\n  box-sizing: inherit; }\n\n/deep/ .ng2-smart-filter .completer-dropdown-holder {\n  font-weight: normal; }\n\n/deep/ .ng2-smart-filter a {\n  font-weight: normal; }\n"
 
 /***/ }),
 
-/***/ 1227:
+/***/ 1229:
 /***/ (function(module, exports) {
 
 module.exports = ".ng2-smart-pagination {\n  display: inline-block;\n  font-size: .875rem;\n  padding: 0; }\n  .ng2-smart-pagination .sr-only {\n    position: absolute;\n    width: 1px;\n    height: 1px;\n    padding: 0;\n    margin: -1px;\n    overflow: hidden;\n    clip: rect(0, 0, 0, 0);\n    border: 0; }\n  .ng2-smart-pagination .ng2-smart-page-item {\n    display: inline; }\n"
 
 /***/ }),
 
-/***/ 1228:
+/***/ 1230:
 /***/ (function(module, exports) {
 
 module.exports = "a.sort.asc, a.sort.desc {\n  font-weight: bold; }\n  a.sort.asc::after, a.sort.desc::after {\n    content: '';\n    display: inline-block;\n    width: 0;\n    height: 0;\n    border-bottom: 4px solid rgba(0, 0, 0, 0.3);\n    border-top: 4px solid transparent;\n    border-left: 4px solid transparent;\n    border-right: 4px solid transparent;\n    margin-bottom: 2px; }\n\na.sort.desc::after {\n  transform: rotate(-180deg);\n  margin-bottom: -2px; }\n"
 
 /***/ }),
 
-/***/ 1229:
+/***/ 1231:
 /***/ (function(module, exports) {
 
 module.exports = "/deep/ table.ng2-smart-table {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 16px;\n  line-height: 1.5;\n  color: #606c71;\n  border-collapse: collapse;\n  border-spacing: 0;\n  display: table;\n  width: 100%;\n  max-width: 100%;\n  overflow: auto;\n  word-break: normal;\n  word-break: keep-all; }\n  /deep/ table.ng2-smart-table td, /deep/ table.ng2-smart-table th {\n    font-size: .875rem;\n    margin: 0;\n    padding: 0.5rem 1rem;\n    border: 1px solid #e9ebec; }\n  /deep/ table.ng2-smart-table .ng2-smart-row.selected {\n    background: rgba(0, 0, 0, 0.05); }\n  /deep/ table.ng2-smart-table .ng2-smart-row .ng2-smart-actions.ng2-smart-action-multiple-select {\n    text-align: center; }\n"
 
 /***/ }),
 
-/***/ 1230:
+/***/ 1232:
 /***/ (function(module, exports) {
 
 module.exports = "<div [ngSwitch]=\"getEditorType()\">\r\n    <select-editor *ngSwitchCase=\"'list'\"\r\n                   [cell]=\"cell\"\r\n                   [inputClass]=\"inputClass\"\r\n                   (onClick)=\"onClick($event)\"\r\n                   (onEdited)=\"onEdited($event)\"\r\n                   (onStopEditing)=\"onStopEditing()\">\r\n    </select-editor>\r\n\r\n    <textarea-editor *ngSwitchCase=\"'textarea'\"\r\n                     [cell]=\"cell\"\r\n                     [inputClass]=\"inputClass\"\r\n                     (onClick)=\"onClick($event)\"\r\n                     (onEdited)=\"onEdited($event)\"\r\n                     (onStopEditing)=\"onStopEditing()\">\r\n    </textarea-editor>\r\n\r\n    <checkbox-editor *ngSwitchCase=\"'checkbox'\"\r\n                     [cell]=\"cell\"\r\n                     [inputClass]=\"inputClass\"\r\n                     (onClick)=\"onClick($event)\">\r\n    </checkbox-editor>\r\n\r\n    <completer-editor *ngSwitchCase=\"'completer'\"\r\n                      [cell]=\"cell\">\r\n    </completer-editor>\r\n\r\n    <input-editor *ngSwitchDefault\r\n                  [cell]=\"cell\"\r\n                  [inputClass]=\"inputClass\"\r\n                  (onClick)=\"onClick($event)\"\r\n                  (onEdited)=\"onEdited($event)\"\r\n                  (onStopEditing)=\"onStopEditing()\">\r\n    </input-editor>\r\n</div>"
 
 /***/ }),
 
-/***/ 1231:
+/***/ 1233:
 /***/ (function(module, exports) {
 
 module.exports = "<tr *ngFor=\"let row of grid.getRows()\" (click)=\"userSelectRow.emit(row)\" class=\"ng2-smart-row\" [ngClass]=\"{selected: row.isSelected}\">\r\n  <td *ngIf=\"grid.isMultiSelectVisible()\" class=\"ng2-smart-actions ng2-smart-action-multiple-select\" (click)=\"multipleSelectRow.emit(row)\">\r\n    <input type=\"checkbox\" class=\"form-control\" [ngModel]=\"row.isSelected\">\r\n  </td>\r\n  <td *ngIf=\"!row.isInEditing && grid.showActionColumn('left')\" class=\"ng2-smart-actions\" style=\"width: 120px;\">\r\n    <ng2-st-tbody-edit-delete [grid]=\"grid\"\r\n                              [deleteConfirm]=\"deleteConfirm\"\r\n                              [editConfirm]=\"editConfirm\"\r\n                              [viewConfirm]=\"viewConfirm\"\r\n                              (edit)=\"edit.emit(row)\"\r\n                              (view)=\"view.emit(row)\"\r\n                              (delete)=\"delete.emit(row)\"\r\n                              (editRowSelect)=\"editRowSelect.emit($event)\"\r\n                              (viewRowSelect)=\"viewRowSelect.emit($event)\"\r\n                              [row]=\"row\"\r\n                              [source]=\"source\">\r\n    </ng2-st-tbody-edit-delete>\r\n  </td>\r\n  <td *ngIf=\"row.isInEditing\" class=\"ng2-smart-actions\">\r\n    <ng2-st-tbody-create-cancel [grid]=\"grid\" [row]=\"row\" [editConfirm]=\"editConfirm\"></ng2-st-tbody-create-cancel>\r\n  </td>\r\n  <td *ngFor=\"let cell of row.getCells()\">\r\n    <ng2-smart-table-cell [cell]=\"cell\"\r\n                          [grid]=\"grid\"\r\n                          [row]=\"row\"\r\n                          [isNew]=\"false\"\r\n                          [mode]=\"grid.getSetting('mode')\"\r\n                          [editConfirm]=\"editConfirm\"\r\n                          [inputClass]=\"grid.getSetting('edit.inputClass')\"\r\n                          [isInEditing]=\"row.isInEditing\">\r\n    </ng2-smart-table-cell>\r\n  </td>\r\n  \r\n  <td *ngIf=\"!row.isInEditing && grid.showActionColumn('right')\" class=\"ng2-smart-actions\">\r\n    <ng2-st-tbody-edit-delete [grid]=\"grid\"\r\n                              [deleteConfirm]=\"deleteConfirm\"\r\n                              [editConfirm]=\"editConfirm\"\r\n                              [row]=\"row\"\r\n                              [source]=\"source\"\r\n                              (edit)=\"edit.emit(row)\"\r\n                              (delete)=\"delete.emit(row)\"\r\n                              (editRowSelect)=\"editRowSelect.emit($event)\">\r\n    </ng2-st-tbody-edit-delete>\r\n  </td>\r\n  </tr>\r\n\r\n  <tr *ngIf=\"grid.getRows().length == 0\">\r\n  <td [attr.colspan]=\"grid.getColumns().length + (grid.getSetting('actions.add') || grid.getSetting('actions.edit') || grid.getSetting('actions.delete'))\">\r\n    {{ grid.getSetting('noDataMessage') }}\r\n  </td>\r\n</tr>"
 
 /***/ }),
 
-/***/ 1232:
+/***/ 1234:
 /***/ (function(module, exports) {
 
 module.exports = "<tr ng2-st-thead-titles-row *ngIf=\"!grid.getSetting('hideHeader')\"\r\n                            class=\"ng2-smart-titles\"\r\n                            [grid]=\"grid\"\r\n                            [isAllSelected]=\"isAllSelected\"\r\n                            [source]=\"source\"\r\n                            (sort)=\"sort.emit($event)\"\r\n                            (selectAllRows)=\"selectAllRows.emit($event)\">\r\n</tr>\r\n\r\n<tr ng2-st-thead-filters-row *ngIf=\"!grid.getSetting('hideSubHeader')\"\r\n                              class=\"ng2-smart-filters\"\r\n                              [grid]=\"grid\"\r\n                              [source]=\"source\"\r\n                              (create)=\"create.emit($event)\"\r\n                              (filter)=\"filter.emit($event)\">\r\n</tr>\r\n<tr ng2-st-thead-form-row *ngIf=\"grid.createFormShown\"\r\n                          [grid]=\"grid\"\r\n                          [createConfirm]=\"createConfirm\">\r\n</tr>"
 
 /***/ }),
 
-/***/ 1233:
+/***/ 1235:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"ng2-smart-table-container\">\r\n  <table class=\"ng2-smart-table table\" [id]=\"grid.getSetting('attr.id')\" [ngClass]=\"grid.getSetting('attr.class')\">\r\n\r\n    <thead ng2-st-thead *ngIf=\"!grid.getSetting('hideHeader') || !grid.getSetting('hideSubHeader')\"\r\n                        [grid]=\"grid\"\r\n                        [isAllSelected]=\"isAllSelected\"\r\n                        [source]=\"source\"\r\n                        [createConfirm]=\"createConfirm\"\r\n                        (create)=\"create.emit($event)\"\r\n                        (selectAllRows)=\"onSelectAllRows($event)\"\r\n                        (sort)=\"sort($event)\"\r\n                        (filter)=\"filter($event)\">\r\n    </thead>\r\n\r\n    <tbody ng2-st-tbody [grid]=\"grid\"\r\n                        [source]=\"source\"\r\n                        [deleteConfirm]=\"deleteConfirm\"\r\n                        [editConfirm]=\"editConfirm\"\r\n                        [viewConfirm]=\"viewConfirm\"\r\n                        (edit)=\"edit.emit($event)\"\r\n                        (view)=\"view.emit($event)\"\r\n                        (delete)=\"delete.emit($event)\"\r\n                        (userSelectRow)=\"onUserSelectRow($event)\"\r\n                        (editRowSelect)=\"editRowSelect($event)\"\r\n                        (viewRowSelect)=\"viewRowSelect($event)\"\r\n                        (multipleSelectRow)=\"multipleSelectRow($event)\">\r\n    </tbody>\r\n\r\n  </table>\r\n\r\n  <ng2-smart-table-pager *ngIf=\"grid.getSetting('pager.display')\"\r\n                         [source]=\"source\"\r\n                         [perPage]=\"grid.getSetting('pager.perPage')\"\r\n                         (changePage)=\"changePage($event)\">\r\n  </ng2-smart-table-pager>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 1267:
+/***/ 1270:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3470,14 +3470,14 @@ ServerSourceConf.DATA_KEY = '';
 
 /***/ }),
 
-/***/ 1268:
+/***/ 1271:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_local_data_source__ = __webpack_require__(1173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__server_source_conf__ = __webpack_require__(1267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__helpers__ = __webpack_require__(1170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_local_data_source__ = __webpack_require__(1175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__server_source_conf__ = __webpack_require__(1270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__helpers__ = __webpack_require__(1172);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServerDataSource; });
 
 
@@ -3605,18 +3605,18 @@ var ServerDataSource = (function (_super) {
 
 /***/ }),
 
-/***/ 1269:
+/***/ 1272:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__grid__ = __webpack_require__(1164);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Grid", function() { return __WEBPACK_IMPORTED_MODULE_0__grid__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_source_data_source__ = __webpack_require__(1166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_source_data_source__ = __webpack_require__(1168);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "DataSource", function() { return __WEBPACK_IMPORTED_MODULE_1__data_source_data_source__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_source_local_local_data_source__ = __webpack_require__(1173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_source_local_local_data_source__ = __webpack_require__(1175);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LocalDataSource", function() { return __WEBPACK_IMPORTED_MODULE_2__data_source_local_local_data_source__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_source_server_server_data_source__ = __webpack_require__(1268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_source_server_server_data_source__ = __webpack_require__(1271);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ServerDataSource", function() { return __WEBPACK_IMPORTED_MODULE_3__data_source_server_server_data_source__["a"]; });
 
 
@@ -3626,7 +3626,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1299:
+/***/ 1303:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3777,7 +3777,7 @@ AddUserService = __decorate([
 
 /***/ }),
 
-/***/ 1447:
+/***/ 1457:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3859,7 +3859,7 @@ var CheckboxesComponent = (function () {
 CheckboxesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-checkboxes',
-        template: __webpack_require__(1857),
+        template: __webpack_require__(1880),
         styles: []
     })
 ], CheckboxesComponent);
@@ -3868,22 +3868,22 @@ CheckboxesComponent = __decorate([
 
 /***/ }),
 
-/***/ 1448:
+/***/ 1458:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_ng2_smart_table___ = __webpack_require__(1177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_ng2_smart_table___ = __webpack_require__(1179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_ng2_smart_table____default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__node_modules_ng2_smart_table___);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_style_loader_smartTables_scss__ = __webpack_require__(1876);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_style_loader_smartTables_scss__ = __webpack_require__(1899);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_style_loader_smartTables_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__modaldialogs_authorizationDialog_authorizationDialog_component__ = __webpack_require__(559);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component_base__ = __webpack_require__(568);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__modaldialogs_authorizationDialog_authorizationDialog_component__ = __webpack_require__(560);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component_base__ = __webpack_require__(569);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoleMasterListComponent; });
 
 
@@ -4006,7 +4006,7 @@ var RoleMasterListComponent = (function (_super) {
 RoleMasterListComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'role-master-list',
-        template: __webpack_require__(1858),
+        template: __webpack_require__(1881),
         providers: [__WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__["a" /* MasterRepo */]],
         styles: [__webpack_require__(120)],
     }),
@@ -4019,20 +4019,20 @@ RoleMasterListComponent = __decorate([
 
 /***/ }),
 
-/***/ 1449:
+/***/ 1459:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_pages_pages_menu__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_pages_pages_menu__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lodash__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_style_loader_grid_scss__ = __webpack_require__(1877);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_style_loader_grid_scss__ = __webpack_require__(1900);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_style_loader_grid_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_style_loader_grid_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__adduser_service__ = __webpack_require__(1299);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__theme_validators__ = __webpack_require__(580);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__adduser_service__ = __webpack_require__(1303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__theme_validators__ = __webpack_require__(581);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_bootstrap__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__common_repositories_masterRepo_service__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__common_services_alert_alert_service__ = __webpack_require__(12);
@@ -4082,6 +4082,7 @@ var AddUser = (function () {
         this.AllowReverseEntry = 0;
         this.StockAgeingLimit = 0;
         this.ShowDashboard = 0;
+        this.AllowBackDateEntry = 0;
         //property maping
         this.checkboxPropertiesMapping = {
             model: "value",
@@ -4157,6 +4158,7 @@ var AddUser = (function () {
                         _this.AllowReverseEntry = data.result.AllowReverseEntry;
                         _this.StockAgeingLimit = data.result.StockAgeingLimit ? data.result.StockAgeingLimit : 0;
                         _this.ShowDashboard = data.result.ShowDashboard;
+                        _this.AllowBackDateEntry = data.result.AllowBackDateEntry ? data.result.AllowBackDateEntry : 0;
                     }
                 });
             }
@@ -4438,6 +4440,9 @@ var AddUser = (function () {
         }
     };
     AddUser.prototype.onSubmit = function () {
+        if (!this.masterService.getRequestOption()) {
+            return;
+        }
         var canSubmit = false;
         if (this.mode == "user") {
             if (this.userForm.valid) {
@@ -4538,7 +4543,8 @@ var AddUser = (function () {
                     latepostdelete: this.latepostdelete,
                     AllowReverseEntry: this.AllowReverseEntry,
                     StockAgeingLimit: this.StockAgeingLimit,
-                    ShowDashboard: this.ShowDashboard
+                    ShowDashboard: this.ShowDashboard,
+                    AllowBackDateEntry: this.AllowBackDateEntry
                 };
             }
             else if (this.mode == "edit") {
@@ -4556,7 +4562,8 @@ var AddUser = (function () {
                     latepostdelete: this.latepostdelete,
                     AllowReverseEntry: this.AllowReverseEntry,
                     StockAgeingLimit: this.StockAgeingLimit,
-                    ShowDashboard: this.ShowDashboard
+                    ShowDashboard: this.ShowDashboard,
+                    AllowBackDateEntry: this.AllowBackDateEntry
                 };
             }
             else if (this.mode == "role" || this.mode == "editRole") {
@@ -4928,8 +4935,8 @@ __decorate([
 AddUser = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: "user-manager",
-        template: __webpack_require__(1860),
-        styles: [__webpack_require__(1859)],
+        template: __webpack_require__(1883),
+        styles: [__webpack_require__(1882)],
         providers: [__WEBPACK_IMPORTED_MODULE_6__adduser_service__["a" /* AddUserService */]]
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_11__common_services_spinner_spinner_service__["a" /* SpinnerService */],
@@ -4952,17 +4959,17 @@ var userDivisionRight = (function () {
 
 /***/ }),
 
-/***/ 1450:
+/***/ 1460:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_repositories_masterRepo_service__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_ng2_smart_table___ = __webpack_require__(1177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_ng2_smart_table___ = __webpack_require__(1179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_ng2_smart_table____default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__node_modules_ng2_smart_table___);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss__ = __webpack_require__(1878);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss__ = __webpack_require__(1901);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__adduser_service__ = __webpack_require__(1299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__adduser_service__ = __webpack_require__(1303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_alert_alert_service__ = __webpack_require__(12);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserList; });
@@ -5097,9 +5104,15 @@ var UserList = (function () {
         });
     };
     UserList.prototype.openRoleList = function () {
+        if (!this.masterService.getRequestOption()) {
+            return;
+        }
         this.userManager = "role";
     };
     UserList.prototype.openUserList = function () {
+        if (!this.masterService.getRequestOption()) {
+            return;
+        }
         this.userManager = 'user';
     };
     UserList.prototype.onAddClick = function () {
@@ -5117,6 +5130,9 @@ var UserList = (function () {
     };
     UserList.prototype.onDeleteConfirm = function (event) {
         var _this = this;
+        if (!this.masterService.getRequestOption()) {
+            return;
+        }
         if (window.confirm('Are you sure you want to delete?')) {
             this.adduserService.deleteUser(event).subscribe(function (data) {
                 if (data.status == "ok") {
@@ -5184,8 +5200,8 @@ var UserList = (function () {
 UserList = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: "user-list",
-        template: __webpack_require__(1862),
-        styles: [__webpack_require__(1861)],
+        template: __webpack_require__(1885),
+        styles: [__webpack_require__(1884)],
         providers: [__WEBPACK_IMPORTED_MODULE_4__adduser_service__["a" /* AddUserService */]]
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__adduser_service__["a" /* AddUserService */],
@@ -5198,7 +5214,7 @@ UserList = __decorate([
 
 /***/ }),
 
-/***/ 1451:
+/***/ 1461:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5222,19 +5238,17 @@ UserManager = __decorate([
 
 /***/ }),
 
-/***/ 1615:
+/***/ 1629:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_userManger_adduser_component__ = __webpack_require__(1449);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_userManger_adduser_component__ = __webpack_require__(1459);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__userManager_component__ = __webpack_require__(1451);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_userManger_userList_component__ = __webpack_require__(1450);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_role_master_role_master_list_component__ = __webpack_require__(1448);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_role_master_add_role_master_add_role_mater_demo_comopnent__ = __webpack_require__(1447);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__userManager_component__ = __webpack_require__(1461);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_userManger_userList_component__ = __webpack_require__(1460);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_role_master_role_master_list_component__ = __webpack_require__(1458);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_role_master_add_role_master_add_role_mater_demo_comopnent__ = __webpack_require__(1457);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
-
 
 
 
@@ -5246,10 +5260,10 @@ var routes = [
         path: '',
         component: __WEBPACK_IMPORTED_MODULE_2__userManager_component__["a" /* UserManager */],
         children: [
-            { path: 'userlist', component: __WEBPACK_IMPORTED_MODULE_4__components_userManger_userList_component__["a" /* UserList */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'adduser', component: __WEBPACK_IMPORTED_MODULE_0__components_userManger_adduser_component__["a" /* AddUser */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'rolemaster', component: __WEBPACK_IMPORTED_MODULE_6__components_role_master_add_role_master_add_role_mater_demo_comopnent__["a" /* CheckboxesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'rolemaster/add-rolemaster', component: __WEBPACK_IMPORTED_MODULE_5__components_role_master_role_master_list_component__["a" /* RoleMasterListComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'userlist', component: __WEBPACK_IMPORTED_MODULE_3__components_userManger_userList_component__["a" /* UserList */] },
+            { path: 'adduser', component: __WEBPACK_IMPORTED_MODULE_0__components_userManger_adduser_component__["a" /* AddUser */] },
+            { path: 'rolemaster', component: __WEBPACK_IMPORTED_MODULE_5__components_role_master_add_role_master_add_role_mater_demo_comopnent__["a" /* CheckboxesComponent */] },
+            { path: 'rolemaster/add-rolemaster', component: __WEBPACK_IMPORTED_MODULE_4__components_role_master_role_master_list_component__["a" /* RoleMasterListComponent */] },
         ]
     }
 ];
@@ -5258,76 +5272,76 @@ var routing = __WEBPACK_IMPORTED_MODULE_1__angular_router__["RouterModule"].forC
 
 /***/ }),
 
-/***/ 1697:
+/***/ 1712:
 /***/ (function(module, exports) {
 
 module.exports = ".ng2-smart-table-container table.ng2-smart-table {\n  color: #000000; }\n  .ng2-smart-table-container table.ng2-smart-table th, .ng2-smart-table-container table.ng2-smart-table td {\n    border: 1px solid gainsboro !important;\n    line-height: 35px;\n    vertical-align: middle; }\n  .ng2-smart-table-container table.ng2-smart-table input {\n    line-height: 1.5 !important; }\n  .ng2-smart-table-container table.ng2-smart-table tbody tr:hover {\n    background: rgba(0, 0, 0, 0.03); }\n  .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-sort-link {\n    font-size: 14px !important;\n    color: #000000;\n    font-weight: 900; }\n    .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-sort-link.sort {\n      font-weight: 900 !important; }\n      .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-sort-link.sort::after {\n        border-bottom-color: #000000 !important; }\n  .ng2-smart-table-container table.ng2-smart-table .ng2-smart-actions {\n    width: 70px;\n    text-align: center; }\n    .ng2-smart-table-container table.ng2-smart-table .ng2-smart-actions .actions {\n      float: none;\n      text-align: center; }\n  .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-action {\n    font-size: 14px !important;\n    color: #000000;\n    padding: 0 5px;\n    display: inline-block; }\n    .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-action.ng2-smart-action-add-add {\n      font-size: 25px !important; }\n\nnav.ng2-smart-pagination-nav {\n  display: flex;\n  justify-content: center; }\n"
 
 /***/ }),
 
-/***/ 1698:
+/***/ 1713:
 /***/ (function(module, exports) {
 
 module.exports = ".show-grid div[class^=col-] {\n  padding: 10px;\n  box-sizing: border-box; }\n  .show-grid div[class^=col-] div {\n    color: #000000;\n    text-align: center;\n    font-size: 18px;\n    background-color: rgba(0, 0, 0, 0.3);\n    padding: 12px 5px; }\n\n.grid-h {\n  margin-top: 40px;\n  margin-bottom: 0; }\n  .grid-h:first-child {\n    margin-top: 0; }\n"
 
 /***/ }),
 
-/***/ 1699:
+/***/ 1714:
 /***/ (function(module, exports) {
 
 module.exports = ".ng2-smart-table-container table.ng2-smart-table {\n  color: #000000; }\n  .ng2-smart-table-container table.ng2-smart-table th, .ng2-smart-table-container table.ng2-smart-table td {\n    border: 1px solid gainsboro !important;\n    line-height: 35px;\n    vertical-align: middle; }\n  .ng2-smart-table-container table.ng2-smart-table input {\n    line-height: 1.5 !important; }\n  .ng2-smart-table-container table.ng2-smart-table tbody tr:hover {\n    background: rgba(0, 0, 0, 0.03); }\n  .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-sort-link {\n    font-size: 14px !important;\n    color: #000000;\n    font-weight: 900; }\n    .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-sort-link.sort {\n      font-weight: 900 !important; }\n      .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-sort-link.sort::after {\n        border-bottom-color: #000000 !important; }\n  .ng2-smart-table-container table.ng2-smart-table .ng2-smart-actions {\n    width: 70px;\n    text-align: center; }\n    .ng2-smart-table-container table.ng2-smart-table .ng2-smart-actions .actions {\n      float: none;\n      text-align: center; }\n  .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-action {\n    font-size: 14px !important;\n    color: #000000;\n    padding: 0 5px;\n    display: inline-block; }\n    .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-action.ng2-smart-action-add-add {\n      font-size: 25px !important; }\n\nnav.ng2-smart-pagination-nav {\n  display: flex;\n  justify-content: center; }\n"
 
 /***/ }),
 
-/***/ 1857:
+/***/ 1880:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"sticky-top\">\r\n        <div class=\"row clearfix\" style=\" padding: 0px 20px;\">\r\n            <div class=\"col-md-6\">\r\n                <h3 class=\"page-title\">{{ modeTitle }}</h3>\r\n            </div>\r\n            <div class=\"col-md-6\" style=\"float: right;\">\r\n                <button type=\"button \" class=\"btn btn-info pull-right\" (click)=\"cancel()\" style=\"margin-right : 10px;\">\r\n                    Back\r\n                </button>\r\n                <button *ngIf=\"viewMode == false\" (click)=\"onSave()\" class=\"btn btn-info pull-right\"\r\n                    style=\"margin-right : 10px;\" [disabled]=\"!form.valid\">\r\n                    Save\r\n                </button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"main-container\" style=\"padding-top : 10px; margin-bottom: 0px\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-12\" >              \r\n                <div class=\"tabbable\" id=\"warehouse-tabs\">\r\n                    <ul class=\"nav nav-tabs\">\r\n                        <li class=\"nav-item\">\r\n                            <a class=\"nav-link active\" href=\"#general-info\" data-toggle=\"tab\">General Info</a>\r\n                        </li>                  \r\n                    </ul>\r\n\r\n                    <div class=\"col-md-6\">\r\n                            <div class=\"tab-content\">\r\n                                    <div class=\"tab-pane active\" id=\"general-info\">\r\n                                        <div style=\"overflow-y: scroll; overflow-x: hidden\">\r\n                                                <h3>tri-state checkboxes</h3>\r\n                                                <tree-root\r\n                                                #tree\r\n                                                [nodes]=\"nodes\"\r\n                                                [options]=\"options\">\r\n                                            \r\n                                                <ng-template #treeNodeTemplate let-node=\"node\" let-index=\"index\" >\r\n                                                    <input\r\n                                                    (change)=\"check(node, !node.data.checked)\"\r\n                                                    type=\"checkbox\"\r\n                                                    [indeterminate]=\"node.data.indeterminate\"\r\n                                                    [checked]=\"node.data.checked\">\r\n                                            \r\n                                                    {{ node.data.name }}\r\n                                                </ng-template>\r\n                                                </tree-root>\r\n                                        </div>                                                        \r\n                                    </div>                  \r\n                                </div>\r\n                    </div>\r\n                    <div class=\"col-md-6\">\r\n                        <h3>click on MenuName to View Function key details</h3>\r\n\r\n                    </div>\r\n\r\n                </div>\r\n            </div>\r\n            <div  style =\" border: 1px; color: aliceblue\">\r\n\r\n            </div>\r\n\r\n        </div>\r\n    </div>"
 
 /***/ }),
 
-/***/ 1858:
+/***/ 1881:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"widgets\">\r\n        <div class =\"row\">\r\n            <button type=\"button\" class=\"btn btn-info\" (click)=\"addNewBrandType()\" style=\"margin-left:18px; margin-bottom: 10px;\">New Brand Type</button>\r\n            </div>\r\n        \r\n          <div class=\"row\">\r\n            <ba-card  title=\"Brand Type\" baCardClass=\"with-scroll\">\r\n              <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (view)=\"onViewClick($event)\" (deleteConfirm)=\"onDeleteConfirm($event)\"></ng2-smart-table>\r\n            </ba-card>\r\n          </div>  \r\n</div>"
 
 /***/ }),
 
-/***/ 1859:
+/***/ 1882:
 /***/ (function(module, exports) {
 
 module.exports = ".card {\r\n    margin: auto !important;\r\n    width: 60%;\r\n  }\r\n\r\n  .card-body {\r\n    padding: 5px !important;\r\n    max-height: 455px !important;\r\n  }\r\n\r\n  input,\r\n  select,\r\n  textarea {\r\n    border: 1px solid #cbcbcb;\r\n    border-radius: 3px;\r\n    color: black;\r\n  }\r\n\r\n  label{\r\n    text-align: end;\r\n    height: 25px;\r\n    font-size: 14px;\r\n}\r\n\r\n.col-sm-7{\r\n  padding-left: 1px;\r\n}\r\n\r\n.form-control{\r\n  font-size: 14px;\r\n}\r\n\r\n.table tbody tr td{\r\n  line-height: 24px;\r\n}\r\n\r\n.table td, .table th{\r\n  padding: 0.10rem !important;\r\n}\r\n\r\ntbody {\r\n  display:block;\r\n  height:59vh;\r\n  overflow:auto;\r\n}\r\n\r\nthead, tbody tr {\r\ndisplay:table;\r\nwidth:100%;\r\ntable-layout:fixed;/* even columns width , fix width of table too*/\r\n}\r\n\r\nth{\r\nfont-size: 14px;\r\nfont-weight: bold;\r\n}\r\n\r\ntd{\r\nfont-size: 13px;\r\n}"
 
 /***/ }),
 
-/***/ 1860:
+/***/ 1883:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"sticky-top\">\r\n    <div class=\"row clearfix\" style=\" padding: 0px 20px;\">\r\n        <div class=\"col-md-10\">\r\n            <h3 class=\"page-title\">{{modeTitile}}</h3>\r\n        </div>\r\n        <div class=\"col-md-2\" style=\"float: right;\">\r\n            <button type=\"submit\" class=\"btn btn-info\" style=\"margin-bottom: 10px;\" (click)=\"onSubmit()\">Save</button>\r\n            <button type=\"button\" class=\"btn btn-info\" style=\"margin-bottom: 10px;\" (click)=\"back()\">Cancel</button>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div style=\"margin-top: 35px;height: 500px;overflow-y: scroll;\">\r\n\r\n    <!-- <div class=\"widgets\"> -->\r\n    <ba-card baCardClass=\"with-scroll\">\r\n\r\n\r\n        <ng-container *ngIf=\"mode=='user' || mode=='edit'\">\r\n            <!-- <div class=\"card\">\r\n                <div class=\"card-header\">\r\n                  <h5 class=\"page-title\">New User</h5>\r\n                </div>\r\n                <div class=\"card-body\"> -->\r\n            <form class=\"form-group\" class=\"form-horizontal\" [formGroup]=\"userForm\">\r\n                <div class=\"tabbable\" id=\"warehouse-tabs\">\r\n                    <ul class=\"nav nav-tabs\">\r\n                        <li class=\"nav-item\">\r\n                            <a class=\"nav-link active\" href=\"#user\" data-toggle=\"tab\">UserInfo</a>\r\n                        </li>\r\n                        <li class=\"nav-item\">\r\n                            <a class=\"nav-link\" href=\"#userWiseRights\" data-toggle=\"tab\" role=\"tab\">User Rights</a>\r\n                        </li>\r\n                        <li *ngIf='masterService.userSetting.userwisedivision==1' class=\"nav-item\">\r\n                            <a class=\"nav-link\" href=\"#Roleprivilege\" data-toggle=\"tab\">User-right privilege</a>\r\n                        </li>\r\n                    </ul>\r\n                    <div class=\"tab-content\">\r\n                        <div class=\"tab-pane active\" id=\"user\">\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"inputUsername\" class=\"col-sm-3 form-control-label\">User Name:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <input type=\"text\" class=\"form-control\" formControlName=\"username\"\r\n                                        id=\"inputUsername\" placeholder=\"User Name\">\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"inputPassword3\" class=\"col-sm-3 form-control-label\">Password:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <input type=\"password\" class=\"form-control\" formControlName=\"password\"\r\n                                        id=\"inputPassword3\" placeholder=\"Password\">\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"inputEmail3\" class=\"col-sm-3 form-control-label\">Email:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <input type=\"email\" class=\"form-control\" formControlName=\"email\" id=\"inputEmail3\"\r\n                                        placeholder=\"Email\">\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label class=\"col-sm-3 form-control-label\">Role:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <select class=\"form-control\" formControlName=\"role\">\r\n                                        <option *ngFor=\"let role of roleList;let i=index\" value=\"{{role.rolename}}\">\r\n                                            {{role?.rolename}}\r\n                                        </option>\r\n                                    </select>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <!-- <div class=\"form-group row\">\r\n                                <label class=\"col-sm-3 form-control-label\">Warehouse:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <select class=\"form-control\" formControlName=\"warehouse\" (change)=\"changeWarehouse()\">\r\n                                        <option *ngFor=\"let warehouseName of warehouseList;let i=index\"\r\n                                            value=\"{{warehouseName.NAME}}\">\r\n                                            {{warehouseName?.NAME}}\r\n                                        </option>\r\n                                    </select>\r\n                                </div>\r\n                            </div> -->\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label class=\"col-sm-3 form-control-label\">Division:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <select class=\"form-control\" formControlName=\"division\"\r\n                                        (change)=\"selectDivision($event)\">\r\n                                        <option *ngFor=\"let division of divisionList;let i=index\"\r\n                                            value=\"{{division.INITIAL}}\">\r\n                                            {{division?.NAME}}\r\n                                        </option>\r\n                                    </select>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label class=\"col-sm-3 form-control-label\">Status:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <select class=\"form-control\" formControlName=\"ISACTIVE\"\r\n                                        style=\"height:30px;padding-bottom: 0px;\">\r\n                                        <option value=1>Active</option>\r\n                                        <option value=0>Inactive</option>\r\n                                    </select>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n\r\n                        <div class=\"tab-pane\" id=\"userWiseRights\">\r\n                            <div class=\"row col-md-12\" style=\"margin-top: 1rem;\">\r\n                                <div class=\"col-md-6 \">\r\n                                    <div class=\"row\">\r\n                                        <input type=\"checkbox\" [(ngModel)]=\"latepostedit\" [ngModelOptions]=\"{standalone: true}\" (change)=\"$event.target.checked?(latepostedit = 1):(latepostedit = 0)\" ><span> L_EDIT</span>\r\n                                    </div>\r\n                                    <div class=\"row\">\r\n                                        <input type=\"checkbox\" [(ngModel)]=\"latepostdelete\" [ngModelOptions]=\"{standalone: true}\" (change)=\"$event.target.checked?(latepostdelete = 1):(latepostdelete = 0)\" ><span> L_DELETE</span>\r\n                                    </div>\r\n                                    <div class=\"row\">\r\n                                        <input type=\"checkbox\" [(ngModel)]=\"AllowReverseEntry\" [ngModelOptions]=\"{standalone: true}\" (change)=\"$event.target.checked?(AllowReverseEntry = 1):(AllowReverseEntry = 0)\" ><span> Allow Reverse Entry</span>\r\n                                    </div>\r\n\r\n                                    <div class=\"row\">\r\n                                        <input type=\"checkbox\" style=\"width: 17px; height: 32px;\" [ngModelOptions]=\"{standalone: true}\" (change)=\"$event.target.checked?(ShowDashboard = 1):(ShowDashboard = 0)\" [(ngModel)]=\"ShowDashboard\"/><span>Show Graph Dashboard </span>\r\n                                       \r\n                                        \r\n                                    </div>\r\n                                    <div class=\"row\" >\r\n                                        <label > User Wise Ageing Limit</label>\r\n                                        <input type=\"number\" style=\"width: 6rem; height: 26px;\"  [(ngModel)]=\"StockAgeingLimit\"[ngModelOptions]=\"{standalone: true}\" >\r\n                                      </div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n\r\n                        <div class=\"tab-pane\" id=\"Roleprivilege\">\r\n                            <form [formGroup]=\"roleForm\">\r\n                                <div formArrayName=\"menuRights\" class=\"horizontal-scroll\">\r\n                                    <!-- Report Division Privilege -->\r\n                                    <div class=\"col-sm-3\">\r\n                                        <table style=\"height:300px;border:1px solid #e2eaea;\">\r\n                                            <thead>\r\n                                                <tr>\r\n                                                    <th style=\"width: 26px;background: #e2eaea;\"></th>\r\n                                                    <th style=\"background: #e2eaea;\">Report Division Privilege</th>\r\n\r\n                                                </tr>\r\n                                            </thead>\r\n                                            <tbody style=\"height: 23px;\">\r\n                                                <tr style=\"height: 23px;\">\r\n                                                    <td style=\"width: 26px;\"><input type=\"checkbox\"\r\n                                                            [ngModelOptions]=\"{standalone: true}\"\r\n                                                            [(ngModel)]=\"SelectAll\" (change)=ChangeAll()></td>\r\n                                                    <td>Select All</td>\r\n                                                </tr>\r\n                                            </tbody>\r\n                                            <tbody style=\"height: 23px;\"\r\n                                                *ngFor=\"let div of userdivisionList;let i=index\">\r\n\r\n                                                <tr style=\"height: 23px;\">\r\n                                                    <td style=\"width: 26px;\"><input type=\"checkbox\"\r\n                                                            [ngModelOptions]=\"{standalone: true}\"\r\n                                                            [(ngModel)]=\"div.isCheck\" (change)=ChangeDiv()></td>\r\n                                                    <td>{{div?.NAME}}</td>\r\n\r\n                                            </tbody>\r\n\r\n                                        </table>\r\n                                    </div>\r\n                                    <!-- Transaction Division Privilege -->\r\n                                    <div class=\"col-sm-3\">\r\n                                        <table style=\"height:300px;border:1px solid #e2eaea;\">\r\n                                            <thead>\r\n                                                <tr>\r\n                                                    <th style=\"width: 26px;background: #e2eaea;\"></th>\r\n                                                    <th style=\"background: #e2eaea;\">Transaction Division Privilege</th>\r\n\r\n                                                </tr>\r\n                                            </thead>\r\n                                            <tbody style=\"height: 23px;\">\r\n                                                <tr style=\"height: 23px;\">\r\n                                                    <td style=\"width: 26px;\"><input type=\"checkbox\"\r\n                                                            [ngModelOptions]=\"{standalone: true}\"\r\n                                                            [(ngModel)]=\"SelectAll_trn\" (change)=ChangeAll_trn()></td>\r\n                                                    <td>Select All</td>\r\n                                                </tr>\r\n                                            </tbody>\r\n                                            <tbody style=\"height: 23px;\"\r\n                                                *ngFor=\"let div of userdivisionList;let i=index\">\r\n\r\n                                                <tr style=\"height: 23px;\">\r\n                                                    <td style=\"width: 26px;\"><input type=\"checkbox\"\r\n                                                            [ngModelOptions]=\"{standalone: true}\"\r\n                                                            [(ngModel)]=\"div.isCheck_trn\" (change)=ChangeDiv_trn()></td>\r\n                                                    <td>{{div?.NAME}}</td>\r\n\r\n                                            </tbody>\r\n\r\n                                        </table>\r\n                                    </div>\r\n                                </div>\r\n                            </form>\r\n                        </div>\r\n\r\n                    </div>\r\n                </div>\r\n            </form>\r\n            <!-- </div>\r\n              </div> -->\r\n            <!-- <form [formGroup]=\"userForm\">\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputUsername\" class=\"col-sm-1 form-control-label\">User Name</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <input type=\"text\" class=\"form-control\" formControlName=\"username\" id=\"inputUsername\"\r\n                            placeholder=\"User Name\">\r\n                    </div>\r\n                    <label for=\"inputPassword3\" class=\"col-sm-1 form-control-label\">Password</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <input type=\"text\" class=\"form-control\" formControlName=\"password\" id=\"inputPassword3\"\r\n                            placeholder=\"Password\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputEmail3\" class=\"col-sm-1 form-control-label\">Email</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <input type=\"email\" class=\"form-control\" formControlName=\"email\" id=\"inputEmail3\"\r\n                            placeholder=\"Email\">\r\n                    </div>\r\n                    <label for=\"inputmobile\" class=\"col-sm-1 form-control-label\">Role</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select class=\"form-control\" formControlName=\"role\">\r\n                            <option *ngFor=\"let role of roleList;let i=index\" value=\"{{role.rolename}}\">\r\n                                {{role?.rolename}}\r\n                            </option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputEmail3\" class=\"col-sm-1 form-control-label\">Warehouse</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select class=\"form-control\" formControlName=\"warehouse\">\r\n                            <option *ngFor=\"let warehouse of warehouseList;let i=index\" value=\"{{warehouse.NAME}}\">\r\n                                {{warehouse?.NAME}}\r\n                            </option>\r\n                        </select>\r\n                    </div>\r\n                    <label for=\"inputmobile\" class=\"col-sm-1 form-control-label\">Division</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select class=\"form-control\" formControlName=\"division\">\r\n                            <option *ngFor=\"let warehouse of divisionList;let i=index\" value=\"{{warehouse.INITIAL}}\">\r\n                                {{warehouse?.NAME}}\r\n                            </option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputEmail3\" class=\"col-sm-1 form-control-label\">User Type</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select class=\"form-control\" formControlName=\"LoginProfile\"\r\n                          style=\"height:30px;padding-bottom: 0px;\">\r\n                          <option *ngIf =\"userProfile.CompanyInfo.LoginProfile!='company_login'\" value='user_login'>User Login</option>\r\n                          <option *ngIf =\"userProfile.CompanyInfo.LoginProfile!='company_login'\" value='product_login'>Product Approval</option>\r\n                          <option *ngIf =\"userProfile.CompanyInfo.LoginProfile!='company_login'\" value='price_approval_login'>Price Approval</option>\r\n                          <option *ngIf =\"userProfile.CompanyInfo.LoginProfile!='company_login'\" value='scheme_approval_login'>Scheme Approval</option>\r\n                          <option *ngIf =\"userProfile.CompanyInfo.LoginProfile!='company_login'\" value='customer_approval_login'>Customer Approval</option>\r\n                          <option *ngIf =\"userProfile.CompanyInfo.LoginProfile=='company_login'\" value='company_login'>Company Login</option>\r\n                         <option *ngIf =\"userProfile.CompanyInfo.LoginProfile!='company_login'\" value='non_nestle_login'>Non Nestle Login</option> \r\n                          \r\n                          \r\n                        </select>\r\n                    </div>\r\n\r\n                    <label for=\"inputEmail3\" class=\"col-sm-1 form-control-label\">Status</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select class=\"form-control\" formControlName=\"ISACTIVE\"\r\n                          style=\"height:30px;padding-bottom: 0px;\">\r\n                          <option value=1>Active</option>\r\n                          <option value=0>Inactive</option>\r\n                        </select>\r\n                    </div>\r\n                   \r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputEmail3\" class=\"col-sm-1 form-control-label\">PCL</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select \r\n                        class=\"form-control\" \r\n                        formControlName=\"PCL\"\r\n                        style=\"height:30px;padding-bottom: 0px;\"\r\n                          >\r\n                          <option *ngFor = \"let i of productCategoryList \"  value= \"{{i.PCL}}\" >{{ i.SHORTNAME }}</option>\r\n                        </select>\r\n                    </div>\r\n                   \r\n                </div>\r\n            </form> -->\r\n        </ng-container>\r\n\r\n\r\n        <ng-container *ngIf=\"mode=='role'|| mode =='editRole'\">\r\n            <form [formGroup]=\"roleForm\">\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputUsername\" class=\"col-sm-1 form-control-label\">Role Name</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <input type=\"text\" class=\"form-control\" style=\"width: 27rem; height: 1.5rem;\"\r\n                            formControlName=\"roleName\">\r\n                    </div>\r\n                    <label for=\"inputPassword3\" class=\"col-sm-1 form-control-label\">Role</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select name=\"\" id=\"\" class=\"form-control\" style=\"width: 27rem; height: 1.5rem;\"\r\n                            formControlName=\"role\">\r\n                            <option value=\"1\">Administrator</option>\r\n                            <option value=\"2\">Supervisor</option>\r\n                            <option value=\"3\">Operator</option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"main-container\" style=\"margin-top:0px !important;margin-bottom: 0px\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col-md-12\">\r\n                            <div class=\"tabbable\" id=\"warehouse-tabs\">\r\n                                <ul class=\"nav nav-tabs\">\r\n                                    <li class=\"nav-item\">\r\n                                        <a class=\"nav-link active\" href=\"#menuRights\" data-toggle=\"tab\">Menu Rights</a>\r\n                                    </li>\r\n                                    <!-- <li class=\"nav-item\">\r\n                                        <a class=\"nav-link\" href=\"#userRights\" data-toggle=\"tab\">User Rights</a>\r\n                                    </li> -->\r\n                                </ul>\r\n                                <div class=\"tab-content\">\r\n                                    <div class=\"tab-pane active\" id=\"menuRights\">\r\n\r\n                                        <div formArrayName=\"menuRights\" class=\"horizontal-scroll\">\r\n                                            <table class=\"table table-striped\" style=\"width: 100%;\">\r\n                                                <thead>\r\n                                                    <tr style=\"position: sticky; top:0;line-height: 1.5rem;\">\r\n                                                        <th scope=\"col\" style=\"width:14%\">Menu Rights</th>\r\n                                                        <!-- <th scope=\"col\" style=\"width:5%\"><input type=\"checkbox\"\r\n                                                                (change)=\"TickAllValue('view',$event,'view')\"><span>&nbsp;Select\r\n                                                                all</span></th>\r\n                                                        <th scope=\"col\" style=\"width:5%\"><input type=\"checkbox\"\r\n                                                                (change)=\"TickAllValue('add',$event,'add')\"><span>Select\r\n                                                                all</span></th>\r\n                                                        <th scope=\"col\" style=\"width:5%\"><input type=\"checkbox\"\r\n                                                                (change)=\"TickAllValue('edit',$event)\"><span>Select\r\n                                                                all</span>\r\n                                                        </th>\r\n                                                        <th scope=\"col\" style=\"width:5%\"><input type=\"checkbox\"\r\n                                                                (change)=\"TickAllValue('delete',$event)\"><span>Select\r\n                                                                all</span>\r\n                                                        </th>\r\n                                                        <th scope=\"col\" style=\"width:5%\"><input type=\"checkbox\"\r\n                                                                (change)=\"TickAllValue('print',$event)\"><span>Select\r\n                                                                all</span>\r\n                                                        </th>\r\n                                                        <th scope=\"col\" style=\"width:5%\"><input\r\n                                                                type=\"checkbox\"><span>Select\r\n                                                                all</span></th>\r\n                                                        <th scope=\"col\" style=\"width:5%\"><input\r\n                                                                type=\"checkbox\"><span>Select\r\n                                                                all</span></th> -->\r\n                                                    </tr>\r\n                                                </thead>\r\n                                                <tbody>\r\n                                                    <tr *ngFor=\"let item of roleForm.controls.menuRights.controls;let i=index\"\r\n                                                        style=\"margin-left: 10px;\" [formGroupName]=\"i\"\r\n                                                        class=\"row show-grid\">\r\n                                                        <td style=\"width: 37%;\"><input type=\"text\"\r\n                                                                style=\"border:0;background-color: #d9e5e7 !important; height: 3vh\"\r\n                                                                size=\"40\" formControlName=\"title\"></td>\r\n                                                        <ng-container *ngIf=\"path!=''\">\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"view\"><span> View</span></td>\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"add\"><span> Add</span></td>\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"edit\"><span> Edit</span></td>\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"delete\"><span> Delete</span></td>\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"print\"><span> Print</span></td>\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"L_edit\"><span> L_Edit</span></td>\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"L_delete\"><span> L_Delete</span>\r\n                                                            </td>\r\n                                                        </ng-container>\r\n\r\n                                                    </tr>\r\n\r\n                                                </tbody>\r\n                                            </table>\r\n\r\n                                            <!-- <div *ngFor=\"let item of roleForm.controls.menuRights.controls;let i=index\">\r\n                        <div [formGroupName]=\"i\" class=\"row show-grid\">\r\n                            <div class=\"col-md-4\">\r\n                                <input type=\"text\" style=\"border:0;background-color: transparent;width:100%;\"\r\n                                    formControlName=\"title\">\r\n                            </div>\r\n                            <ng-container *ngIf=\"path!=''\">\r\n                                <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"view\"><span>View</span>\r\n                                </div>\r\n                                <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"add\"><span>Add</span>\r\n                                </div>\r\n                                <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"edit\"><span>Edit</span>\r\n                                </div>\r\n                                <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"delete\"><span>Delete</span>\r\n                                </div>\r\n                                <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"print\"><span>Print</span>\r\n                                </div> -->\r\n                                            <!-- <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"post\"><span>Post</span>\r\n                                </div> -->\r\n                                            <!-- <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"import\"><span>Import</span>\r\n                                </div>\r\n                                <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"export\"><span>Export</span>\r\n                                </div> -->\r\n                                            <!-- </ng-container>\r\n\r\n                        </div>\r\n                    </div> -->\r\n                                        </div>\r\n                                    </div>\r\n                                    <!-- <div class=\"tab-pane\" id=\"userRights\">\r\n                                        <div class=\"user-rights\" *ngIf=\"roleForm.controls.userRights.controls.length\">\r\n                                            <ba-card title=\"User Rights Setting\" class=\"vertical-scroll\">\r\n\r\n                                                <div formArrayName=\"userRights\">\r\n                                                    <div class=\"col-sm-3\"\r\n                                                        *ngFor=\"let item of roleForm.controls.userRights.controls;let i=index\">\r\n                                                        <ng-container\r\n                                                            *ngIf=\"item.value.right != 'DIVISION' && item.value.right != 'WAREHOUSE'\">\r\n                                                            <div [formGroupName]=\"i\">\r\n                                                                <div *ngIf=\"item.value.valueType=='tinyint'\">\r\n                                                                    <Label\r\n                                                                        *ngIf='mode != \"editRole\"'>{{item.value.right}}</Label>\r\n                                                                    <input type=\"checkbox\" formControlName=\"value\">\r\n                                                                    <span><input\r\n                                                                            style=\"margin-top: 3px; margin-bottom: 3px;\"\r\n                                                                            type=\"text\"\r\n                                                                            style=\"border:0;background-color: transparent; margin-top: 3px; margin-bottom: 3px;\"\r\n                                                                            formControlName=\"path\">\r\n                                                                    </span>\r\n                                                                </div>\r\n                                                                <div\r\n                                                                    *ngIf=\"(item.value.valueType=='varchar' || item.value.valueType=='char') && item.value.right != 'DIVISION'\">\r\n                                                                    <Label>{{item.value.right}}</Label>\r\n                                                                    <input *ngIf=\"item.value.right != 'WAREHOUSE'\"\r\n                                                                        type=\"text\"\r\n                                                                        style=\"border:0;background-color: transparent; margin-top: 3px; margin-bottom: 3px;\"\r\n                                                                        formControlName=\"path\">\r\n                                                                    <span *ngIf=\"item.value.right != 'WAREHOUSE'\">\r\n                                                                        <input type=\"text\"\r\n                                                                            style=\"margin-top: 3px; margin-bottom: 3px;\"\r\n                                                                            formControlName=\"value\" />\r\n                                                                    </span>\r\n                                                                </div>\r\n                                                                <div\r\n                                                                    *ngIf=\"(item.value.valueType=='varchar' || item.value.valueType=='char') && item.value.right == 'DIVISION'\">\r\n                                                                    <Label>{{item.value.right}}</Label>\r\n                                                                    <input type=\"text\"\r\n                                                                        style=\"border:0;background-color: transparent; margin-top: 3px; margin-bottom: 3px;\"\r\n                                                                        formControlName=\"path\">\r\n                                                                    <span>\r\n                                                                        <select formControlName=\"value\"\r\n                                                                            style=\"margin-top: 3px; margin-bottom: 3px; min-width: 200px;\"\r\n                                                                            (change)=\"changeDivision($event.target.value)\">\r\n                                                                            <option\r\n                                                                                *ngFor=\"let d of masterService.allDivisionList$ | async\"\r\n                                                                                value=\"{{d.INITIAL}}\">{{d.NAME}}\r\n                                                                            </option>\r\n                                                                        </select>\r\n                                                                    </span>\r\n                                                                </div>\r\n                                                                <div\r\n                                                                    *ngIf=\"(item.value.valueType=='varchar' || item.value.valueType=='char') && item.value.right == 'WAREHOUSE'\">\r\n                                                                    <Label>{{item.value.right}}</Label>\r\n                                                                    <input type=\"text\"\r\n                                                                        style=\"border:0;background-color: transparent\"\r\n                                                                        formControlName=\"path\">\r\n                                                                    <span>\r\n                                                                        <select formControlName=\"value\"\r\n                                                                            style=\"margin-top: 3px; margin-bottom: 3px; min-width: 200px;\">\r\n                                                                            <option\r\n                                                                                *ngFor=\"let w of divisionWarehouseList\"\r\n                                                                                [ngValue]=\"w.NAME\">\r\n                                                                                {{w.NAME}}\r\n                                                                            </option>\r\n                                                                        </select>\r\n                                                                    </span>\r\n                                                                </div>\r\n                                                                <div\r\n                                                                    *ngIf=\"item.value.valueType=='numeric' || item.value.valueType=='decimal' || item.value.valueType=='float'\">\r\n                                                                    <Label>{{item.value.right}}</Label>\r\n                                                                   \r\n                                                                    <span><input type=\"text\" formControlName=\"value\"\r\n                                                                            style=\"width: 84px;\"></span>\r\n                                                                </div>\r\n                                                            </div>\r\n                                                        </ng-container>\r\n                                                    </div>\r\n                                                </div>\r\n\r\n                                            </ba-card>\r\n                                        </div>\r\n                                    </div> -->\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n            </form>\r\n        </ng-container>\r\n\r\n\r\n\r\n    </ba-card>\r\n    <!-- </div> -->\r\n\r\n\r\n</div>\r\n\r\n\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Information</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                {{DialogMessage}}\r\n            </div>\r\n\r\n\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #loginModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog \">\r\n        <div class=\"modal-content\">\r\n            <login (signedIn)=\"hideloginModal()\" toUrl=\"test\"></login>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"sticky-top\">\r\n    <div class=\"row clearfix\" style=\" padding: 0px 20px;\">\r\n        <div class=\"col-md-10\">\r\n            <h3 class=\"page-title\">{{modeTitile}}</h3>\r\n        </div>\r\n        <div class=\"col-md-2\" style=\"float: right;\">\r\n            <button type=\"submit\" class=\"btn btn-info\" style=\"margin-bottom: 10px;\" (click)=\"onSubmit()\">Save</button>\r\n            <button type=\"button\" class=\"btn btn-info\" style=\"margin-bottom: 10px;\" (click)=\"back()\">Cancel</button>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div style=\"margin-top: 35px;height: 500px;overflow-y: scroll;\">\r\n\r\n    <!-- <div class=\"widgets\"> -->\r\n    <ba-card baCardClass=\"with-scroll\">\r\n\r\n\r\n        <ng-container *ngIf=\"mode=='user' || mode=='edit'\">\r\n            <!-- <div class=\"card\">\r\n                <div class=\"card-header\">\r\n                  <h5 class=\"page-title\">New User</h5>\r\n                </div>\r\n                <div class=\"card-body\"> -->\r\n            <form class=\"form-group\" class=\"form-horizontal\" [formGroup]=\"userForm\">\r\n                <div class=\"tabbable\" id=\"warehouse-tabs\">\r\n                    <ul class=\"nav nav-tabs\">\r\n                        <li class=\"nav-item\">\r\n                            <a class=\"nav-link active\" href=\"#user\" data-toggle=\"tab\">UserInfo</a>\r\n                        </li>\r\n                        <li class=\"nav-item\">\r\n                            <a class=\"nav-link\" href=\"#userWiseRights\" data-toggle=\"tab\" role=\"tab\">User Rights</a>\r\n                        </li>\r\n                        <li *ngIf='masterService.userSetting.userwisedivision==1' class=\"nav-item\">\r\n                            <a class=\"nav-link\" href=\"#Roleprivilege\" data-toggle=\"tab\">User-right privilege</a>\r\n                        </li>\r\n                    </ul>\r\n                    <div class=\"tab-content\">\r\n                        <div class=\"tab-pane active\" id=\"user\">\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"inputUsername\" class=\"col-sm-3 form-control-label\">User Name:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <input type=\"text\" class=\"form-control\" formControlName=\"username\"\r\n                                        id=\"inputUsername\" placeholder=\"User Name\">\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"inputPassword3\" class=\"col-sm-3 form-control-label\">Password:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <input type=\"password\" class=\"form-control\" formControlName=\"password\"\r\n                                        id=\"inputPassword3\" placeholder=\"Password\">\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"inputEmail3\" class=\"col-sm-3 form-control-label\">Email:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <input type=\"email\" class=\"form-control\" formControlName=\"email\" id=\"inputEmail3\"\r\n                                        placeholder=\"Email\">\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label class=\"col-sm-3 form-control-label\">Role:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <select class=\"form-control\" formControlName=\"role\">\r\n                                        <option *ngFor=\"let role of roleList;let i=index\" value=\"{{role.rolename}}\">\r\n                                            {{role?.rolename}}\r\n                                        </option>\r\n                                    </select>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <!-- <div class=\"form-group row\">\r\n                                <label class=\"col-sm-3 form-control-label\">Warehouse:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <select class=\"form-control\" formControlName=\"warehouse\" (change)=\"changeWarehouse()\">\r\n                                        <option *ngFor=\"let warehouseName of warehouseList;let i=index\"\r\n                                            value=\"{{warehouseName.NAME}}\">\r\n                                            {{warehouseName?.NAME}}\r\n                                        </option>\r\n                                    </select>\r\n                                </div>\r\n                            </div> -->\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label class=\"col-sm-3 form-control-label\">Division:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <select class=\"form-control\" formControlName=\"division\"\r\n                                        (change)=\"selectDivision($event)\">\r\n                                        <option *ngFor=\"let division of divisionList;let i=index\"\r\n                                            value=\"{{division.INITIAL}}\">\r\n                                            {{division?.NAME}}\r\n                                        </option>\r\n                                    </select>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label class=\"col-sm-3 form-control-label\">Status:</label>\r\n                                <div class=\"col-sm-7\">\r\n                                    <select class=\"form-control\" formControlName=\"ISACTIVE\"\r\n                                        style=\"height:30px;padding-bottom: 0px;\">\r\n                                        <option value=1>Active</option>\r\n                                        <option value=0>Inactive</option>\r\n                                    </select>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n\r\n                        <div class=\"tab-pane\" id=\"userWiseRights\">\r\n                            <div class=\"row col-md-12\" style=\"margin-top: 1rem;\">\r\n                                <div class=\"col-md-6 \">\r\n                                    <div class=\"row\">\r\n                                        <input type=\"checkbox\" [(ngModel)]=\"latepostedit\" [ngModelOptions]=\"{standalone: true}\" (change)=\"$event.target.checked?(latepostedit = 1):(latepostedit = 0)\" ><span> L_EDIT</span>\r\n                                    </div>\r\n                                    <div class=\"row\">\r\n                                        <input type=\"checkbox\" [(ngModel)]=\"latepostdelete\" [ngModelOptions]=\"{standalone: true}\" (change)=\"$event.target.checked?(latepostdelete = 1):(latepostdelete = 0)\" ><span> L_DELETE</span>\r\n                                    </div>\r\n                                    <div class=\"row\">\r\n                                        <input type=\"checkbox\" [(ngModel)]=\"AllowReverseEntry\" [ngModelOptions]=\"{standalone: true}\" (change)=\"$event.target.checked?(AllowReverseEntry = 1):(AllowReverseEntry = 0)\" ><span> Allow Reverse Entry</span>\r\n                                    </div>\r\n\r\n                                    <div class=\"row\">\r\n                                        <input type=\"checkbox\" [ngModelOptions]=\"{standalone: true}\" (change)=\"$event.target.checked?(ShowDashboard = 1):(ShowDashboard = 0)\" [(ngModel)]=\"ShowDashboard\"/><span>Show Graph Dashboard </span>\r\n                                       \r\n                                        \r\n                                    </div>\r\n                                    <div class=\"row\" >\r\n                                        <label > User Wise Ageing Limit</label>\r\n                                        <input type=\"number\" [(ngModel)]=\"StockAgeingLimit\"[ngModelOptions]=\"{standalone: true}\" >\r\n                                      </div>\r\n                                      <div class=\"row\" >\r\n                                        <label > Allow Back Date Entry (Days)</label>\r\n                                        <input type=\"number\" [(ngModel)]=\"AllowBackDateEntry\"[ngModelOptions]=\"{standalone: true}\" >\r\n                                      </div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n\r\n                        <div class=\"tab-pane\" id=\"Roleprivilege\">\r\n                            <form [formGroup]=\"roleForm\">\r\n                                <div formArrayName=\"menuRights\" class=\"horizontal-scroll\">\r\n                                    <!-- Report Division Privilege -->\r\n                                    <div class=\"col-sm-3\">\r\n                                        <table style=\"height:300px;border:1px solid #e2eaea;\">\r\n                                            <thead>\r\n                                                <tr>\r\n                                                    <th style=\"width: 26px;background: #e2eaea;\"></th>\r\n                                                    <th style=\"background: #e2eaea;\">Report Division Privilege</th>\r\n\r\n                                                </tr>\r\n                                            </thead>\r\n                                            <tbody style=\"height: 23px;\">\r\n                                                <tr style=\"height: 23px;\">\r\n                                                    <td style=\"width: 26px;\"><input type=\"checkbox\"\r\n                                                            [ngModelOptions]=\"{standalone: true}\"\r\n                                                            [(ngModel)]=\"SelectAll\" (change)=ChangeAll()></td>\r\n                                                    <td>Select All</td>\r\n                                                </tr>\r\n                                            </tbody>\r\n                                            <tbody style=\"height: 23px;\"\r\n                                                *ngFor=\"let div of userdivisionList;let i=index\">\r\n\r\n                                                <tr style=\"height: 23px;\">\r\n                                                    <td style=\"width: 26px;\"><input type=\"checkbox\"\r\n                                                            [ngModelOptions]=\"{standalone: true}\"\r\n                                                            [(ngModel)]=\"div.isCheck\" (change)=ChangeDiv()></td>\r\n                                                    <td>{{div?.NAME}}</td>\r\n\r\n                                            </tbody>\r\n\r\n                                        </table>\r\n                                    </div>\r\n                                    <!-- Transaction Division Privilege -->\r\n                                    <div class=\"col-sm-3\">\r\n                                        <table style=\"height:300px;border:1px solid #e2eaea;\">\r\n                                            <thead>\r\n                                                <tr>\r\n                                                    <th style=\"width: 26px;background: #e2eaea;\"></th>\r\n                                                    <th style=\"background: #e2eaea;\">Transaction Division Privilege</th>\r\n\r\n                                                </tr>\r\n                                            </thead>\r\n                                            <tbody style=\"height: 23px;\">\r\n                                                <tr style=\"height: 23px;\">\r\n                                                    <td style=\"width: 26px;\"><input type=\"checkbox\"\r\n                                                            [ngModelOptions]=\"{standalone: true}\"\r\n                                                            [(ngModel)]=\"SelectAll_trn\" (change)=ChangeAll_trn()></td>\r\n                                                    <td>Select All</td>\r\n                                                </tr>\r\n                                            </tbody>\r\n                                            <tbody style=\"height: 23px;\"\r\n                                                *ngFor=\"let div of userdivisionList;let i=index\">\r\n\r\n                                                <tr style=\"height: 23px;\">\r\n                                                    <td style=\"width: 26px;\"><input type=\"checkbox\"\r\n                                                            [ngModelOptions]=\"{standalone: true}\"\r\n                                                            [(ngModel)]=\"div.isCheck_trn\" (change)=ChangeDiv_trn()></td>\r\n                                                    <td>{{div?.NAME}}</td>\r\n\r\n                                            </tbody>\r\n\r\n                                        </table>\r\n                                    </div>\r\n                                </div>\r\n                            </form>\r\n                        </div>\r\n\r\n                    </div>\r\n                </div>\r\n            </form>\r\n            <!-- </div>\r\n              </div> -->\r\n            <!-- <form [formGroup]=\"userForm\">\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputUsername\" class=\"col-sm-1 form-control-label\">User Name</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <input type=\"text\" class=\"form-control\" formControlName=\"username\" id=\"inputUsername\"\r\n                            placeholder=\"User Name\">\r\n                    </div>\r\n                    <label for=\"inputPassword3\" class=\"col-sm-1 form-control-label\">Password</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <input type=\"text\" class=\"form-control\" formControlName=\"password\" id=\"inputPassword3\"\r\n                            placeholder=\"Password\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputEmail3\" class=\"col-sm-1 form-control-label\">Email</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <input type=\"email\" class=\"form-control\" formControlName=\"email\" id=\"inputEmail3\"\r\n                            placeholder=\"Email\">\r\n                    </div>\r\n                    <label for=\"inputmobile\" class=\"col-sm-1 form-control-label\">Role</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select class=\"form-control\" formControlName=\"role\">\r\n                            <option *ngFor=\"let role of roleList;let i=index\" value=\"{{role.rolename}}\">\r\n                                {{role?.rolename}}\r\n                            </option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputEmail3\" class=\"col-sm-1 form-control-label\">Warehouse</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select class=\"form-control\" formControlName=\"warehouse\">\r\n                            <option *ngFor=\"let warehouse of warehouseList;let i=index\" value=\"{{warehouse.NAME}}\">\r\n                                {{warehouse?.NAME}}\r\n                            </option>\r\n                        </select>\r\n                    </div>\r\n                    <label for=\"inputmobile\" class=\"col-sm-1 form-control-label\">Division</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select class=\"form-control\" formControlName=\"division\">\r\n                            <option *ngFor=\"let warehouse of divisionList;let i=index\" value=\"{{warehouse.INITIAL}}\">\r\n                                {{warehouse?.NAME}}\r\n                            </option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputEmail3\" class=\"col-sm-1 form-control-label\">User Type</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select class=\"form-control\" formControlName=\"LoginProfile\"\r\n                          style=\"height:30px;padding-bottom: 0px;\">\r\n                          <option *ngIf =\"userProfile.CompanyInfo.LoginProfile!='company_login'\" value='user_login'>User Login</option>\r\n                          <option *ngIf =\"userProfile.CompanyInfo.LoginProfile!='company_login'\" value='product_login'>Product Approval</option>\r\n                          <option *ngIf =\"userProfile.CompanyInfo.LoginProfile!='company_login'\" value='price_approval_login'>Price Approval</option>\r\n                          <option *ngIf =\"userProfile.CompanyInfo.LoginProfile!='company_login'\" value='scheme_approval_login'>Scheme Approval</option>\r\n                          <option *ngIf =\"userProfile.CompanyInfo.LoginProfile!='company_login'\" value='customer_approval_login'>Customer Approval</option>\r\n                          <option *ngIf =\"userProfile.CompanyInfo.LoginProfile=='company_login'\" value='company_login'>Company Login</option>\r\n                         <option *ngIf =\"userProfile.CompanyInfo.LoginProfile!='company_login'\" value='non_nestle_login'>Non Nestle Login</option> \r\n                          \r\n                          \r\n                        </select>\r\n                    </div>\r\n\r\n                    <label for=\"inputEmail3\" class=\"col-sm-1 form-control-label\">Status</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select class=\"form-control\" formControlName=\"ISACTIVE\"\r\n                          style=\"height:30px;padding-bottom: 0px;\">\r\n                          <option value=1>Active</option>\r\n                          <option value=0>Inactive</option>\r\n                        </select>\r\n                    </div>\r\n                   \r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputEmail3\" class=\"col-sm-1 form-control-label\">PCL</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select \r\n                        class=\"form-control\" \r\n                        formControlName=\"PCL\"\r\n                        style=\"height:30px;padding-bottom: 0px;\"\r\n                          >\r\n                          <option *ngFor = \"let i of productCategoryList \"  value= \"{{i.PCL}}\" >{{ i.SHORTNAME }}</option>\r\n                        </select>\r\n                    </div>\r\n                   \r\n                </div>\r\n            </form> -->\r\n        </ng-container>\r\n\r\n\r\n        <ng-container *ngIf=\"mode=='role'|| mode =='editRole'\">\r\n            <form [formGroup]=\"roleForm\">\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputUsername\" class=\"col-sm-1 form-control-label\">Role Name</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <input type=\"text\" class=\"form-control\" style=\"width: 27rem; height: 1.5rem;\"\r\n                            formControlName=\"roleName\">\r\n                    </div>\r\n                    <label for=\"inputPassword3\" class=\"col-sm-1 form-control-label\">Role</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <select name=\"\" id=\"\" class=\"form-control\" style=\"width: 27rem; height: 1.5rem;\"\r\n                            formControlName=\"role\">\r\n                            <option value=\"1\">Administrator</option>\r\n                            <option value=\"2\">Supervisor</option>\r\n                            <option value=\"3\">Operator</option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"main-container\" style=\"margin-top:0px !important;margin-bottom: 0px\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col-md-12\">\r\n                            <div class=\"tabbable\" id=\"warehouse-tabs\">\r\n                                <ul class=\"nav nav-tabs\">\r\n                                    <li class=\"nav-item\">\r\n                                        <a class=\"nav-link active\" href=\"#menuRights\" data-toggle=\"tab\">Menu Rights</a>\r\n                                    </li>\r\n                                    <!-- <li class=\"nav-item\">\r\n                                        <a class=\"nav-link\" href=\"#userRights\" data-toggle=\"tab\">User Rights</a>\r\n                                    </li> -->\r\n                                </ul>\r\n                                <div class=\"tab-content\">\r\n                                    <div class=\"tab-pane active\" id=\"menuRights\">\r\n\r\n                                        <div formArrayName=\"menuRights\" class=\"horizontal-scroll\">\r\n                                            <table class=\"table table-striped\" style=\"width: 100%;\">\r\n                                                <thead>\r\n                                                    <tr style=\"position: sticky; top:0;line-height: 1.5rem;\">\r\n                                                        <th scope=\"col\" style=\"width:14%\">Menu Rights</th>\r\n                                                        <!-- <th scope=\"col\" style=\"width:5%\"><input type=\"checkbox\"\r\n                                                                (change)=\"TickAllValue('view',$event,'view')\"><span>&nbsp;Select\r\n                                                                all</span></th>\r\n                                                        <th scope=\"col\" style=\"width:5%\"><input type=\"checkbox\"\r\n                                                                (change)=\"TickAllValue('add',$event,'add')\"><span>Select\r\n                                                                all</span></th>\r\n                                                        <th scope=\"col\" style=\"width:5%\"><input type=\"checkbox\"\r\n                                                                (change)=\"TickAllValue('edit',$event)\"><span>Select\r\n                                                                all</span>\r\n                                                        </th>\r\n                                                        <th scope=\"col\" style=\"width:5%\"><input type=\"checkbox\"\r\n                                                                (change)=\"TickAllValue('delete',$event)\"><span>Select\r\n                                                                all</span>\r\n                                                        </th>\r\n                                                        <th scope=\"col\" style=\"width:5%\"><input type=\"checkbox\"\r\n                                                                (change)=\"TickAllValue('print',$event)\"><span>Select\r\n                                                                all</span>\r\n                                                        </th>\r\n                                                        <th scope=\"col\" style=\"width:5%\"><input\r\n                                                                type=\"checkbox\"><span>Select\r\n                                                                all</span></th>\r\n                                                        <th scope=\"col\" style=\"width:5%\"><input\r\n                                                                type=\"checkbox\"><span>Select\r\n                                                                all</span></th> -->\r\n                                                    </tr>\r\n                                                </thead>\r\n                                                <tbody>\r\n                                                    <tr *ngFor=\"let item of roleForm.controls.menuRights.controls;let i=index\"\r\n                                                        style=\"margin-left: 10px;\" [formGroupName]=\"i\"\r\n                                                        class=\"row show-grid\">\r\n                                                        <td style=\"width: 37%;\"><input type=\"text\"\r\n                                                                style=\"border:0;background-color: #d9e5e7 !important; height: 3vh\"\r\n                                                                size=\"40\" formControlName=\"title\"></td>\r\n                                                        <ng-container *ngIf=\"path!=''\">\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"view\"><span> View</span></td>\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"add\"><span> Add</span></td>\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"edit\"><span> Edit</span></td>\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"delete\"><span> Delete</span></td>\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"print\"><span> Print</span></td>\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"L_edit\"><span> L_Edit</span></td>\r\n                                                            <td style=\"width: 13%;\"><input type=\"checkbox\"\r\n                                                                    formControlName=\"L_delete\"><span> L_Delete</span>\r\n                                                            </td>\r\n                                                        </ng-container>\r\n\r\n                                                    </tr>\r\n\r\n                                                </tbody>\r\n                                            </table>\r\n\r\n                                            <!-- <div *ngFor=\"let item of roleForm.controls.menuRights.controls;let i=index\">\r\n                        <div [formGroupName]=\"i\" class=\"row show-grid\">\r\n                            <div class=\"col-md-4\">\r\n                                <input type=\"text\" style=\"border:0;background-color: transparent;width:100%;\"\r\n                                    formControlName=\"title\">\r\n                            </div>\r\n                            <ng-container *ngIf=\"path!=''\">\r\n                                <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"view\"><span>View</span>\r\n                                </div>\r\n                                <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"add\"><span>Add</span>\r\n                                </div>\r\n                                <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"edit\"><span>Edit</span>\r\n                                </div>\r\n                                <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"delete\"><span>Delete</span>\r\n                                </div>\r\n                                <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"print\"><span>Print</span>\r\n                                </div> -->\r\n                                            <!-- <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"post\"><span>Post</span>\r\n                                </div> -->\r\n                                            <!-- <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"import\"><span>Import</span>\r\n                                </div>\r\n                                <div class=\"col-md-1\">\r\n                                    <input type=\"checkbox\" formControlName=\"export\"><span>Export</span>\r\n                                </div> -->\r\n                                            <!-- </ng-container>\r\n\r\n                        </div>\r\n                    </div> -->\r\n                                        </div>\r\n                                    </div>\r\n                                    <!-- <div class=\"tab-pane\" id=\"userRights\">\r\n                                        <div class=\"user-rights\" *ngIf=\"roleForm.controls.userRights.controls.length\">\r\n                                            <ba-card title=\"User Rights Setting\" class=\"vertical-scroll\">\r\n\r\n                                                <div formArrayName=\"userRights\">\r\n                                                    <div class=\"col-sm-3\"\r\n                                                        *ngFor=\"let item of roleForm.controls.userRights.controls;let i=index\">\r\n                                                        <ng-container\r\n                                                            *ngIf=\"item.value.right != 'DIVISION' && item.value.right != 'WAREHOUSE'\">\r\n                                                            <div [formGroupName]=\"i\">\r\n                                                                <div *ngIf=\"item.value.valueType=='tinyint'\">\r\n                                                                    <Label\r\n                                                                        *ngIf='mode != \"editRole\"'>{{item.value.right}}</Label>\r\n                                                                    <input type=\"checkbox\" formControlName=\"value\">\r\n                                                                    <span><input\r\n                                                                            style=\"margin-top: 3px; margin-bottom: 3px;\"\r\n                                                                            type=\"text\"\r\n                                                                            style=\"border:0;background-color: transparent; margin-top: 3px; margin-bottom: 3px;\"\r\n                                                                            formControlName=\"path\">\r\n                                                                    </span>\r\n                                                                </div>\r\n                                                                <div\r\n                                                                    *ngIf=\"(item.value.valueType=='varchar' || item.value.valueType=='char') && item.value.right != 'DIVISION'\">\r\n                                                                    <Label>{{item.value.right}}</Label>\r\n                                                                    <input *ngIf=\"item.value.right != 'WAREHOUSE'\"\r\n                                                                        type=\"text\"\r\n                                                                        style=\"border:0;background-color: transparent; margin-top: 3px; margin-bottom: 3px;\"\r\n                                                                        formControlName=\"path\">\r\n                                                                    <span *ngIf=\"item.value.right != 'WAREHOUSE'\">\r\n                                                                        <input type=\"text\"\r\n                                                                            style=\"margin-top: 3px; margin-bottom: 3px;\"\r\n                                                                            formControlName=\"value\" />\r\n                                                                    </span>\r\n                                                                </div>\r\n                                                                <div\r\n                                                                    *ngIf=\"(item.value.valueType=='varchar' || item.value.valueType=='char') && item.value.right == 'DIVISION'\">\r\n                                                                    <Label>{{item.value.right}}</Label>\r\n                                                                    <input type=\"text\"\r\n                                                                        style=\"border:0;background-color: transparent; margin-top: 3px; margin-bottom: 3px;\"\r\n                                                                        formControlName=\"path\">\r\n                                                                    <span>\r\n                                                                        <select formControlName=\"value\"\r\n                                                                            style=\"margin-top: 3px; margin-bottom: 3px; min-width: 200px;\"\r\n                                                                            (change)=\"changeDivision($event.target.value)\">\r\n                                                                            <option\r\n                                                                                *ngFor=\"let d of masterService.allDivisionList$ | async\"\r\n                                                                                value=\"{{d.INITIAL}}\">{{d.NAME}}\r\n                                                                            </option>\r\n                                                                        </select>\r\n                                                                    </span>\r\n                                                                </div>\r\n                                                                <div\r\n                                                                    *ngIf=\"(item.value.valueType=='varchar' || item.value.valueType=='char') && item.value.right == 'WAREHOUSE'\">\r\n                                                                    <Label>{{item.value.right}}</Label>\r\n                                                                    <input type=\"text\"\r\n                                                                        style=\"border:0;background-color: transparent\"\r\n                                                                        formControlName=\"path\">\r\n                                                                    <span>\r\n                                                                        <select formControlName=\"value\"\r\n                                                                            style=\"margin-top: 3px; margin-bottom: 3px; min-width: 200px;\">\r\n                                                                            <option\r\n                                                                                *ngFor=\"let w of divisionWarehouseList\"\r\n                                                                                [ngValue]=\"w.NAME\">\r\n                                                                                {{w.NAME}}\r\n                                                                            </option>\r\n                                                                        </select>\r\n                                                                    </span>\r\n                                                                </div>\r\n                                                                <div\r\n                                                                    *ngIf=\"item.value.valueType=='numeric' || item.value.valueType=='decimal' || item.value.valueType=='float'\">\r\n                                                                    <Label>{{item.value.right}}</Label>\r\n                                                                   \r\n                                                                    <span><input type=\"text\" formControlName=\"value\"\r\n                                                                            style=\"width: 84px;\"></span>\r\n                                                                </div>\r\n                                                            </div>\r\n                                                        </ng-container>\r\n                                                    </div>\r\n                                                </div>\r\n\r\n                                            </ba-card>\r\n                                        </div>\r\n                                    </div> -->\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n            </form>\r\n        </ng-container>\r\n\r\n\r\n\r\n    </ba-card>\r\n    <!-- </div> -->\r\n\r\n\r\n</div>\r\n\r\n\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Information</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                {{DialogMessage}}\r\n            </div>\r\n\r\n\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #loginModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog \">\r\n        <div class=\"modal-content\">\r\n            <login (signedIn)=\"hideloginModal()\" toUrl=\"test\"></login>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 1861:
+/***/ 1884:
 /***/ (function(module, exports) {
 
 module.exports = ".card-header {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n  }\r\n  \r\n  .card-header::after {\r\n    display: none;\r\n  }\r\n  \r\n  .card-body {\r\n    padding: 5px !important;\r\n    max-height: 455px !important;\r\n  }\r\n  \r\n  .main-title {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    margin: 60px 0px;\r\n  \r\n  }\r\n  \r\n  .scroll-touch {\r\n    -webkit-overflow-scrolling: touch !important; \r\n  } \r\n  \r\n  .table td, .table th{\r\n    padding: 0.10rem !important;\r\n  }\r\n  \r\n  .sticky-top {\r\n    margin-top: 60px;\r\n    height: 100vh;\r\n  }\r\n\r\n  tbody {\r\n    display:block;\r\n    height:59vh;\r\n    overflow:auto;\r\n}\r\n\r\nthead, tbody tr {\r\n  display:table;\r\n  width:100%;\r\n  table-layout:fixed;/* even columns width , fix width of table too*/\r\n}\r\n\r\nth{\r\n  font-size: 14px;\r\n  font-weight: bold;\r\n}\r\n\r\ntd{\r\n  font-size: 12px;\r\n}\r\n\r\n.btn-sm{\r\n  line-height: 3px;\r\n}\r\n\r\n.btn-info{\r\n    margin: auto 1px;\r\n}\r\n\r\n\r\n.card-header{\r\n  padding: 10px 20px;\r\n}\r\n\r\n.searchBy{\r\n  font-size: 13px;\r\n  margin-left: 18rem;\r\n}\r\n\r\n@media screen and (min-width: 1400px) {\r\n.header-buttons {\r\n    margin-top: 15px;\r\n  }\r\n}"
 
 /***/ }),
 
-/***/ 1862:
+/***/ 1885:
 /***/ (function(module, exports) {
 
 module.exports = "<!-- <div class=\"widgets\">\r\n  <button class=\"btn btn-info\" style=\"margin-bottom: 10px;\" (click)=\"onAddClick(); (false)\">\r\n    Add User\r\n  </button>\r\n  <button class=\"btn btn-info\" style=\"margin-bottom: 10px;\" (click)=\"addRole(); (false)\">\r\n    Add Role\r\n  </button>\r\n\r\n  <div class=\"row\">\r\n    <ba-card baCardClass=\"with-scroll\">\r\n        <ul class=\"nav nav-tabs\">\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link active\" href=\"#user\" data-toggle=\"tab\">User List</a>\r\n            </li>\r\n           \r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" href=\"#role\" data-toggle=\"tab\">Role List</a>\r\n            </li>\r\n          </ul>\r\n      <div class=\"tab-content\">\r\n        <div role=\"tabpanel\" class=\"tab-pane active\" id=\"user\">\r\n          <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\"\r\n            (deleteConfirm)=\"onDeleteConfirm($event)\"></ng2-smart-table>\r\n        </div>\r\n        <div role=\"tabpanel\" class=\"tab-pane\" id=\"role\">\r\n            <ng2-smart-table [settings]=\"roleSettings\" [source]=\"roleSource\" (edit)=\"onRoleEditClick($event)\"\r\n            ></ng2-smart-table>\r\n        </div>\r\n      </div>\r\n    </ba-card>\r\n  </div>\r\n</div> -->\r\n\r\n<!--NEW UI DESIGN FOR USER MANAGER-->\r\n<div class=\"row col-md-12 header-buttons\">\r\n  <div class=\"col-md-4\">\r\n      <h5 style=\"font-weight: bold;\" *ngIf=\"this.userManager == 'user'\">User Profile Master</h5>\r\n      <h5 style=\"font-weight: bold;\" *ngIf=\"this.userManager == 'role'\">Role Master</h5>\r\n\r\n  </div>\r\n  <div class=\"col-md-8\">\r\n      <!-- <button class=\"btn btn-info pull-right\" style=\"font-size: 12px;\" routerLink=\"/pages/dashboard\">Back</button> -->\r\n      <button *ngIf=\"this.userManager == 'user'\" class=\"btn btn-info pull-right\" style=\"font-size: 12px;\" (click)=\"onAddClick()\">Add User</button>\r\n      <button *ngIf=\"this.userManager == 'role'\"class=\"btn btn-info pull-right\" style=\"font-size: 12px;\" (click)=\"addRole()\">Add Role</button>\r\n\r\n      <button *ngIf=\"this.userManager == 'role'\" class=\"btn btn-info pull-right\" style=\"font-size: 12px;\" (click)=\"openUserList()\">User List</button>\r\n      <button *ngIf=\"this.userManager == 'user'\"  class=\"btn btn-info pull-right\" style=\"font-size: 12px;\" (click)=\"openRoleList()\">Role List</button>\r\n\r\n  </div>\r\n</div>\r\n\r\n<div class=\"row\" style=\"align-items: center;\">\r\n  <div class=\"col-md-12 col-sm-8\" style=\"margin-top:0.5rem\">\r\n      <div class=\"card\" style=\"margin: auto; width: 63rem;\">\r\n        <div *ngIf=\"this.userManager == 'user'\">\r\n          <div class=\"card-header\">\r\n              <span style=\"font-weight: bold;\">User Profile Lists</span>\r\n              \r\n          </div>\r\n\r\n          <div class=\"card-body\">\r\n              <!-- <perfect-scrollbar class=\"perfect__scrollbar\" style=\"height: calc(98vh - 32vh);\"> -->\r\n                  <table class=\"table table-striped\">\r\n                      <thead>\r\n                          <tr style=\"position: sticky; top:0;line-height: 1.5rem;\">\r\n                              <th scope=\"col\" style=\"width:3%\">S.N</th>\r\n                              <th scope=\"col\" style=\"width:18%\">User Name</th>\r\n                              <!-- <th scope=\"col\" style=\"width:13%\">Email</th> -->\r\n                              <th scope=\"col\" style=\"width:8%\">Role</th>\r\n                              <th scope=\"col\" style=\"width:8%\">Role Type</th>\r\n                              <th scope=\"col\" style=\"width:8%\">Division</th>\r\n                              <th scope=\"col\" style=\"width:8%\">Warehouse</th>\r\n                              <th scope=\"col\" style=\"width:8%\">Status</th>\r\n                              <th scope=\"col\" style=\"text-align:center;width:18%\">Action</th>\r\n                          </tr>\r\n                      </thead>\r\n                      <tbody>\r\n                        <ng-container *ngIf=\"this.userList && this.userList.length > 0\">\r\n                          <tr *ngFor=\"let user of this.userList; let i=index\">\r\n                            <td style=\"width:3%;\">{{i+1}}</td>\r\n                            <td style=\"width:18%;\">{{user.username}}</td>\r\n                            <!-- <td style=\"width:13%;\">{{user.email}}</td> -->\r\n                            <td style=\"width:8%;\">{{user.role}}</td>\r\n                            <td style=\"width:8%;\">{{user.userrole}} </td>\r\n                            <td style=\"width:8%;\">{{user.division}} </td>\r\n                            <td style=\"width:8%;\">{{user.WAREHOUSE}} </td>\r\n                            <td style=\"width:8%;\">{{user.ISACTIVE}} </td>\r\n                            <td style=\"width:18%;text-align: center;\">\r\n                            <button style=\"width: 60px;\" type=\"button\" class=\"btn btn-sm btn-info mr-1 btn-sm\" data-toggle=\"modal\" (click)=\"onEditClick(user)\">Edit</button>\r\n                            <button style=\"width: 60px;\" type=\"button\" class=\"btn btn-sm btn-info mr-1 btn-sm\" data-toggle=\"modal\" (click)=\"onDeleteConfirm(user)\">Delete</button>\r\n\r\n                            </td>\r\n                          </tr>\r\n                        </ng-container>\r\n                      </tbody>\r\n                  </table>\r\n\r\n            </div>\r\n        </div>\r\n        <div *ngIf=\"this.userManager == 'role'\">\r\n          <div class=\"card-header\">\r\n              <span>Role Lists</span>\r\n              \r\n          </div>\r\n\r\n          <div class=\"card-body\">\r\n              <!-- <perfect-scrollbar class=\"perfect__scrollbar\" style=\"height: calc(98vh - 32vh);\"> -->\r\n                  <table class=\"table table-striped\">\r\n                      <thead>\r\n                          <tr style=\"position: sticky; top:0;line-height: 1.5rem;\">\r\n                              <th scope=\"col\" style=\"width:3%\">S.N</th>\r\n                              <th scope=\"col\" style=\"width:18%\">Role Name</th>\r\n                              <th scope=\"col\" style=\"width:8%\">Role</th>\r\n                              <th scope=\"col\" style=\"text-align:center;width:18%\">Action</th>\r\n                          </tr>\r\n                      </thead>\r\n                      <tbody>\r\n                        <ng-container *ngIf=\"this.roleList && this.roleList.length > 0\">\r\n                          <tr *ngFor=\"let role of this.roleList; let i=index\">\r\n                            <td style=\"width:3%;\">{{i+1}}</td>\r\n                            <td style=\"width:18%;\">{{role.rolename}}</td>\r\n                            <td style=\"width:8%;\">{{role.role}}</td>\r\n                            <td style=\"width:18%;text-align: center;\">\r\n                            <button style=\"width: 60px;\" type=\"button\" class=\"btn btn-sm btn-info mr-1 btn-sm\" data-toggle=\"modal\" (click)=\"onRoleEditClick(role)\">Edit</button>\r\n                            <!-- <button style=\"width: 60px;\" type=\"button\" class=\"btn btn-sm btn-info mr-1 btn-sm\" data-toggle=\"modal\" (click)=\"onDeleteConfirm(user)\">Delete</button> -->\r\n\r\n                            </td>\r\n                          </tr>\r\n                        </ng-container>\r\n                      </tbody>\r\n                  </table>\r\n\r\n            </div>\r\n        </div>\r\n            <!-- <div class=\"card-footer\" style=\"padding:5px\" *ngIf=\"customerLists && (customerLists | searchData: filter:searchProduct).length > itemsPerPage\">\r\n            <div class=\"pagination\" >\r\n              <div style=\"margin:auto\">\r\n              <pagination-controls (pageChange)=\"customerPagination($event)\"></pagination-controls>\r\n              </div>\r\n            </div> \r\n            </div> -->\r\n          \r\n\r\n      </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 1876:
+/***/ 1899:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1697);
+var content = __webpack_require__(1712);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(31)(content, {});
@@ -5348,13 +5362,13 @@ if(false) {
 
 /***/ }),
 
-/***/ 1877:
+/***/ 1900:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1698);
+var content = __webpack_require__(1713);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(31)(content, {});
@@ -5375,13 +5389,13 @@ if(false) {
 
 /***/ }),
 
-/***/ 1878:
+/***/ 1901:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1699);
+var content = __webpack_require__(1714);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(31)(content, {});

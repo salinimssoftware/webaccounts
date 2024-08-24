@@ -1,6 +1,6 @@
 webpackJsonpac__name_([5],{
 
-/***/ 1155:
+/***/ 1156:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,32 +9,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__node_modules_ng2_smart_table_src_ng2_smart_table_module__ = __webpack_require__(1171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__node_modules_ng2_smart_table_src_ng2_smart_table_module__ = __webpack_require__(1173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dialogRep_routing__ = __webpack_require__(1480);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dialogRep_routing__ = __webpack_require__(1490);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_services_permission_guard_service__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_reports_report_component__ = __webpack_require__(1476);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_reports_tabsA__ = __webpack_require__(1479);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_reports_tabA__ = __webpack_require__(1371);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_reports_mnubutton__ = __webpack_require__(1475);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_reports_reportdialog_component__ = __webpack_require__(1478);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_reports_ReportTable_component__ = __webpack_require__(1474);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__dialogRep_component__ = __webpack_require__(1372);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_angular_tree_component__ = __webpack_require__(556);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_reports_reportControls__ = __webpack_require__(1477);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ngui_auto_complete__ = __webpack_require__(564);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_reports_report_component__ = __webpack_require__(1486);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_reports_tabsA__ = __webpack_require__(1489);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_reports_tabA__ = __webpack_require__(1375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_reports_mnubutton__ = __webpack_require__(1485);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_reports_reportdialog_component__ = __webpack_require__(1488);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_reports_ReportTable_component__ = __webpack_require__(1484);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__dialogRep_component__ = __webpack_require__(1376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_angular_tree_component__ = __webpack_require__(557);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_reports_reportControls__ = __webpack_require__(1487);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ngui_auto_complete__ = __webpack_require__(565);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ngui_auto_complete___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__ngui_auto_complete__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_ngx_contextmenu__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_reports_report_service__ = __webpack_require__(1263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_primeng_components_menubar_menubar__ = __webpack_require__(1677);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_ngx_contextmenu__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_reports_report_service__ = __webpack_require__(1265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_primeng_components_menubar_menubar__ = __webpack_require__(1692);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_primeng_components_menubar_menubar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20_primeng_components_menubar_menubar__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_primeng_components_tabview_tabview__ = __webpack_require__(1678);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_primeng_components_tabview_tabview__ = __webpack_require__(1693);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_primeng_components_tabview_tabview___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_primeng_components_tabview_tabview__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_reports_Excel_service__ = __webpack_require__(1370);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_ReportDynamicControls_DebitorsReportOptionsAndDueAging_component__ = __webpack_require__(1471);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_ReportDynamicControls_TreePartyAndLedger__ = __webpack_require__(1472);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_reports_PreviewReportFormat__ = __webpack_require__(1473);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__userManager_components_userManger_adduser_service__ = __webpack_require__(1299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_reports_Excel_service__ = __webpack_require__(1374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_ReportDynamicControls_DebitorsReportOptionsAndDueAging_component__ = __webpack_require__(1481);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_ReportDynamicControls_TreePartyAndLedger__ = __webpack_require__(1482);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_reports_PreviewReportFormat__ = __webpack_require__(1483);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__userManager_components_userManger_adduser_service__ = __webpack_require__(1303);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReportModule", function() { return ReportModule; });
 
 
@@ -100,14 +100,14 @@ ReportModule = __decorate([
 
 /***/ }),
 
-/***/ 1162:
+/***/ 1164:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_set_data_set__ = __webpack_require__(1221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_set_data_set__ = __webpack_require__(1223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers__ = __webpack_require__(1170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers__ = __webpack_require__(1172);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Grid; });
 
 
@@ -330,7 +330,7 @@ var Grid = (function () {
 
 /***/ }),
 
-/***/ 1164:
+/***/ 1166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -376,13 +376,13 @@ Cell.PREPARE = function (value) { return value; };
 
 /***/ }),
 
-/***/ 1165:
+/***/ 1167:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1166);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DefaultEditor", function() { return DefaultEditor; });
 
 
@@ -419,7 +419,7 @@ __decorate([
 
 /***/ }),
 
-/***/ 1166:
+/***/ 1168:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -533,7 +533,7 @@ var DataSource = (function () {
 
 /***/ }),
 
-/***/ 1167:
+/***/ 1169:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -607,11 +607,11 @@ var Column = (function () {
 
 /***/ }),
 
-/***/ 1168:
+/***/ 1170:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cell__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cell__ = __webpack_require__(1166);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Row; });
 
 var Row = (function () {
@@ -661,12 +661,12 @@ var Row = (function () {
 
 /***/ }),
 
-/***/ 1169:
+/***/ 1171:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_column__ = __webpack_require__(1167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_column__ = __webpack_require__(1169);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DefaultFilter; });
 
 
@@ -705,7 +705,7 @@ __decorate([
 
 /***/ }),
 
-/***/ 1170:
+/***/ 1172:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -853,7 +853,7 @@ function getDeepFromObject(object, name, defaultValue) {
 
 /***/ }),
 
-/***/ 1171:
+/***/ 1173:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -862,16 +862,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_completer__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng2_smart_table_directives__ = __webpack_require__(1178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ng2_smart_table_components_cell_cell_component__ = __webpack_require__(1195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng2_smart_table_components_cell_cell_view_mode__ = __webpack_require__(1193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng2_smart_table_components_cell_cell_edit_mode__ = __webpack_require__(1185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ng2_smart_table_components_cell_cell_editors__ = __webpack_require__(1188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ng2_smart_table_components_filter_filter_component__ = __webpack_require__(1201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ng2_smart_table_components_filter_filter_types__ = __webpack_require__(1198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ng2_smart_table_components_pager_pager_component__ = __webpack_require__(1202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ng2_smart_table_components_thead_thead_directives__ = __webpack_require__(1220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ng2_smart_table_components_tbody_tbody_directives__ = __webpack_require__(1207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng2_smart_table_directives__ = __webpack_require__(1180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ng2_smart_table_components_cell_cell_component__ = __webpack_require__(1197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng2_smart_table_components_cell_cell_view_mode__ = __webpack_require__(1195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng2_smart_table_components_cell_cell_edit_mode__ = __webpack_require__(1187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ng2_smart_table_components_cell_cell_editors__ = __webpack_require__(1190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ng2_smart_table_components_filter_filter_component__ = __webpack_require__(1203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ng2_smart_table_components_filter_filter_types__ = __webpack_require__(1200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ng2_smart_table_components_pager_pager_component__ = __webpack_require__(1204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ng2_smart_table_components_thead_thead_directives__ = __webpack_require__(1222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ng2_smart_table_components_tbody_tbody_directives__ = __webpack_require__(1209);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ng2SmartTableModule", function() { return Ng2SmartTableModule; });
 
 
@@ -927,22 +927,22 @@ Ng2SmartTableModule = __decorate([
 
 /***/ }),
 
-/***/ 1172:
+/***/ 1174:
 /***/ (function(module, exports) {
 
 module.exports = "input, textarea {\n  width: 100%;\n  line-height: normal;\n  padding: .375rem .75rem; }\n"
 
 /***/ }),
 
-/***/ 1173:
+/***/ 1175:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__local_sorter__ = __webpack_require__(1224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_filter__ = __webpack_require__(1222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__local_pager__ = __webpack_require__(1223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_source__ = __webpack_require__(1166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__helpers__ = __webpack_require__(1170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__local_sorter__ = __webpack_require__(1226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_filter__ = __webpack_require__(1224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__local_pager__ = __webpack_require__(1225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_source__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__helpers__ = __webpack_require__(1172);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalDataSource; });
 
 
@@ -1182,12 +1182,12 @@ var LocalDataSource = (function (_super) {
 
 /***/ }),
 
-/***/ 1174:
+/***/ 1176:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1166);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditCellDefault; });
 
 
@@ -1226,12 +1226,12 @@ __decorate([
 
 /***/ }),
 
-/***/ 1178:
+/***/ 1180:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ng2_smart_table_ng2_smart_table_component__ = __webpack_require__(1179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ng2_smart_table_ng2_smart_table_component__ = __webpack_require__(1181);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NG2_SMART_TABLE_DIRECTIVES", function() { return NG2_SMART_TABLE_DIRECTIVES; });
 
 var NG2_SMART_TABLE_DIRECTIVES = [__WEBPACK_IMPORTED_MODULE_0__ng2_smart_table_ng2_smart_table_component__["Ng2SmartTableComponent"]];
@@ -1239,16 +1239,16 @@ var NG2_SMART_TABLE_DIRECTIVES = [__WEBPACK_IMPORTED_MODULE_0__ng2_smart_table_n
 
 /***/ }),
 
-/***/ 1179:
+/***/ 1181:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_source_data_source__ = __webpack_require__(1166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_helpers__ = __webpack_require__(1170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_data_source_local_local_data_source__ = __webpack_require__(1173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_source_data_source__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_helpers__ = __webpack_require__(1172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_data_source_local_local_data_source__ = __webpack_require__(1175);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ng2SmartTableComponent", function() { return Ng2SmartTableComponent; });
 
 
@@ -1470,8 +1470,8 @@ __decorate([
 Ng2SmartTableComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'ng2-smart-table',
-        styles: [__webpack_require__(1229)],
-        template: __webpack_require__(1233)
+        styles: [__webpack_require__(1231)],
+        template: __webpack_require__(1235)
     })
 ], Ng2SmartTableComponent);
 
@@ -1479,12 +1479,12 @@ Ng2SmartTableComponent = __decorate([
 
 /***/ }),
 
-/***/ 1182:
+/***/ 1184:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__edit_cell_default__ = __webpack_require__(1174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__edit_cell_default__ = __webpack_require__(1176);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomEditComponent; });
 
 
@@ -1531,12 +1531,12 @@ CustomEditComponent = __decorate([
 
 /***/ }),
 
-/***/ 1183:
+/***/ 1185:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__edit_cell_default__ = __webpack_require__(1174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__edit_cell_default__ = __webpack_require__(1176);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DefaultEditComponent; });
 
 
@@ -1553,7 +1553,7 @@ var DefaultEditComponent = (function (_super) {
 DefaultEditComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'table-cell-default-editor',
-        template: __webpack_require__(1230),
+        template: __webpack_require__(1232),
     }),
     __metadata("design:paramtypes", [])
 ], DefaultEditComponent);
@@ -1562,12 +1562,12 @@ DefaultEditComponent = __decorate([
 
 /***/ }),
 
-/***/ 1184:
+/***/ 1186:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1166);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditCellComponent; });
 
 
@@ -1608,15 +1608,15 @@ EditCellComponent = __decorate([
 
 /***/ }),
 
-/***/ 1185:
+/***/ 1187:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__custom_edit_component__ = __webpack_require__(1182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__custom_edit_component__ = __webpack_require__(1184);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__custom_edit_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_edit_component__ = __webpack_require__(1183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_edit_component__ = __webpack_require__(1185);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__default_edit_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__edit_cell_component__ = __webpack_require__(1184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__edit_cell_component__ = __webpack_require__(1186);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__edit_cell_component__["a"]; });
 
 
@@ -1625,12 +1625,12 @@ EditCellComponent = __decorate([
 
 /***/ }),
 
-/***/ 1186:
+/***/ 1188:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1167);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxEditorComponent; });
 
 
@@ -1649,7 +1649,7 @@ var CheckboxEditorComponent = (function (_super) {
 CheckboxEditorComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'checkbox-editor',
-        styles: [__webpack_require__(1172)],
+        styles: [__webpack_require__(1174)],
         template: "\n    <input [ngClass]=\"inputClass\"\n           type=\"checkbox\"\n           class=\"form-control\"\n           [name]=\"cell.getId()\"\n           [disabled]=\"!cell.isEditable()\"\n           [checked]=\"cell.getValue() == (cell.getColumn().getConfig()?.true || true)\"\n           (click)=\"onClick.emit($event)\"\n           (change)=\"onChange($event)\">\n    ",
     }),
     __metadata("design:paramtypes", [])
@@ -1659,13 +1659,13 @@ CheckboxEditorComponent = __decorate([
 
 /***/ }),
 
-/***/ 1187:
+/***/ 1189:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_completer__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_editor__ = __webpack_require__(1165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_editor__ = __webpack_require__(1167);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterEditorComponent; });
 
 
@@ -1703,19 +1703,19 @@ CompleterEditorComponent = __decorate([
 
 /***/ }),
 
-/***/ 1188:
+/***/ 1190:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__completer_editor_component__ = __webpack_require__(1187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__completer_editor_component__ = __webpack_require__(1189);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__completer_editor_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__input_editor_component__ = __webpack_require__(1189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__input_editor_component__ = __webpack_require__(1191);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__input_editor_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_editor_component__ = __webpack_require__(1190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_editor_component__ = __webpack_require__(1192);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__select_editor_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__textarea_editor_component__ = __webpack_require__(1191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__textarea_editor_component__ = __webpack_require__(1193);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__textarea_editor_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__checkbox_editor_component__ = __webpack_require__(1186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__checkbox_editor_component__ = __webpack_require__(1188);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__checkbox_editor_component__["a"]; });
 
 
@@ -1726,12 +1726,12 @@ CompleterEditorComponent = __decorate([
 
 /***/ }),
 
-/***/ 1189:
+/***/ 1191:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1167);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InputEditorComponent; });
 
 
@@ -1745,7 +1745,7 @@ var InputEditorComponent = (function (_super) {
 InputEditorComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'input-editor',
-        styles: [__webpack_require__(1172)],
+        styles: [__webpack_require__(1174)],
         template: "\n    <input [ngClass]=\"inputClass\"\n           class=\"form-control\"\n           [(ngModel)]=\"cell.newValue\"\n           [name]=\"cell.getId()\"\n           [placeholder]=\"cell.getTitle()\"\n           [disabled]=\"!cell.isEditable()\"\n           (click)=\"onClick.emit($event)\"\n           (keydown.enter)=\"onEdited.emit($event)\"\n           (keydown.esc)=\"onStopEditing.emit()\">\n    ",
     }),
     __metadata("design:paramtypes", [])
@@ -1755,12 +1755,12 @@ InputEditorComponent = __decorate([
 
 /***/ }),
 
-/***/ 1190:
+/***/ 1192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1167);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectEditorComponent; });
 
 
@@ -1783,12 +1783,12 @@ SelectEditorComponent = __decorate([
 
 /***/ }),
 
-/***/ 1191:
+/***/ 1193:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(1167);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextareaEditorComponent; });
 
 
@@ -1802,7 +1802,7 @@ var TextareaEditorComponent = (function (_super) {
 TextareaEditorComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'textarea-editor',
-        styles: [__webpack_require__(1172)],
+        styles: [__webpack_require__(1174)],
         template: "\n    <textarea [ngClass]=\"inputClass\"\n              class=\"form-control\"\n              [(ngModel)]=\"cell.newValue\"\n              [name]=\"cell.getId()\"\n              [disabled]=\"!cell.isEditable()\"\n              [placeholder]=\"cell.getTitle()\"\n              (click)=\"onClick.emit($event)\"\n              (keydown.enter)=\"onEdited.emit($event)\"\n              (keydown.esc)=\"onStopEditing.emit()\">\n    </textarea>\n    ",
     }),
     __metadata("design:paramtypes", [])
@@ -1812,12 +1812,12 @@ TextareaEditorComponent = __decorate([
 
 /***/ }),
 
-/***/ 1192:
+/***/ 1194:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1166);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomViewComponent; });
 
 
@@ -1860,13 +1860,13 @@ CustomViewComponent = __decorate([
 
 /***/ }),
 
-/***/ 1193:
+/***/ 1195:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__custom_view_component__ = __webpack_require__(1192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__custom_view_component__ = __webpack_require__(1194);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__custom_view_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__view_cell_component__ = __webpack_require__(1194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__view_cell_component__ = __webpack_require__(1196);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__view_cell_component__["a"]; });
 
 
@@ -1874,12 +1874,12 @@ CustomViewComponent = __decorate([
 
 /***/ }),
 
-/***/ 1194:
+/***/ 1196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(1166);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ViewCellComponent; });
 
 
@@ -1903,14 +1903,14 @@ ViewCellComponent = __decorate([
 
 /***/ }),
 
-/***/ 1195:
+/***/ 1197:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_cell__ = __webpack_require__(1164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_data_set_row__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_cell__ = __webpack_require__(1166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_data_set_row__ = __webpack_require__(1170);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CellComponent; });
 
 
@@ -1984,13 +1984,13 @@ CellComponent = __decorate([
 
 /***/ }),
 
-/***/ 1196:
+/***/ 1198:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(1169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(1171);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxFilterComponent; });
 
 
@@ -2036,7 +2036,7 @@ CheckboxFilterComponent = __decorate([
 
 /***/ }),
 
-/***/ 1197:
+/***/ 1199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2044,7 +2044,7 @@ CheckboxFilterComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_completer__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__default_filter__ = __webpack_require__(1169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__default_filter__ = __webpack_require__(1171);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterFilterComponent; });
 
 
@@ -2093,17 +2093,17 @@ CompleterFilterComponent = __decorate([
 
 /***/ }),
 
-/***/ 1198:
+/***/ 1200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__input_filter_component__ = __webpack_require__(1199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__input_filter_component__ = __webpack_require__(1201);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__input_filter_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__select_filter_component__ = __webpack_require__(1200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__select_filter_component__ = __webpack_require__(1202);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__select_filter_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkbox_filter_component__ = __webpack_require__(1196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkbox_filter_component__ = __webpack_require__(1198);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__checkbox_filter_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__completer_filter_component__ = __webpack_require__(1197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__completer_filter_component__ = __webpack_require__(1199);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__completer_filter_component__["a"]; });
 
 
@@ -2113,13 +2113,13 @@ CompleterFilterComponent = __decorate([
 
 /***/ }),
 
-/***/ 1199:
+/***/ 1201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(1169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(1171);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InputFilterComponent; });
 
 
@@ -2152,13 +2152,13 @@ InputFilterComponent = __decorate([
 
 /***/ }),
 
-/***/ 1200:
+/***/ 1202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(1169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(1171);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectFilterComponent; });
 
 
@@ -2191,13 +2191,13 @@ SelectFilterComponent = __decorate([
 
 /***/ }),
 
-/***/ 1201:
+/***/ 1203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(1166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_column__ = __webpack_require__(1167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_column__ = __webpack_require__(1169);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilterComponent; });
 
 
@@ -2245,7 +2245,7 @@ __decorate([
 FilterComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'ng2-smart-table-filter',
-        styles: [__webpack_require__(1226)],
+        styles: [__webpack_require__(1228)],
         template: "\n    <div class=\"ng2-smart-filter\" *ngIf=\"column.isFilterable\" [ngSwitch]=\"column.getFilterType()\">\n      <select-filter *ngSwitchCase=\"'list'\"\n                     [query]=\"query\"\n                     [ngClass]=\"inputClass\"\n                     [column]=\"column\"\n                     (filter)=\"onFilter($event)\">\n      </select-filter>\n      <checkbox-filter *ngSwitchCase=\"'checkbox'\"\n                       [query]=\"query\"\n                       [ngClass]=\"inputClass\"\n                       [column]=\"column\"\n                       (filter)=\"onFilter($event)\">\n      </checkbox-filter>\n      <completer-filter *ngSwitchCase=\"'completer'\"\n                        [query]=\"query\"\n                        [ngClass]=\"inputClass\"\n                        [column]=\"column\"\n                        (filter)=\"onFilter($event)\">\n      </completer-filter>\n      <input-filter *ngSwitchDefault\n                    [query]=\"query\"\n                    [ngClass]=\"inputClass\"\n                    [column]=\"column\"\n                    (filter)=\"onFilter($event)\">\n      </input-filter>\n    </div>\n  "
     })
 ], FilterComponent);
@@ -2254,12 +2254,12 @@ FilterComponent = __decorate([
 
 /***/ }),
 
-/***/ 1202:
+/***/ 1204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(1166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(1168);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagerComponent; });
 
 
@@ -2348,7 +2348,7 @@ __decorate([
 PagerComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'ng2-smart-table-pager',
-        styles: [__webpack_require__(1227)],
+        styles: [__webpack_require__(1229)],
         template: "\n    <nav *ngIf=\"shouldShow()\" class=\"ng2-smart-pagination-nav\">\n      <ul class=\"ng2-smart-pagination pagination\">\n        <li class=\"ng2-smart-page-item page-item\" [ngClass]=\"{disabled: getPage() == 1}\">\n          <a class=\"ng2-smart-page-link page-link\" href=\"#\" \n          (click)=\"getPage() == 1 ? false : paginate(1)\" aria-label=\"First\">\n            <span aria-hidden=\"true\">&laquo;</span>\n            <span class=\"sr-only\">First</span>\n          </a>\n        </li>\n        <li class=\"ng2-smart-page-item page-item\" \n        [ngClass]=\"{active: getPage() == page}\" *ngFor=\"let page of getPages()\">\n          <span class=\"ng2-smart-page-link page-link\" \n          *ngIf=\"getPage() == page\">{{ page }} <span class=\"sr-only\">(current)</span></span>\n          <a class=\"ng2-smart-page-link page-link\" href=\"#\" \n          (click)=\"paginate(page)\" *ngIf=\"getPage() != page\">{{ page }}</a>\n        </li>\n  \n        <li class=\"ng2-smart-page-item page-item\" \n        [ngClass]=\"{disabled: getPage() == getLast()}\">\n          <a class=\"ng2-smart-page-link page-link\" href=\"#\" \n          (click)=\"getPage() == getLast() ? false : paginate(getLast())\" aria-label=\"Last\">\n            <span aria-hidden=\"true\">&raquo;</span>\n            <span class=\"sr-only\">Last</span>\n          </a>\n        </li>\n      </ul>\n    </nav>\n  "
     })
 ], PagerComponent);
@@ -2357,13 +2357,13 @@ PagerComponent = __decorate([
 
 /***/ }),
 
-/***/ 1203:
+/***/ 1205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(1170);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TbodyCreateCancelComponent; });
 
 
@@ -2406,13 +2406,13 @@ TbodyCreateCancelComponent = __decorate([
 
 /***/ }),
 
-/***/ 1204:
+/***/ 1206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(1170);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TbodyEditDeleteComponent; });
 
 
@@ -2523,13 +2523,13 @@ TbodyEditDeleteComponent = __decorate([
 
 /***/ }),
 
-/***/ 1205:
+/***/ 1207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__edit_delete_component__ = __webpack_require__(1204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__edit_delete_component__ = __webpack_require__(1206);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__edit_delete_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__create_cancel_component__ = __webpack_require__(1203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__create_cancel_component__ = __webpack_require__(1205);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__create_cancel_component__["a"]; });
 
 
@@ -2537,12 +2537,12 @@ TbodyEditDeleteComponent = __decorate([
 
 /***/ }),
 
-/***/ 1206:
+/***/ 1208:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Ng2SmartTableTbodyComponent; });
 
 
@@ -2624,7 +2624,7 @@ __decorate([
 Ng2SmartTableTbodyComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: '[ng2-st-tbody]',
-        template: __webpack_require__(1231)
+        template: __webpack_require__(1233)
     })
 ], Ng2SmartTableTbodyComponent);
 
@@ -2632,12 +2632,12 @@ Ng2SmartTableTbodyComponent = __decorate([
 
 /***/ }),
 
-/***/ 1207:
+/***/ 1209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cells__ = __webpack_require__(1205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tbody_component__ = __webpack_require__(1206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cells__ = __webpack_require__(1207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tbody_component__ = __webpack_require__(1208);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NG2_SMART_TABLE_TBODY_DIRECTIVES; });
 
 
@@ -2650,12 +2650,12 @@ var NG2_SMART_TABLE_TBODY_DIRECTIVES = [
 
 /***/ }),
 
-/***/ 1208:
+/***/ 1210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionsTitleComponent; });
 
 
@@ -2684,12 +2684,12 @@ ActionsTitleComponent = __decorate([
 
 /***/ }),
 
-/***/ 1209:
+/***/ 1211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionsComponent; });
 
 
@@ -2718,12 +2718,12 @@ ActionsComponent = __decorate([
 
 /***/ }),
 
-/***/ 1210:
+/***/ 1212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddButtonComponent; });
 
 
@@ -2772,12 +2772,12 @@ AddButtonComponent = __decorate([
 
 /***/ }),
 
-/***/ 1211:
+/***/ 1213:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxSelectAllComponent; });
 
 
@@ -2809,12 +2809,12 @@ CheckboxSelectAllComponent = __decorate([
 
 /***/ }),
 
-/***/ 1212:
+/***/ 1214:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_column__ = __webpack_require__(1167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_column__ = __webpack_require__(1169);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ColumnTitleComponent; });
 
 
@@ -2847,21 +2847,21 @@ ColumnTitleComponent = __decorate([
 
 /***/ }),
 
-/***/ 1213:
+/***/ 1215:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__title_title_component__ = __webpack_require__(1214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__title_title_component__ = __webpack_require__(1216);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_0__title_title_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_title_component__ = __webpack_require__(1208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_title_component__ = __webpack_require__(1210);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__actions_title_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_component__ = __webpack_require__(1209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_component__ = __webpack_require__(1211);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__actions_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_button_component__ = __webpack_require__(1210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_button_component__ = __webpack_require__(1212);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_3__add_button_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__checkbox_select_all_component__ = __webpack_require__(1211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__checkbox_select_all_component__ = __webpack_require__(1213);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_4__checkbox_select_all_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__column_title_component__ = __webpack_require__(1212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__column_title_component__ = __webpack_require__(1214);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_5__column_title_component__["a"]; });
 
 
@@ -2873,13 +2873,13 @@ ColumnTitleComponent = __decorate([
 
 /***/ }),
 
-/***/ 1214:
+/***/ 1216:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(1166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_column__ = __webpack_require__(1167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_column__ = __webpack_require__(1169);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TitleComponent; });
 
 
@@ -2940,7 +2940,7 @@ __decorate([
 TitleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'ng2-smart-table-title',
-        styles: [__webpack_require__(1228)],
+        styles: [__webpack_require__(1230)],
         template: "\n    <a href=\"#\" *ngIf=\"column.isSortable\"\n                (click)=\"_sort($event, column)\" \n                class=\"ng2-smart-sort-link sort\"\n                [ngClass]=\"currentDirection\">\n      {{ column.title }}\n    </a>\n    <span class=\"ng2-smart-sort\" *ngIf=\"!column.isSortable\">{{ column.title }}</span>\n  "
     })
 ], TitleComponent);
@@ -2949,15 +2949,15 @@ TitleComponent = __decorate([
 
 /***/ }),
 
-/***/ 1215:
+/***/ 1217:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thead_filters_row_component__ = __webpack_require__(1216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thead_filters_row_component__ = __webpack_require__(1218);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__thead_filters_row_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__thead_form_row_component__ = __webpack_require__(1217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__thead_form_row_component__ = __webpack_require__(1219);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__thead_form_row_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__thead_titles_row_component__ = __webpack_require__(1218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__thead_titles_row_component__ = __webpack_require__(1220);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__thead_titles_row_component__["a"]; });
 
 
@@ -2966,12 +2966,12 @@ TitleComponent = __decorate([
 
 /***/ }),
 
-/***/ 1216:
+/***/ 1218:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TheadFitlersRowComponent; });
 
 
@@ -3009,13 +3009,13 @@ TheadFitlersRowComponent = __decorate([
 
 /***/ }),
 
-/***/ 1217:
+/***/ 1219:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(1168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(1170);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TheadFormRowComponent; });
 
 
@@ -3057,12 +3057,12 @@ TheadFormRowComponent = __decorate([
 
 /***/ }),
 
-/***/ 1218:
+/***/ 1220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TheadTitlesRowComponent; });
 
 
@@ -3104,12 +3104,12 @@ TheadTitlesRowComponent = __decorate([
 
 /***/ }),
 
-/***/ 1219:
+/***/ 1221:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(1164);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Ng2SmartTableTheadComponent; });
 
 
@@ -3157,7 +3157,7 @@ __decorate([
 Ng2SmartTableTheadComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: '[ng2-st-thead]',
-        template: __webpack_require__(1232)
+        template: __webpack_require__(1234)
     })
 ], Ng2SmartTableTheadComponent);
 
@@ -3165,13 +3165,13 @@ Ng2SmartTableTheadComponent = __decorate([
 
 /***/ }),
 
-/***/ 1220:
+/***/ 1222:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cells__ = __webpack_require__(1213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__rows__ = __webpack_require__(1215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__thead_component__ = __webpack_require__(1219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cells__ = __webpack_require__(1215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__rows__ = __webpack_require__(1217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__thead_component__ = __webpack_require__(1221);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NG2_SMART_TABLE_THEAD_DIRECTIVES; });
 
 
@@ -3192,12 +3192,12 @@ var NG2_SMART_TABLE_THEAD_DIRECTIVES = [
 
 /***/ }),
 
-/***/ 1221:
+/***/ 1223:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__row__ = __webpack_require__(1168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__column__ = __webpack_require__(1167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__row__ = __webpack_require__(1170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__column__ = __webpack_require__(1169);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataSet; });
 
 
@@ -3322,7 +3322,7 @@ var DataSet = (function () {
 
 /***/ }),
 
-/***/ 1222:
+/***/ 1224:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3347,7 +3347,7 @@ LocalFilter.FILTER = function (value, search) {
 
 /***/ }),
 
-/***/ 1223:
+/***/ 1225:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3365,7 +3365,7 @@ var LocalPager = (function () {
 
 /***/ }),
 
-/***/ 1224:
+/***/ 1226:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3396,63 +3396,63 @@ LocalSorter.COMPARE = function (direction, a, b) {
 
 /***/ }),
 
-/***/ 1226:
+/***/ 1228:
 /***/ (function(module, exports) {
 
 module.exports = "/deep/ .ng2-smart-filter input, /deep/ .ng2-smart-filter select {\n  width: 100%;\n  line-height: normal;\n  padding: 0.3rem 0.5rem;\n  font-weight: normal; }\n\n/deep/ .ng2-smart-filter input[type=\"search\"] {\n  box-sizing: inherit; }\n\n/deep/ .ng2-smart-filter .completer-dropdown-holder {\n  font-weight: normal; }\n\n/deep/ .ng2-smart-filter a {\n  font-weight: normal; }\n"
 
 /***/ }),
 
-/***/ 1227:
+/***/ 1229:
 /***/ (function(module, exports) {
 
 module.exports = ".ng2-smart-pagination {\n  display: inline-block;\n  font-size: .875rem;\n  padding: 0; }\n  .ng2-smart-pagination .sr-only {\n    position: absolute;\n    width: 1px;\n    height: 1px;\n    padding: 0;\n    margin: -1px;\n    overflow: hidden;\n    clip: rect(0, 0, 0, 0);\n    border: 0; }\n  .ng2-smart-pagination .ng2-smart-page-item {\n    display: inline; }\n"
 
 /***/ }),
 
-/***/ 1228:
+/***/ 1230:
 /***/ (function(module, exports) {
 
 module.exports = "a.sort.asc, a.sort.desc {\n  font-weight: bold; }\n  a.sort.asc::after, a.sort.desc::after {\n    content: '';\n    display: inline-block;\n    width: 0;\n    height: 0;\n    border-bottom: 4px solid rgba(0, 0, 0, 0.3);\n    border-top: 4px solid transparent;\n    border-left: 4px solid transparent;\n    border-right: 4px solid transparent;\n    margin-bottom: 2px; }\n\na.sort.desc::after {\n  transform: rotate(-180deg);\n  margin-bottom: -2px; }\n"
 
 /***/ }),
 
-/***/ 1229:
+/***/ 1231:
 /***/ (function(module, exports) {
 
 module.exports = "/deep/ table.ng2-smart-table {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 16px;\n  line-height: 1.5;\n  color: #606c71;\n  border-collapse: collapse;\n  border-spacing: 0;\n  display: table;\n  width: 100%;\n  max-width: 100%;\n  overflow: auto;\n  word-break: normal;\n  word-break: keep-all; }\n  /deep/ table.ng2-smart-table td, /deep/ table.ng2-smart-table th {\n    font-size: .875rem;\n    margin: 0;\n    padding: 0.5rem 1rem;\n    border: 1px solid #e9ebec; }\n  /deep/ table.ng2-smart-table .ng2-smart-row.selected {\n    background: rgba(0, 0, 0, 0.05); }\n  /deep/ table.ng2-smart-table .ng2-smart-row .ng2-smart-actions.ng2-smart-action-multiple-select {\n    text-align: center; }\n"
 
 /***/ }),
 
-/***/ 1230:
+/***/ 1232:
 /***/ (function(module, exports) {
 
 module.exports = "<div [ngSwitch]=\"getEditorType()\">\r\n    <select-editor *ngSwitchCase=\"'list'\"\r\n                   [cell]=\"cell\"\r\n                   [inputClass]=\"inputClass\"\r\n                   (onClick)=\"onClick($event)\"\r\n                   (onEdited)=\"onEdited($event)\"\r\n                   (onStopEditing)=\"onStopEditing()\">\r\n    </select-editor>\r\n\r\n    <textarea-editor *ngSwitchCase=\"'textarea'\"\r\n                     [cell]=\"cell\"\r\n                     [inputClass]=\"inputClass\"\r\n                     (onClick)=\"onClick($event)\"\r\n                     (onEdited)=\"onEdited($event)\"\r\n                     (onStopEditing)=\"onStopEditing()\">\r\n    </textarea-editor>\r\n\r\n    <checkbox-editor *ngSwitchCase=\"'checkbox'\"\r\n                     [cell]=\"cell\"\r\n                     [inputClass]=\"inputClass\"\r\n                     (onClick)=\"onClick($event)\">\r\n    </checkbox-editor>\r\n\r\n    <completer-editor *ngSwitchCase=\"'completer'\"\r\n                      [cell]=\"cell\">\r\n    </completer-editor>\r\n\r\n    <input-editor *ngSwitchDefault\r\n                  [cell]=\"cell\"\r\n                  [inputClass]=\"inputClass\"\r\n                  (onClick)=\"onClick($event)\"\r\n                  (onEdited)=\"onEdited($event)\"\r\n                  (onStopEditing)=\"onStopEditing()\">\r\n    </input-editor>\r\n</div>"
 
 /***/ }),
 
-/***/ 1231:
+/***/ 1233:
 /***/ (function(module, exports) {
 
 module.exports = "<tr *ngFor=\"let row of grid.getRows()\" (click)=\"userSelectRow.emit(row)\" class=\"ng2-smart-row\" [ngClass]=\"{selected: row.isSelected}\">\r\n  <td *ngIf=\"grid.isMultiSelectVisible()\" class=\"ng2-smart-actions ng2-smart-action-multiple-select\" (click)=\"multipleSelectRow.emit(row)\">\r\n    <input type=\"checkbox\" class=\"form-control\" [ngModel]=\"row.isSelected\">\r\n  </td>\r\n  <td *ngIf=\"!row.isInEditing && grid.showActionColumn('left')\" class=\"ng2-smart-actions\" style=\"width: 120px;\">\r\n    <ng2-st-tbody-edit-delete [grid]=\"grid\"\r\n                              [deleteConfirm]=\"deleteConfirm\"\r\n                              [editConfirm]=\"editConfirm\"\r\n                              [viewConfirm]=\"viewConfirm\"\r\n                              (edit)=\"edit.emit(row)\"\r\n                              (view)=\"view.emit(row)\"\r\n                              (delete)=\"delete.emit(row)\"\r\n                              (editRowSelect)=\"editRowSelect.emit($event)\"\r\n                              (viewRowSelect)=\"viewRowSelect.emit($event)\"\r\n                              [row]=\"row\"\r\n                              [source]=\"source\">\r\n    </ng2-st-tbody-edit-delete>\r\n  </td>\r\n  <td *ngIf=\"row.isInEditing\" class=\"ng2-smart-actions\">\r\n    <ng2-st-tbody-create-cancel [grid]=\"grid\" [row]=\"row\" [editConfirm]=\"editConfirm\"></ng2-st-tbody-create-cancel>\r\n  </td>\r\n  <td *ngFor=\"let cell of row.getCells()\">\r\n    <ng2-smart-table-cell [cell]=\"cell\"\r\n                          [grid]=\"grid\"\r\n                          [row]=\"row\"\r\n                          [isNew]=\"false\"\r\n                          [mode]=\"grid.getSetting('mode')\"\r\n                          [editConfirm]=\"editConfirm\"\r\n                          [inputClass]=\"grid.getSetting('edit.inputClass')\"\r\n                          [isInEditing]=\"row.isInEditing\">\r\n    </ng2-smart-table-cell>\r\n  </td>\r\n  \r\n  <td *ngIf=\"!row.isInEditing && grid.showActionColumn('right')\" class=\"ng2-smart-actions\">\r\n    <ng2-st-tbody-edit-delete [grid]=\"grid\"\r\n                              [deleteConfirm]=\"deleteConfirm\"\r\n                              [editConfirm]=\"editConfirm\"\r\n                              [row]=\"row\"\r\n                              [source]=\"source\"\r\n                              (edit)=\"edit.emit(row)\"\r\n                              (delete)=\"delete.emit(row)\"\r\n                              (editRowSelect)=\"editRowSelect.emit($event)\">\r\n    </ng2-st-tbody-edit-delete>\r\n  </td>\r\n  </tr>\r\n\r\n  <tr *ngIf=\"grid.getRows().length == 0\">\r\n  <td [attr.colspan]=\"grid.getColumns().length + (grid.getSetting('actions.add') || grid.getSetting('actions.edit') || grid.getSetting('actions.delete'))\">\r\n    {{ grid.getSetting('noDataMessage') }}\r\n  </td>\r\n</tr>"
 
 /***/ }),
 
-/***/ 1232:
+/***/ 1234:
 /***/ (function(module, exports) {
 
 module.exports = "<tr ng2-st-thead-titles-row *ngIf=\"!grid.getSetting('hideHeader')\"\r\n                            class=\"ng2-smart-titles\"\r\n                            [grid]=\"grid\"\r\n                            [isAllSelected]=\"isAllSelected\"\r\n                            [source]=\"source\"\r\n                            (sort)=\"sort.emit($event)\"\r\n                            (selectAllRows)=\"selectAllRows.emit($event)\">\r\n</tr>\r\n\r\n<tr ng2-st-thead-filters-row *ngIf=\"!grid.getSetting('hideSubHeader')\"\r\n                              class=\"ng2-smart-filters\"\r\n                              [grid]=\"grid\"\r\n                              [source]=\"source\"\r\n                              (create)=\"create.emit($event)\"\r\n                              (filter)=\"filter.emit($event)\">\r\n</tr>\r\n<tr ng2-st-thead-form-row *ngIf=\"grid.createFormShown\"\r\n                          [grid]=\"grid\"\r\n                          [createConfirm]=\"createConfirm\">\r\n</tr>"
 
 /***/ }),
 
-/***/ 1233:
+/***/ 1235:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"ng2-smart-table-container\">\r\n  <table class=\"ng2-smart-table table\" [id]=\"grid.getSetting('attr.id')\" [ngClass]=\"grid.getSetting('attr.class')\">\r\n\r\n    <thead ng2-st-thead *ngIf=\"!grid.getSetting('hideHeader') || !grid.getSetting('hideSubHeader')\"\r\n                        [grid]=\"grid\"\r\n                        [isAllSelected]=\"isAllSelected\"\r\n                        [source]=\"source\"\r\n                        [createConfirm]=\"createConfirm\"\r\n                        (create)=\"create.emit($event)\"\r\n                        (selectAllRows)=\"onSelectAllRows($event)\"\r\n                        (sort)=\"sort($event)\"\r\n                        (filter)=\"filter($event)\">\r\n    </thead>\r\n\r\n    <tbody ng2-st-tbody [grid]=\"grid\"\r\n                        [source]=\"source\"\r\n                        [deleteConfirm]=\"deleteConfirm\"\r\n                        [editConfirm]=\"editConfirm\"\r\n                        [viewConfirm]=\"viewConfirm\"\r\n                        (edit)=\"edit.emit($event)\"\r\n                        (view)=\"view.emit($event)\"\r\n                        (delete)=\"delete.emit($event)\"\r\n                        (userSelectRow)=\"onUserSelectRow($event)\"\r\n                        (editRowSelect)=\"editRowSelect($event)\"\r\n                        (viewRowSelect)=\"viewRowSelect($event)\"\r\n                        (multipleSelectRow)=\"multipleSelectRow($event)\">\r\n    </tbody>\r\n\r\n  </table>\r\n\r\n  <ng2-smart-table-pager *ngIf=\"grid.getSetting('pager.display')\"\r\n                         [source]=\"source\"\r\n                         [perPage]=\"grid.getSetting('pager.perPage')\"\r\n                         (changePage)=\"changePage($event)\">\r\n  </ng2-smart-table-pager>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 1263:
+/***/ 1265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3466,7 +3466,7 @@ module.exports = "<div class=\"ng2-smart-table-container\">\r\n  <table class=\"
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_Observable__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_services_setting_service__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__userManager_components_userManger_adduser_service__ = __webpack_require__(1299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__userManager_components_userManger_adduser_service__ = __webpack_require__(1303);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportService; });
 
 
@@ -3824,7 +3824,7 @@ ReportService = __decorate([
 
 /***/ }),
 
-/***/ 1299:
+/***/ 1303:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3975,14 +3975,14 @@ AddUserService = __decorate([
 
 /***/ }),
 
-/***/ 1370:
+/***/ 1374:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_file_saver__ = __webpack_require__(561);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_file_saver__ = __webpack_require__(562);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_file_saver___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_file_saver__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_xlsx__ = __webpack_require__(563);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_xlsx__ = __webpack_require__(564);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_xlsx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_xlsx__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExcelService; });
 
@@ -4016,7 +4016,7 @@ ExcelService = __decorate([
 
 /***/ }),
 
-/***/ 1371:
+/***/ 1375:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4049,7 +4049,7 @@ TabA = __decorate([
 
 /***/ }),
 
-/***/ 1372:
+/***/ 1376:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4073,20 +4073,20 @@ dialogRepComponent = __decorate([
 
 /***/ }),
 
-/***/ 1455:
+/***/ 1465:
 /***/ (function(module, exports) {
 
 module.exports = " .borderdiv{\r\n    border:1px solid rgba(119,119,119,0.15)\r\n}\r\n .rowdiv{\r\n    border:1px solid rgba(119,119,119,0.15);\r\n    text-align:center;\r\n}\r\n.smalllabeldiv{\r\nheight: 16px;\r\n}\r\n.smallHeader{\r\n    font-size:11px;\r\n    font-weight:bold;\r\n    margin: 0px;\r\n\r\n}\r\n.scrolldiv{\r\n    max-height:75px;\r\n    padding-right: 30px;\r\n    overflow:auto;\r\n    scrollbar-3dlight-color:#FFFFFF;\r\n    scrollbar-arrow-color:#000000;\r\n    scrollbar-base-color:#FF9999;\r\n    scrollbar-darkshadow-color:#000000;\r\n    scrollbar-face-color:#000000;\r\n    scrollbar-highlight-color:#000000;\r\n    scrollbar-shadow-color:#0033CC;\r\n}\r\n.multiboxspan{\r\n    font-size: 11px;\r\n    font-weight: bold; \r\n    position:relative;\r\n    float:left;\r\n    display:block;\r\n    margin:2px;\r\n     border: 1px solid silver;\r\n     border-radius: 5px;\r\n     background-color: lavenderblush;\r\n}\r\n.smallBoldLabel{\r\n    font-size:11px;\r\n    font-weight:bold;\r\n    margin:0px;\r\n    float:left;\r\n    margin-left: 10px;\r\n}"
 
 /***/ }),
 
-/***/ 1471:
+/***/ 1481:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reports_report_service__ = __webpack_require__(1263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reports_report_service__ = __webpack_require__(1265);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DebitorsReportOptionsAndDueAgingComponent; });
 
 
@@ -4198,17 +4198,17 @@ DebitorsReportOptionsAndDueAgingComponent = __decorate([
 
 /***/ }),
 
-/***/ 1472:
+/***/ 1482:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_repositories_masterRepo_service__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reports_report_service__ = __webpack_require__(1263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular_tree_component_dist_models_tree_options_model__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular_tree_component_dist_constants_keys__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angular_tree_component_dist_components_tree_component__ = __webpack_require__(583);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reports_report_service__ = __webpack_require__(1265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular_tree_component_dist_models_tree_options_model__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular_tree_component_dist_constants_keys__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angular_tree_component_dist_components_tree_component__ = __webpack_require__(584);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TreePartyAndLedgerComponent; });
 
 
@@ -4398,7 +4398,7 @@ var _a;
 
 /***/ }),
 
-/***/ 1473:
+/***/ 1483:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4418,7 +4418,7 @@ var PreviewReportFormatComponent = (function () {
 PreviewReportFormatComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'previewReport',
-        template: __webpack_require__(1712),
+        template: __webpack_require__(1727),
         providers: []
     }),
     __metadata("design:paramtypes", [])
@@ -4428,15 +4428,15 @@ PreviewReportFormatComponent = __decorate([
 
 /***/ }),
 
-/***/ 1474:
+/***/ 1484:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_style_loader_smartTables_scss__ = __webpack_require__(1864);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_style_loader_smartTables_scss__ = __webpack_require__(1887);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_style_loader_smartTables_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ngx_contextmenu__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__report_service__ = __webpack_require__(1263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ngx_contextmenu__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__report_service__ = __webpack_require__(1265);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportTable; });
 
 
@@ -4536,12 +4536,12 @@ ReportTable = __decorate([
 
 /***/ }),
 
-/***/ 1475:
+/***/ 1485:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__report_service__ = __webpack_require__(1263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__report_service__ = __webpack_require__(1265);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuButton; });
 
 
@@ -4596,16 +4596,16 @@ MenuButton = __decorate([
 
 /***/ }),
 
-/***/ 1476:
+/***/ 1486:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_repositories_masterRepo_service__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__report_service__ = __webpack_require__(1263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_buttons_scss__ = __webpack_require__(1863);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__report_service__ = __webpack_require__(1265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_buttons_scss__ = __webpack_require__(1886);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_buttons_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_style_loader_buttons_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_uuid__ = __webpack_require__(1616);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_uuid__ = __webpack_require__(1630);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_angular2_uuid__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject__ = __webpack_require__(30);
@@ -4778,7 +4778,7 @@ var Report = (function () {
 Report = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: 'report',
-        template: __webpack_require__(1713),
+        template: __webpack_require__(1728),
         providers: [__WEBPACK_IMPORTED_MODULE_2__report_service__["a" /* ReportService */]]
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__report_service__["a" /* ReportService */], __WEBPACK_IMPORTED_MODULE_5__angular_router__["Router"], __WEBPACK_IMPORTED_MODULE_1__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_0__common_repositories_masterRepo_service__["a" /* MasterRepo */]])
@@ -4788,14 +4788,14 @@ Report = __decorate([
 
 /***/ }),
 
-/***/ 1477:
+/***/ 1487:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_repositories_masterRepo_service__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__report_service__ = __webpack_require__(1263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__report_service__ = __webpack_require__(1265);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportControls; });
@@ -5133,9 +5133,9 @@ __decorate([
 ReportControls = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'reportcontrols',
-        template: __webpack_require__(1714),
+        template: __webpack_require__(1729),
         providers: [],
-        styles: [__webpack_require__(1455)]
+        styles: [__webpack_require__(1465)]
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__report_service__["a" /* ReportService */], __WEBPACK_IMPORTED_MODULE_1__common_repositories_masterRepo_service__["a" /* MasterRepo */]])
 ], ReportControls);
@@ -5144,19 +5144,19 @@ ReportControls = __decorate([
 
 /***/ }),
 
-/***/ 1478:
+/***/ 1488:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__report_service__ = __webpack_require__(1263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__report_service__ = __webpack_require__(1265);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_bootstrap__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_material__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__modaldialogs_messageDialog_messageDialog_component__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Excel_service__ = __webpack_require__(1370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Excel_service__ = __webpack_require__(1374);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_services_permission_authService_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__common_repositories_masterRepo_service__ = __webpack_require__(8);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportDialog; });
@@ -5285,7 +5285,7 @@ var ReportDialog = (function () {
         this.excelService.exportAsExcelFile(ExcelExportData, 'ReportExcel');
     };
     ReportDialog.prototype.csvDownload = function () {
-        var json2csv = __webpack_require__(1664);
+        var json2csv = __webpack_require__(1678);
         var MHeader = [];
         var Header = [];
         this.reportMaster.reportGrid.mainHeader.forEach(function (element) {
@@ -5629,8 +5629,8 @@ __decorate([
 ReportDialog = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'report-dialog',
-        template: __webpack_require__(1715),
-        styles: [__webpack_require__(1455)]
+        template: __webpack_require__(1730),
+        styles: [__webpack_require__(1465)]
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__report_service__["a" /* ReportService */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_4__angular_material__["a" /* MdDialog */], __WEBPACK_IMPORTED_MODULE_7__Excel_service__["a" /* ExcelService */], __WEBPACK_IMPORTED_MODULE_8__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_9__common_repositories_masterRepo_service__["a" /* MasterRepo */]])
 ], ReportDialog);
@@ -5640,12 +5640,12 @@ ReportDialog = __decorate([
 
 /***/ }),
 
-/***/ 1479:
+/***/ 1489:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tabA__ = __webpack_require__(1371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tabA__ = __webpack_require__(1375);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsA; });
@@ -5741,12 +5741,12 @@ TabsA = __decorate([
 
 /***/ }),
 
-/***/ 1480:
+/***/ 1490:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dialogRep_component__ = __webpack_require__(1372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dialogRep_component__ = __webpack_require__(1376);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 
 
@@ -5762,7 +5762,7 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["RouterModule"].forC
 
 /***/ }),
 
-/***/ 1616:
+/***/ 1630:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5806,10 +5806,10 @@ exports.UUID = UUID;
 
 /***/ }),
 
-/***/ 1661:
+/***/ 1675:
 /***/ (function(module, exports, __webpack_require__) {
 
-var isBuffer = __webpack_require__(1663)
+var isBuffer = __webpack_require__(1677)
 
 var flat = module.exports = flatten
 flatten.flatten = flatten
@@ -5918,7 +5918,7 @@ function unflatten(target, opts) {
 
 /***/ }),
 
-/***/ 1663:
+/***/ 1677:
 /***/ (function(module, exports) {
 
 /*!
@@ -5946,19 +5946,19 @@ function isSlowBuffer (obj) {
 
 /***/ }),
 
-/***/ 1664:
+/***/ 1678:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Module dependencies.
  */
-var os = __webpack_require__(1674);
-var lodashGet = __webpack_require__(1669);
-var lodashFlatten = __webpack_require__(1668);
-var lodashUniq = __webpack_require__(1673);
-var lodashSet = __webpack_require__(1672);
-var lodashCloneDeep = __webpack_require__(1667);
-var flatten = __webpack_require__(1661);
+var os = __webpack_require__(1689);
+var lodashGet = __webpack_require__(1683);
+var lodashFlatten = __webpack_require__(1682);
+var lodashUniq = __webpack_require__(1687);
+var lodashSet = __webpack_require__(1686);
+var lodashCloneDeep = __webpack_require__(1681);
+var flatten = __webpack_require__(1675);
 
 /**
  * @name Json2CsvParams
@@ -6250,11 +6250,11 @@ function createDataRows(params) {
   return dataRows;
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(581)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(582)))
 
 /***/ }),
 
-/***/ 1665:
+/***/ 1679:
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -6265,8 +6265,8 @@ function createDataRows(params) {
  * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  * Available under MIT license <https://lodash.com/license>
  */
-var isArguments = __webpack_require__(1670),
-    isArray = __webpack_require__(1671);
+var isArguments = __webpack_require__(1684),
+    isArray = __webpack_require__(1685);
 
 /**
  * Checks if `value` is object-like.
@@ -6392,7 +6392,7 @@ module.exports = baseFlatten;
 
 /***/ }),
 
-/***/ 1666:
+/***/ 1680:
 /***/ (function(module, exports) {
 
 /**
@@ -6531,7 +6531,7 @@ module.exports = isIterateeCall;
 
 /***/ }),
 
-/***/ 1667:
+/***/ 1681:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -8283,11 +8283,11 @@ function stubFalse() {
 
 module.exports = cloneDeep;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(74), __webpack_require__(225)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(74), __webpack_require__(227)(module)))
 
 /***/ }),
 
-/***/ 1668:
+/***/ 1682:
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -8298,8 +8298,8 @@ module.exports = cloneDeep;
  * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  * Available under MIT license <https://lodash.com/license>
  */
-var baseFlatten = __webpack_require__(1665),
-    isIterateeCall = __webpack_require__(1666);
+var baseFlatten = __webpack_require__(1679),
+    isIterateeCall = __webpack_require__(1680);
 
 /**
  * Flattens a nested array. If `isDeep` is `true` the array is recursively
@@ -8334,7 +8334,7 @@ module.exports = flatten;
 
 /***/ }),
 
-/***/ 1669:
+/***/ 1683:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -9273,7 +9273,7 @@ module.exports = get;
 
 /***/ }),
 
-/***/ 1670:
+/***/ 1684:
 /***/ (function(module, exports) {
 
 /**
@@ -9509,7 +9509,7 @@ module.exports = isArguments;
 
 /***/ }),
 
-/***/ 1671:
+/***/ 1685:
 /***/ (function(module, exports) {
 
 /**
@@ -9696,7 +9696,7 @@ module.exports = isArray;
 
 /***/ }),
 
-/***/ 1672:
+/***/ 1686:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -10694,7 +10694,7 @@ module.exports = set;
 
 /***/ }),
 
-/***/ 1673:
+/***/ 1687:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -11598,7 +11598,7 @@ module.exports = uniq;
 
 /***/ }),
 
-/***/ 1674:
+/***/ 1689:
 /***/ (function(module, exports) {
 
 exports.endianness = function () { return 'LE' };
@@ -11650,7 +11650,7 @@ exports.EOL = '\n';
 
 /***/ }),
 
-/***/ 1677:
+/***/ 1692:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11667,7 +11667,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
 var common_1 = __webpack_require__(4);
-var domhandler_1 = __webpack_require__(220);
+var domhandler_1 = __webpack_require__(221);
 var router_1 = __webpack_require__(6);
 var MenubarSub = (function () {
     function MenubarSub(domHandler) {
@@ -11802,7 +11802,7 @@ exports.MenubarModule = MenubarModule;
 
 /***/ }),
 
-/***/ 1678:
+/***/ 1693:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12095,55 +12095,55 @@ exports.TabViewModule = TabViewModule;
 
 /***/ }),
 
-/***/ 1679:
+/***/ 1694:
 /***/ (function(module, exports) {
 
 module.exports = ".basic-btns {\n  padding-top: 8px;\n  margin-bottom: -8px; }\n  .basic-btns h5 {\n    line-height: 35px;\n    font-size: 12px; }\n    .basic-btns h5.row-sm {\n      line-height: 30px; }\n    .basic-btns h5.row-xs {\n      line-height: 22px; }\n  .basic-btns > .row {\n    padding-bottom: 4px; }\n\n.btns-row > div {\n  margin-bottom: 12px; }\n\n.btns-same-width-sm .btn {\n  width: 48px; }\n\n.btns-same-width-md .btn {\n  width: 79px; }\n\n.btns-same-width-lg .btn {\n  width: 112px; }\n\nul.btn-list {\n  margin: 0 0 0 -18px;\n  padding: 0;\n  padding-top: 6px;\n  clear: both; }\n  ul.btn-list li {\n    margin: 0px 0 12px 18px;\n    padding: 0;\n    list-style: none;\n    float: left;\n    cursor: pointer;\n    cursor: hand; }\n\n.btn-group-wrapper {\n  margin-bottom: 12px; }\n\n.btn-icon {\n  width: 34px;\n  height: 34px;\n  line-height: 34px;\n  padding: 0;\n  text-align: center; }\n\n.btn-group-example {\n  float: left;\n  margin-right: 30px;\n  margin-bottom: 12px; }\n\n.btn-toolbar-example {\n  float: left; }\n\n.progress-buttons-container {\n  text-align: center;\n  font-size: 16px; }\n  .progress-buttons-container span.button-title {\n    display: inline-block;\n    width: 100%;\n    line-height: 1;\n    font-size: 14px;\n    margin-bottom: 10px;\n    margin-top: 10px; }\n  .progress-buttons-container .row + .row {\n    margin-top: 30px; }\n\n.button-panel {\n  height: 315px; }\n  .button-panel .btn {\n    width: 150px; }\n\n.large-buttons-panel {\n  height: 202px; }\n\n.button-panel.df-size-button-panel .btn-xs {\n  width: 60px; }\n\n.button-panel.df-size-button-panel .btn-sm {\n  width: 90px; }\n\n.button-panel.df-size-button-panel .btn-mm {\n  width: 120px; }\n\n.button-panel.df-size-button-panel .btn-md {\n  width: 150px; }\n\n.button-panel.df-size-button-panel .btn-xm {\n  width: 175px; }\n\n.button-panel.df-size-button-panel .btn-lg {\n  width: 200px; }\n\n.button-wrapper {\n  text-align: center;\n  margin: 5px 0; }\n\n.btn-group.flex-dropdown {\n  display: flex; }\n"
 
 /***/ }),
 
-/***/ 1680:
+/***/ 1695:
 /***/ (function(module, exports) {
 
 module.exports = ".ng2-smart-table-container table.ng2-smart-table {\n  color: #000000; }\n  .ng2-smart-table-container table.ng2-smart-table th, .ng2-smart-table-container table.ng2-smart-table td {\n    border: 1px solid gainsboro !important;\n    line-height: 25px;\n    font-size: 12px;\n    vertical-align: middle; }\n  .ng2-smart-table-container table.ng2-smart-table input {\n    line-height: 1.5 !important; }\n  .ng2-smart-table-container table.ng2-smart-table tbody tr:hover {\n    background: rgba(0, 0, 0, 0.03); }\n  .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-sort-link {\n    font-size: 14px !important;\n    color: #000000;\n    font-weight: 900; }\n    .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-sort-link.sort {\n      font-weight: 900 !important; }\n      .ng2-smart-table-container table.ng2-smart-table a.ng2-smart-sort-link.sort::after {\n        border-bottom-color: #000000 !important; }\n  .ng2-smart-table-container table.ng2-smart-table .ng2-smart-actions {\n    width: 0px; }\n\nnav.ng2-smart-pagination-nav {\n  display: flex;\n  justify-content: center; }\n"
 
 /***/ }),
 
-/***/ 1712:
+/***/ 1727:
 /***/ (function(module, exports) {
 
 module.exports = "<div>\r\n    <div class=\"col-md-4\">\r\n        <div *ngFor=\"let l of LeftHeader\">\r\n             {{l.label}} : {{l.value}}   \r\n            </div>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n    </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 1713:
+/***/ 1728:
 /***/ (function(module, exports) {
 
 module.exports = "<!--<div class=\"row\">\r\n    <div class=\"btn-toolbar-example\">\r\n        <div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"Toolbar with button groups\">\r\n            <div class=\"btn-group\" role=\"group\" aria-label=\"First group\">\r\n                <ul class=\"btn-list\">\r\n                    <li *ngFor=\"let mnu of reportMenus;let i=index\">\r\n                        <menu-btn [menuName]=\"mnu.name\" (menuClick) = \"onMenuClick($event)\" ></menu-btn>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>-->\r\n\r\n\r\n<!--<div class=\"row\">\r\n    <nav id=\"nav\">\r\n        <ul id=\"navigation\">\r\n            <li *ngFor=\"let mnu of reportMenus;\"><a>{{mnu.title}}<label *ngIf=\"mnu.children.length>0\" >&raquo;</label></a>\r\n                <ul *ngIf=\"mnu.children.length>0\">\r\n                    <li *ngFor=\"let c of mnu.children;\"><a (click)=\"onMenuClick(c)\">{{c.title}}<label *ngIf=\"c.children.length>0\" >&raquo;</label></a>\r\n                        <ul *ngIf=\"c.children.length>0\">\r\n                            <li *ngFor=\"let c2 of c.children;\"><a (click)=\"onMenuClick(c2)\">{{c2.title}}<label *ngIf=\"c2.children.length>0\" >&raquo;</label></a>\r\n                                <ul *ngIf=\"c2.children.length>0\">\r\n                                    <li *ngFor=\"let c3 of c2.children;\"><a (click)=\"onMenuClick(c3)\">{{c3.title}}<label *ngIf=\"c3.children.length>0\" >&raquo;</label></a>\r\n                                        <ul *ngIf=\"c3.children.length>0\">\r\n                                            <li *ngFor=\"let c4 of c3.children;\"><a (click)=\"onMenuClick(c4)\">{{c4.title}}<label *ngIf=\"c4.children.length>0\">&raquo;</label></a>\r\n                                                <ul *ngIf=\"c4.children.length>0\">\r\n                                                    <li *ngFor=\"let c5 of c4.children;\"><a (click)=\"onMenuClick(c5)\">{{c5.title}}<label *ngIf=\"c5.children.length>0\">&raquo;</label></a>\r\n                                                        <ul *ngIf=\"c5.children.length>0\">\r\n                                                            <li *ngFor=\"let c6 of c5.children;\"><a (click)=\"onMenuClick(c6)\">{{c6.title}}<label *ngIf=\"c6.children.length>0\">&raquo;</label></a>\r\n                                                            </li>\r\n                                                        </ul>\r\n                                                    </li>\r\n                                                </ul>\r\n                                            </li>\r\n                                        </ul>\r\n                                    </li>\r\n                                </ul>\r\n                            </li>\r\n                        </ul>\r\n                    </li>\r\n                </ul>\r\n            </li>\r\n\r\n        </ul>\r\n    </nav>\r\n</div>-->\r\n<div class=\"row\">\r\n    <p-menubar [model]=\"menuItems\" ></p-menubar>\r\n    <tabsA [reportTabs]=\"reportTabs\" [reportname]=\"reportname\" (contextmenuEmit)=\"contextMenuParam($event)\" [loadFromDrill]=\"loadFromDrill\" [activeIndex]= \"activeIndex$ |async \" ></tabsA>\r\n\r\n</div>\r\n\r\n\r\n<!--<table id=\"BlueHeaderResizableTable\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t<tr>\r\n\t\t\t\t<th>header</th><th>header</th><th>header</th>\r\n\t\t\t</tr>\r\n\t\t\t<tr>\r\n\t\t\t\t<td class=\"left\">cell</td><td>cell</td><td class=\"right\">cell</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr>\r\n\t\t\t\t<td class=\"left\">cell</td><td>cell</td><td class=\"right\">cell</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr>\r\n\t\t\t\t<td class=\"left bottom\">cell</td><td class=\"bottom\">cell</td><td class=\"bottom right\">cell</td>\r\n\t\t\t</tr>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t</table>-->"
 
 /***/ }),
 
-/***/ 1714:
+/***/ 1729:
 /***/ (function(module, exports) {
 
 module.exports = "<div>\r\n    <div *ngIf=\"control.type=='text'\">\r\n        <div class=\"smalllabeldiv\">\r\n            <label class=\"smallBoldLabel\">{{control.label}}</label>\r\n        </div>\r\n        <div [formGroup]=\"form\">\r\n            <input type=\"text\" style=\"height:25px;width:100%\"   formControlName=\"{{control.name}}\"/>\r\n        </div>\r\n    </div>\r\n\r\n    <div *ngIf=\"control.type=='select'\">\r\n        <div class=\"smalllabeldiv\">\r\n            <label class=\"smallBoldLabel\">{{control.label}}</label>\r\n        </div>\r\n        <div>\r\n            <input ngui-auto-complete [source]=\"dropListItem.bind(this)\" max-num-list=\"25\" [(ngModel)]=\"selectedName\" (ngModelChange)=\"selectChangeEvent($event)\"\r\n                style=\"width:250px;height:25px\" list-formatter=\"{{control.options.displayname}}\" name=\"{{control.name}}\" display-property-name=\"{{control.options.displayname}}\">\r\n\r\n\r\n            <!--<select style=\"width:250px;height:25px\" id=\"{{control.name}}\" name=\"{{control.name}}\" formControlName=\"{{control.name}}\">\r\n         <option *ngFor=\"let s of selectList\" [ngValue]=\"s.INITIAL\">{{s.NAME}}</option></select>-->\r\n            <!--{{control.options.displayname}}-->\r\n        </div>\r\n    </div>\r\n\r\n    <div *ngIf=\"control.type=='MultiSelect'\" >\r\n        <div style=\"float:left;padding-right:5px\">\r\n        <div class=\" smalllabeldiv\">\r\n            <label class=\"smallBoldLabel\">{{control.label}}</label>\r\n        </div>\r\n        <div style=\"width:250px\">\r\n            <input ngui-auto-complete [source]=\"dropListItem.bind(this)\" max-num-list=\"25\" [(ngModel)]=\"selectedObj\" (ngModelChange)=\"selectChangeEvent($event)\"\r\n                style=\"width:220px;height:25px;float:left\" list-formatter=\"{{control.options.displayname}}\" name=\"{{control.name}}\" display-property-name=\"{{control.options.displayname}}\">\r\n            <button style=\"height: 25px;width:25px;float:left\" (click)=\"onAddSelectedObj()\" [disabled]=\"selectedObj==null || multiNameList.indexOf(selectedName)>-1 \">+</button>\r\n        </div>\r\n        </div>\r\n        <div style=\"float:left;padding-right:15px\" class=\"borderdiv\">\r\n        <div *ngIf=\"multiNameList.length>0\" style=\"max-width:500px;text-align:left\">\r\n            <div class=\"scrolldiv\">\r\n                <span *ngFor=\"let cc of multiNameList;let i=index\" class=\"multiboxspan\">{{cc}}<a>\r\n                <button type=\"button\" (click)=\"onRemoveMultiObj(i)\" style=\"border: transparent;background: transparent;color:red\" > x </button></a></span>\r\n            </div>\r\n        </div>\r\n        <div *ngIf=\"multiNameList.length>0 && control.options.singleLedgerOption!=null\">\r\n            <label class=\"smallBoldLabel\"><input type=\"checkbox\" style=\"vertical-align: middle;\" (change)=\"$event.target.checked?(form.controls[control.options.singleLedgerOption].setValue(1)):(form.controls[control.options.singleLedgerOption].setValue(0))\">Merge In Single Ledger</label>\r\n        </div>\r\n        </div>\r\n        <!--<select style=\"width:220px;height:25px\" [(ngModel)]=\"selectedCostcenter\">\r\n     <option *ngFor=\"let cc of costcenterList\" [ngValue]=\"cc\">{{cc.CostCenterName}}</option></select>\r\n        <button style=\"height: 25px;width:25px;\" (click)=\"onAddCostCenter(selectedCostcenter)\" [disabled]=\"selectedCostcenter==null\">+</button>\r\n    </div>\r\n   <div  *ngIf=\"multiSelectCostCenterList.length>0\" style=\"width:300px;text-align:left\">\r\n        <div class=\"scrolldiv\">\r\n            <span *ngFor=\"let cc of multiSelectCostCenterList;let i=index\" class=\"multiboxspan\">{{cc.CostCenterName}}<a>\r\n                <button type=\"button\" (click)=\"onRemoveCostCenter(i)\" style=\"border: transparent;background: transparent;color:red\" > x </button></a></span>\r\n        </div>\r\n    </div>\r\n    <div   *ngIf=\"multiSelectCostCenterList.length>0\">\r\n        <label class=\"smallBoldLabel\"><input type=\"checkbox\" style=\"vertical-align: middle;\">Merge In Single Ledger</label>\r\n        </div>-->\r\n    </div>\r\n\r\n    <div    *ngIf=\"control.type=='checkbox'\" style=\"text-align:left;margin-left:10px;font-size:12px\">\r\n        <label><input type=\"checkbox\" style=\"vertical-align: middle;margin:10px\" (change)=\"IndividualcheckboxChangeEvent($event.target.checked)\" [checked]=\"form.value[control.name]==1\" >{{control.label}}</label>\r\n    </div>\r\n      <div    *ngIf=\"control.type=='rcheckbox'\" style=\"text-align:left;margin-left:10px;font-size:12px\">\r\n        <label><input type=\"checkbox\" style=\"vertical-align: middle;margin:10px\" (change)=\"IndividualrcheckboxChangeEvent($event.target.checked)\" [checked]=\"form.value[control.name]==0\" >{{control.label}}</label>\r\n    </div>\r\n\r\n    <div *ngIf=\"control.type=='date'\">\r\n        <div >\r\n        <div class=\"smalllabeldiv\">\r\n            <label class=\"smallBoldLabel\">{{control.label}}(AD)</label>\r\n        </div>\r\n        <div>\r\n            <input type=\"date\" style=\"width:250px;height:25px;text-align:center\" [(ngModel)]=\"ledgerdialog.DATE1\" (change)=\"changeAccountReportDate($event.target.value,'AD')\"\r\n            />\r\n        </div>\r\n        </div>\r\n        <div >\r\n           \r\n        <div class=\" smalllabeldiv\">\r\n            <label class=\"smallBoldLabel\">{{control.label}}(BS)</label>\r\n        </div>\r\n        <div>\r\n            <input id=\"nepaliDate\" style=\"width:250px;height:25px;text-align:center\" class=\"nepali-calendar ndp-nepali-calendar\" [(ngModel)]=\"ledgerdialog.BSDATE1\"\r\n                onclick=\"showNdpCalendarBox('nepaliDate')\" type=\"text\" (change)=\"changeAccountReportDate($event.target.value,'BS')\"\r\n                (click)=\"clickDate($event.target.value)\" placeholder=\"yyyy-mm-dd\" />\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    <div *ngIf=\"control.type=='doubleselect'\">\r\n       <div style=\"float:left\">\r\n            <div class=\" smalllabeldiv\">\r\n                <label class=\"smallBoldLabel\">{{control.label}} Code</label>\r\n            </div>\r\n            <div>\r\n                <input ngui-auto-complete [source]=\"dropListItem.bind(this)\" max-num-list=\"25\" [(ngModel)]=\"selectedCode\" (ngModelChange)=\"selectChangeEvent($event)\"\r\n                    style=\"width:250px;height:25px\" list-formatter=\"{{control.options.displayCode}}\" name=\"{{control.name}}\"\r\n                    display-property-name=\"{{control.options.displayCode}}\">\r\n            </div>\r\n        </div>\r\n        <div  style=\"float:left\">\r\n            <div class=\" smalllabeldiv\">\r\n                <label class=\"smallBoldLabel\">{{control.label}} Name</label>\r\n            </div>\r\n            <div>\r\n                <input ngui-auto-complete [source]=\"dropListItem.bind(this)\" max-num-list=\"25\" [(ngModel)]=\"selectedName\" (ngModelChange)=\"selectChangeEvent($event)\"\r\n                    style=\"width:220px;height:25px;float:left\" list-formatter=\"{{control.options.displayname}}\" name=\"{{control.name}}\"\r\n                    display-property-name=\"{{control.options.displayname}}\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row\"  *ngIf=\"control.type=='MultiDoubleSelect'\">\r\n        <div style=\"float:left;padding-left:15px;padding-right:2px\">\r\n            <div class=\" smalllabeldiv\">\r\n                <label class=\"smallBoldLabel\">{{control.label}} Code</label>\r\n            </div>\r\n            <div>\r\n                <input ngui-auto-complete [source]=\"dropListItemForCode.bind(this)\" max-num-list=\"25\" [(ngModel)]=\"selectedCode\" (ngModelChange)=\"selectChangeEvent($event)\"\r\n                    style=\"width:250px;height:25px\" list-formatter=\"{{control.options.displayCode}}\" name=\"{{control.name}}\"\r\n                    display-property-name=\"{{control.options.displayCode}}\">\r\n            </div>\r\n        </div>\r\n        <div style=\"float:left;padding-left:2px;padding-right:5px\">\r\n            <div class=\" smalllabeldiv\">\r\n                <label class=\"smallBoldLabel\">{{control.label}} Name</label>\r\n            </div>\r\n            <div style=\"width:250px\">\r\n                <input ngui-auto-complete [source]=\"dropListItem.bind(this)\" max-num-list=\"25\" [(ngModel)]=\"selectedName\" (ngModelChange)=\"selectChangeEvent($event)\"\r\n                    style=\"width:220px;height:25px;float:left\" list-formatter=\"{{control.options.displayname}}\" name=\"{{control.name}}\"\r\n                    display-property-name=\"{{control.options.displayname}}\">\r\n                <button style=\"height: 25px;width:25px;float:left\" (click)=\"onAddSelectedObj()\" [disabled]=\"selectedName==null || selectedName=='' || multiNameList.indexOf(selectedName)>-1\">+</button>\r\n            </div>\r\n        </div>\r\n        <div style=\"float:left\" class=\"borderdiv\">\r\n            <div *ngIf=\"multiNameList.length>0\" style=\"max-width:500px;text-align:left\">\r\n                <div class=\"scrolldiv\">\r\n                    <span *ngFor=\"let cc of multiNameList;let i=index\" class=\"multiboxspan\">{{cc}}<a>\r\n                <button type=\"button\" (click)=\"onRemoveMultiObj(i)\" style=\"border: transparent;background: transparent;color:red\" > x </button></a></span>\r\n                </div>\r\n            </div>\r\n            <div *ngIf=\"multiNameList.length>0 && control.options.singleLedgerOption!=null\">\r\n                <label class=\"smallBoldLabel\"><input type=\"checkbox\" style=\"vertical-align: middle;\" (change)=\"$event.target.checked?(form.controls[control.options.singleLedgerOption].setValue(1)):(form.controls[control.options.singleLedgerOption].setValue(0))\">Merge In Single Ledger</label>\r\n            </div>\r\n        </div>\r\n        <!--<div >\r\n        <select style=\"width:250px;height:25px\" [(ngModel)]=\"selectedAccount\" (ngModelChange)=\"acChange(selectedAccount)\">\r\n    <option *ngFor=\"let ac of accountList\" [ngValue]=\"ac\">{{ac.ACCODE}}</option></select>\r\n    </div>\r\n    <div class=\" smalllabeldiv\">\r\n        <label class=\"smallBoldLabel\">{{control.label}} Name</label>\r\n    </div>\r\n    <div >\r\n        <select style=\"width:220px;height:25px\" [(ngModel)]=\"selectedAccount\"  (ngModelChange)=\"acChange(selectedAccount)\">\r\n    <option *ngFor=\"let ac of accountList\" [ngValue]=\"ac\">{{ac.ACNAME}}</option></select>\r\n        <button style=\"height: 25px;width:25px;\" (click)=\"onAddAccount(selectedAccount)\" [disabled]=\"selectedAccount==null || multiSelectList.indexOf(selectedAccount)>-1\">+</button>\r\n    </div>\r\n    <div   *ngIf=\"multiSelectList.length>0\" style=\"width:300px;text-align: left\">\r\n        <div class=\"scrolldiv\">\r\n            <span *ngFor=\"let m of multiSelectList;let i=index\" class=\"multiboxspan\">{{m.ACNAME}}<a>\r\n                <button type=\"button\" (click)=\"onRemoveAccount(i)\" style=\"border: transparent;background: transparent;color:red\"> x </button></a></span>\r\n        </div>\r\n    </div>\r\n    <div  *ngIf=\"multiSelectList.length>0\">\r\n        <label class=\"smallBoldLabel\"><input type=\"checkbox\" style=\"vertical-align: middle;\" (change)=\"$event.target.checked?(form.controls['InSingleLedger'].setValue(1)):(form.controls['InSingleLedger'].setValue(0))\">Merge In Single Ledger</label>\r\n        </div>-->\r\n    </div>\r\n<div *ngIf=\"control.type=='reportOptions'\">\r\n     <div *ngFor=\"let p of control.reportOptions\" [formGroup]=\"form\">\r\n                    <fieldset class=\"scheduler-border\">\r\n                        <legend class=\"scheduler-border\" style=\"font-size: 12px;width:initial;font-weight:bold\">{{p.description}}</legend>\r\n                        <div *ngIf=\"p.type=='radio'\" class=\"row\">\r\n                            <div *ngFor=\"let r of p.options\" style=\"margin-left:20px;float:left;font-size:12px\">\r\n                              <label style=\"font-size:12px\">  <input type=\"radio\"  [value]=\"r.value\"  formControlName=\"{{p.mappingname}}\">{{r.name}}</label>\r\n                            </div>\r\n                        </div>\r\n                        <div *ngIf=\"p.type=='checkbox'\" class=\"row\">\r\n                            <div *ngFor=\"let r of p.options\" style=\"margin-left:20px;float:left\">\r\n                                <input type=\"checkbox\" (change)=\"checkboxchangeEvent($event.target.checked,r.name,p.description)\" [checked]=\"r.value==1\">{{r.name}}\r\n                            </div>\r\n                        </div>\r\n                    </fieldset>\r\n                    </div>\r\n                    </div>\r\n<div *ngIf=\"control.type=='DebitorsReportOptionsAndDueAging'\">\r\n    <DebitorsReportOptionsAndDueAging [form]=\"form\" [reportname]=\"control.listName\"></DebitorsReportOptionsAndDueAging>\r\n</div>\r\n        <div *ngIf=\"control.type=='tree'\"  style=\"padding: 0px\">\r\n            <treeledgerandparty [form]=\"form\" [control]=\"control\"></treeledgerandparty>\r\n        </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
-/***/ 1715:
+/***/ 1730:
 /***/ (function(module, exports) {
 
 module.exports = "<ba-card>\r\n    <div class=\"row borderdiv\" style=\"padding:15px\">\r\n        \r\n        <form class=\"dynamic-form\" [formGroup]=\"form\">\r\n            <div class=\"table\" >\r\n                <div class=\"row\" *ngFor=\"let c of reportMaster.controls\" >\r\n                    <div  class={{col.column}}  *ngFor=\"let col of c.row\">\r\n                        <!--<div class=\"rowdiv\" style=\"padding-left:15px;padding-right:15px;padding-top:5px;padding-bottom:5px\">-->\r\n                        <reportcontrols [control]=\"col\" [form]=\"form\"></reportcontrols>\r\n                        <!--</div>-->\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </form>\r\n    </div>\r\n</ba-card>\r\n    <div style=\"margin: 15px;\">\r\n        <button style=\"height: 40px;width:80px;\" title=\"Save\" class=\"btn btn-info\" data-dismiss=\"modal\" (click)=\"onloadReportClickEvent()\">Run</button>\r\n         <button style=\"height: 40px;width:80px;\" title=\"Save\" class=\"btn btn-info\" data-dismiss=\"modal\" (click)=\"onloadExcelEvent()\">Excel</button>\r\n         <button style=\"height: 40px;width:80px;\" title=\"Save\" class=\"btn btn-info\" data-dismiss=\"modal\" (click)=\"csvDownload()\">CSV</button>\r\n         <button style=\"height: 40px;width:80px;\" title=\"Save\" class=\"btn btn-info\" data-dismiss=\"modal\" (click)=\"xmlDownloadFromHtml()\">XML</button>\r\n          <button style=\"height: 40px;width:80px;\" title=\"Save\" class=\"btn btn-info\" data-dismiss=\"modal\" (click)=\"onloadPreviewEvent()\">Preview</button>\r\n        <!--<button type=\"button\" title=\"Cancel\" class=\"btn btn-info\" data-dismiss=\"modal\" (click)=\"onClear()\">Clear</button>-->\r\n    </div>\r\n    <!--<div #PreviewReportHeader style=\"height:0px\">\r\n<previewReport ></previewReport>\r\n<div>-->\r\n    \r\n    <div class=\"row\"  #reportHtmlTable id=\"reportTabelSection\">\r\n        <reporttable [reportname]=\"reportname\" [source]=\"gridTabel\" [data]=\"data\" [reportDrill]=\"contextMenuActions\" [repordGridData]=\"reportMaster.reportQuery\" (contextmenuEmit)=\"contextMenuParam($event)\"></reporttable>\r\n    </div>\r\n    <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n        aria-hidden=\"true\">\r\n        <div class=\"modal-dialog modal-sm\">\r\n            <div class=\"modal-content\">\r\n                <div class=\"modal-header\">\r\n                    <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                    <h4 class=\"modal-title\">Information</h4>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    {{DialogMessage}}\r\n                </div>\r\n                <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-info confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-info confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n    "
 
 /***/ }),
 
-/***/ 1863:
+/***/ 1886:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1679);
+var content = __webpack_require__(1694);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(31)(content, {});
@@ -12164,13 +12164,13 @@ if(false) {
 
 /***/ }),
 
-/***/ 1864:
+/***/ 1887:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1680);
+var content = __webpack_require__(1695);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(31)(content, {});

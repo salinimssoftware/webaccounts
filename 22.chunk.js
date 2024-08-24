@@ -1,6 +1,6 @@
 webpackJsonpac__name_([22],{
 
-/***/ 1175:
+/***/ 1177:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -186,7 +186,7 @@ __decorate([
 ReportBodyComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: "report-body",
-        template: __webpack_require__(1234),
+        template: __webpack_require__(1236),
     }),
     __param(1, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DOCUMENT"])),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["Router"], Object])
@@ -209,13 +209,13 @@ var ColumnSettings = (function () {
 
 /***/ }),
 
-/***/ 1225:
+/***/ 1227:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__report_body_component__ = __webpack_require__(1175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__report_body_component__ = __webpack_require__(1177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportBodyModule; });
 
@@ -248,14 +248,14 @@ var ReportBodyModule_1;
 
 /***/ }),
 
-/***/ 1234:
+/***/ 1236:
 /***/ (function(module, exports) {
 
 module.exports = "<style>\r\n  .table tr th {\r\n    text-align: center !important;\r\n    vertical-align: middle;\r\n\r\n  }\r\n\r\n  tr {\r\n    font-size: 12px;\r\n  }\r\n\r\n  .page-header-space {\r\n    height: 100px;\r\n  }\r\n\r\n  .text-justify {\r\n    text-align: justify;\r\n  }\r\n\r\n  table {\r\n    width: 100%;\r\n  }\r\n\r\n\r\n  th {\r\n    font-size: 12px;\r\n    font-weight: bold;\r\n  }\r\n\r\n  .custom-td {\r\n    border: 1px solid #e6e6e6;\r\n    width: 20px;\r\n    text-align: center !important;\r\n  }\r\n\r\n  .row-even {\r\n    background-color: #E6E6E6\r\n  }\r\n\r\n  .row-odd {\r\n    background-color: rgb(197, 197, 196)\r\n  }\r\n\r\n  .thead-padding {\r\n    padding: 10px;\r\n  }\r\n\r\n  .selected-row {\r\n    background-color: #787878 !important;\r\n    color: white;\r\n    font-size: 14px;\r\n  }\r\n\r\n  td {\r\n    padding: 5px !important;\r\n  }\r\n\r\n  .border {\r\n    border-top: 1px solid #e6e6e6 !important;\r\n  }\r\n\r\n  .header{\r\n    min-height: 62px !important\r\n  }\r\n\r\n</style>\r\n<ng-container *ngIf=\"dataList.length\">\r\n  <div id=\"reportTable\" #dataTable *ngIf=\"listSetting\" class=\"row\"\r\n    style=\"height: 470px !important;overflow-y:scroll;overflow-x: hidden;width: 100%;background:#ffffff;margin: 0\">\r\n    <div class=\"header\" style=\"padding: 0px;position: sticky;top: 0\">\r\n      <table id=\"report-header\">\r\n        <thead>\r\n          <tr style=\"border-bottom: 1px solid;height: 30px;\r\n            background: #c5e3ed; \r\n            color: black;\">\r\n            <ng-container *ngIf=\"reportType=='Ledger Voucher'\">\r\n              <td class=\"thead-padding\"><b>Ledger</b></td>\r\n              <td class=\"thead-padding\">{{ACNAME}}</td>\r\n            </ng-container>\r\n            <ng-container *ngIf=\"reportType=='Voucher Register'\">\r\n              <td colspan=\"2\" class=\"thead-padding\"><b>List of All {{voucherName}}</b></td>\r\n            </ng-container>\r\n            <ng-container *ngIf=\"reportType=='Day Book'\">\r\n              <td colspan=\"2\" class=\"thead-padding\"><b>Day Book of {{voucherName}}</b></td>\r\n            </ng-container>\r\n            <td class=\"thead-padding\"></td>\r\n            <td class=\"thead-padding\"></td>\r\n            <td class=\"thead-padding text-right\" colspan=\"3\"> <strong>{{DATE1 |date}} to {{DATE2 |date}}</strong></td>\r\n          </tr>\r\n          <tr style=\"border-bottom: 1px solid;height: 30px;\r\n            background: #c5e3ed; \r\n            color: black;\">\r\n            <ng-container *ngFor=\"let col of listSetting.columns;let i=index\">\r\n              <th *ngIf=\"col.key=='GROUP NAME'\" style=\"width: 7% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='MAIN GROUP NAME'\" style=\"width: 7% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='LEDGER NAME'\" style=\"width: 7% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='TRNDATE'\" style=\"width: 7% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='DATE'\" style=\"width: 7% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='PARTICULARS'\" style=\"width: 30% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='VCH TYPE'\" style=\"width: 10% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='VCH NO'\" style=\"width: 10% !important\" class=\"text-left\">{{col.title}}</th>\r\n              <th *ngIf=\"col.key=='DEBIT' || col.key=='DRAMNT'\" style=\"width: 7% !important\" class=\"text-right\">\r\n                {{col.title}}</th>\r\n              <th *ngIf=\"col.key=='CREDIT' || col.key=='CRAMNT'\" style=\"width: 7% !important\" class=\"text-right\">\r\n                {{col.title}}</th>\r\n              <th *ngIf=\"col.key=='BALANCE'\" style=\"width: 10% !important\" class=\"text-right\">\r\n                {{col.title}}</th>\r\n            </ng-container>\r\n          </tr>\r\n\r\n        </thead>\r\n      </table>\r\n    </div>\r\n\r\n    <table id=\"report-body\">\r\n      <tbody>\r\n        <ng-container *ngFor=\"let itm of dataList;let i = index;\">\r\n          <tr class=\"highlight\" [class.selected-row]=\"selectedRowIndex == i\" (dblclick)=\"doubleClicked(i)\"\r\n            style=\"max-height:25px;\" [class.border]=\"itm['DATE']!=null && itm['FLG']!='B'\">\r\n\r\n            <ng-container *ngFor=\"let col of listSetting.columns\">\r\n              <td *ngIf=\"col.key=='DATE'\" class=\"text-left\" style=\"width:7% !important\">\r\n                {{itm[col.key] | date:'shortDate'}}\r\n              </td>\r\n              <td *ngIf=\"col.key=='PARTICULARS'\" class=\"text-left\" style=\"width:30% !important;white-space: pre\"\r\n                [innerHtml]=\"itm[col.key]\">\r\n              </td>\r\n              <td *ngIf=\"col.key=='VCH TYPE'\" class=\"text-left\" style=\"width:10% !important\">\r\n                {{itm[col.key]}}\r\n              </td>\r\n              <td *ngIf=\"col.key=='VCH NO'\" class=\"text-left\" style=\"width:10% !important\">\r\n                {{itm[col.key]}}\r\n              </td>\r\n              <td *ngIf=\"col.key=='GROUP NAME'\" class=\"text-left\" style=\"width:10% !important\">\r\n                {{itm[col.key]}}\r\n              </td>\r\n              <td *ngIf=\"col.key=='MAIN GROUP NAME'\" class=\"text-left\" style=\"width:10% !important\">\r\n                {{itm[col.key]}}\r\n              </td>\r\n              <td *ngIf=\"col.key=='LEDGER NAME'\" class=\"text-left\" style=\"width:10% !important\">\r\n                {{itm[col.key]}}\r\n              </td>\r\n              <td *ngIf=\"col.key=='TRNDATE'\" class=\"text-left\" style=\"width:10% !important\">\r\n                {{itm[col.key]}}\r\n              </td>\r\n\r\n              <td *ngIf=\"col.key=='DEBIT' || col.key=='DRAMNT'\" style=\"width:7% !important\" class=\"text-right\">\r\n                {{itm[col.key] | number:'1.2-2'}}\r\n              </td>\r\n              <td *ngIf=\"col.key== 'CREDIT' || col.key=='CRAMNT'\" style=\"width:7% !important\" class=\"text-right\">\r\n                {{itm[col.key] | number:'1.2-2'}}\r\n              </td>\r\n              <td *ngIf=\"col.key== 'BALANCE'\" style=\"width:10% !important\" class=\"text-right\">\r\n                {{itm[col.key] | number:'1.2-2'}}\r\n              </td>\r\n            </ng-container>\r\n\r\n          </tr>\r\n          <tr *ngIf=\"selectedRowIndex == i\">\r\n            <td [attr.colspan]=\"listSetting.columns.length+1\">\r\n              <div id=\"row{{i}}\"></div>\r\n            </td>\r\n          </tr>\r\n        </ng-container>\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n</ng-container>\r\n\r\n\r\n\r\n<div class=\"clearfix\" *ngIf=\"dataList.length\" style=\"width: 100% !important\">\r\n  <div class=\"col-md-12\" style=\"position: sticky;bottom:0;padding: 0px;background: #c5e3ed; \r\n  color: black;\">\r\n    <table id=\"report-footer\" style=\"table-layout:fixed;\">\r\n      <tfoot>\r\n        <ng-container>\r\n          <tr *ngFor=\"let total of dataListTotal\">\r\n            <td  style=\"width:7%\" >\r\n              &nbsp;\r\n            </td>\r\n            <td  style=\"width:30%\"></td>\r\n            <td style=\"width:10%\"></td>\r\n            <td class=\"text-left\"  style=\"width:10%\"><b>{{total.PARTICULARS}}</b></td>\r\n            <td style=\"width: 7% !important\" class=\"text-right\">\r\n              <b>{{total.DRAMNT |number:'1.2-2' }}</b></td>\r\n            <td style=\"width: 7% !important\" class=\"text-right\">\r\n              <b>{{total.CRAMNT |number:'1.2-2' }}</b>\r\n            </td>\r\n            <td style=\"width:10%\"></td>\r\n          </tr>\r\n        </ng-container>\r\n\r\n      </tfoot>\r\n    </table>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 1355:
+/***/ 1360:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -263,13 +263,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_popupLists_report_filter_report_filter_module__ = __webpack_require__(1176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_popupLists_report_filter_report_filter_module__ = __webpack_require__(1178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_permission_guard_service__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__report_body_module__ = __webpack_require__(1225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cash_book_component__ = __webpack_require__(1408);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__cash_book_routing_module__ = __webpack_require__(1563);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__cash_book_service__ = __webpack_require__(1409);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CashBookModule", function() { return CashBookModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__report_body_module__ = __webpack_require__(1227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__day_book_routing_module__ = __webpack_require__(1574);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__day_book_component__ = __webpack_require__(1414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__day_book_service__ = __webpack_require__(1415);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DayBookModule", function() { return DayBookModule; });
 
 
 
@@ -279,48 +279,46 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var CashBookModule = (function () {
-    function CashBookModule() {
+var DayBookModule = (function () {
+    function DayBookModule() {
     }
-    return CashBookModule;
+    return DayBookModule;
 }());
-CashBookModule = __decorate([
+DayBookModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormsModule"],
-            __WEBPACK_IMPORTED_MODULE_7__cash_book_routing_module__["a" /* CashBookRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_6__day_book_routing_module__["a" /* DayBookRoutingModule */],
             __WEBPACK_IMPORTED_MODULE_3__common_popupLists_report_filter_report_filter_module__["a" /* ReportFilterModule */].forRoot(),
             __WEBPACK_IMPORTED_MODULE_5__report_body_module__["a" /* ReportBodyModule */].forRoot()
         ],
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_6__cash_book_component__["a" /* CashBookComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__day_book_component__["a" /* DayBookComponent */],
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_4__common_services_permission_guard_service__["a" /* CanActivateTeam */],
-            __WEBPACK_IMPORTED_MODULE_8__cash_book_service__["a" /* CashBookService */]
+            __WEBPACK_IMPORTED_MODULE_8__day_book_service__["a" /* DayBookService */]
         ]
     })
-], CashBookModule);
+], DayBookModule);
 
 
 
 /***/ }),
 
-/***/ 1408:
+/***/ 1414:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_popupLists_report_filter_report_filter_component__ = __webpack_require__(1180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_popupLists_report_filter_report_filter_component__ = __webpack_require__(1182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_spinner_spinner_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_services_alert_alert_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__report_body_component__ = __webpack_require__(1175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cash_book_service__ = __webpack_require__(1409);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_repositories_masterRepo_service__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_services_permission__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_popupLists_report_filter_report_filter_service__ = __webpack_require__(555);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CashBookComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__report_body_component__ = __webpack_require__(1177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__day_book_service__ = __webpack_require__(1415);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_popupLists_report_filter_report_filter_service__ = __webpack_require__(556);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DayBookComponent; });
 
 
 
@@ -328,22 +326,17 @@ CashBookModule = __decorate([
 
 
 
-
-
-var CashBookComponent = (function () {
-    function CashBookComponent(_alertService, _ledgerService, _spinnerService, masterservice, authservice, _reportFilterService, masterService) {
+var DayBookComponent = (function () {
+    function DayBookComponent(_alertService, _ledgerService, _spinnerService, _reportFilterService) {
         this._alertService = _alertService;
         this._ledgerService = _ledgerService;
         this._spinnerService = _spinnerService;
-        this.masterservice = masterservice;
-        this.authservice = authservice;
         this._reportFilterService = _reportFilterService;
-        this.masterService = masterService;
         this.listSetting = new __WEBPACK_IMPORTED_MODULE_4__report_body_component__["a" /* GenericReportListSettings */]();
-        this.reportType = "Cash Book";
+        this.reportType = "Day Book";
         this.ReportDataObj = {};
         this.listSetting = {
-            title: "Cash Book",
+            title: "Day Book",
             columns: [
                 {
                     key: "DATE",
@@ -362,41 +355,39 @@ var CashBookComponent = (function () {
                     title: "VCH NO"
                 },
                 {
-                    key: "DEBIT",
+                    key: "DRAMNT",
                     title: "DEBIT"
                 },
                 {
-                    key: "CREDIT",
+                    key: "CRAMNT",
                     title: "CREDIT"
                 }
             ]
         };
     }
-    CashBookComponent.prototype.ngOnInit = function () {
+    DayBookComponent.prototype.ngOnInit = function () {
         this.loadFilter();
     };
-    CashBookComponent.prototype.loadFilter = function () {
+    DayBookComponent.prototype.loadFilter = function () {
         this.reportFilter.show();
     };
-    CashBookComponent.prototype.applyFilter = function (filterObj) {
+    DayBookComponent.prototype.applyFilter = function (filterObj) {
         var _this = this;
         this.filterObj = filterObj;
         this.reportFilter.popupClose();
         this._spinnerService.show(' Please Wait! Getting Report Data.');
         try {
-            var param = {
-                DIV: this.masterService.userProfile.CompanyInfo.INITIAL,
-                ACID: this._reportFilterService.ReportFilterObj.ACID,
-                DATE1: this.filterObj.DATE1,
-                DATE2: this.filterObj.DATE2,
-                CID: this.masterService.userProfile.CompanyInfo.COMPANYID,
-            };
-            this._ledgerService.getCashBookData(param).subscribe(function (res) {
-                if (res.result.length == 0) {
-                    _this._alertService.warning("No Result Found");
+            this._ledgerService.getDayBookData(filterObj.VTYPE, filterObj.DATE1, filterObj.DATE2, filterObj.SHOWNARRATION, filterObj.DIV).subscribe(function (res) {
+                if (res.status == "ok") {
+                    if (res.result.length == 0) {
+                        _this._alertService.warning("No Result Found");
+                    }
+                    _this.ReportDataObj.particularsRow = res.result;
+                    _this.ReportDataObj.totalRow = res.result2 == null ? [] : res.result2;
                 }
-                _this.ReportDataObj.particularsRow = res.result.data;
-                _this.ReportDataObj.totalRow = res.result2 == null ? [] : res.result2;
+                else {
+                    _this._alertService.error(res.result);
+                }
                 _this._spinnerService.hide();
             }, function (error) {
                 _this._alertService.error(error);
@@ -406,29 +397,29 @@ var CashBookComponent = (function () {
             this._alertService.error(ex);
         }
     };
-    CashBookComponent.prototype.ExportReportInExcel = function () {
+    DayBookComponent.prototype.ExportReportInExcel = function () {
         // this._reportFilterService.exportAsExcelFile(this.ReportDataObj.particularsRow,this.filterObj.VOUCHERNAME)
-        this._reportFilterService.exportTableToExcel("reportTable", "Cash Book");
+        this._reportFilterService.exportTableToExcel("reportTable", "Day Book");
     };
-    return CashBookComponent;
+    return DayBookComponent;
 }());
 __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('reportFilter'),
     __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__common_popupLists_report_filter_report_filter_component__["a" /* ReportFilterComponent */])
-], CashBookComponent.prototype, "reportFilter", void 0);
-CashBookComponent = __decorate([
+], DayBookComponent.prototype, "reportFilter", void 0);
+DayBookComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'cash-book',
-        template: __webpack_require__(1810),
+        selector: 'day-book',
+        template: __webpack_require__(1826),
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__common_services_alert_alert_service__["a" /* AlertService */], __WEBPACK_IMPORTED_MODULE_5__cash_book_service__["a" /* CashBookService */], __WEBPACK_IMPORTED_MODULE_2__common_services_spinner_spinner_service__["a" /* SpinnerService */], __WEBPACK_IMPORTED_MODULE_6__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_7__common_services_permission__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_8__common_popupLists_report_filter_report_filter_service__["a" /* ReportFilterService */], __WEBPACK_IMPORTED_MODULE_6__common_repositories_masterRepo_service__["a" /* MasterRepo */]])
-], CashBookComponent);
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__common_services_alert_alert_service__["a" /* AlertService */], __WEBPACK_IMPORTED_MODULE_5__day_book_service__["a" /* DayBookService */], __WEBPACK_IMPORTED_MODULE_2__common_services_spinner_spinner_service__["a" /* SpinnerService */], __WEBPACK_IMPORTED_MODULE_6__common_popupLists_report_filter_report_filter_service__["a" /* ReportFilterService */]])
+], DayBookComponent);
 
 
 
 /***/ }),
 
-/***/ 1409:
+/***/ 1415:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -439,21 +430,21 @@ CashBookComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__global_state__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CashBookService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DayBookService; });
 
 
 
 
 
 
-var CashBookService = (function () {
-    function CashBookService(http, activatedRoute, authService, state) {
+var DayBookService = (function () {
+    function DayBookService(http, activatedRoute, authService, state) {
         this.http = http;
         this.activatedRoute = activatedRoute;
         this.authService = authService;
         this.state = state;
     }
-    Object.defineProperty(CashBookService.prototype, "apiUrl", {
+    Object.defineProperty(DayBookService.prototype, "apiUrl", {
         get: function () {
             var url = this.state.getGlobalSetting("apiUrl");
             var apiUrl = "";
@@ -466,70 +457,70 @@ var CashBookService = (function () {
         enumerable: true,
         configurable: true
     });
-    CashBookService.prototype.getCashBookData = function (reportparam) {
-        return this.http.post(this.apiUrl + "/loadReports", { reportname: "Cash Book", reportparam: reportparam }, this.getRequestOption())
+    DayBookService.prototype.getDayBookData = function (vtype, from, to, showNarration, div) {
+        return this.http.get(this.apiUrl + "/getDayBookData?VTYPE=" + vtype + "&DATE1=" + from + "&DATE2=" + to + "&SHOWNARATION=" + showNarration + "&DIV=" + div, this.getRequestOption())
             .map(this.extractData)
             .catch(this.handleError);
     };
-    CashBookService.prototype.extractData = function (res) {
+    DayBookService.prototype.extractData = function (res) {
         var response = res.json();
         return response || {};
     };
-    CashBookService.prototype.handleError = function (error) {
+    DayBookService.prototype.handleError = function (error) {
         return __WEBPACK_IMPORTED_MODULE_5_rxjs__["Observable"].throw(error);
     };
-    CashBookService.prototype.getRequestOption = function () {
+    DayBookService.prototype.getRequestOption = function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_0__angular_http__["Headers"]({ 'Content-type': 'application/json', 'Authorization': this.authService.getAuth().token });
         //console.log({ headers: headers });
         return new __WEBPACK_IMPORTED_MODULE_0__angular_http__["RequestOptions"]({ headers: headers });
     };
-    return CashBookService;
+    return DayBookService;
 }());
-CashBookService = __decorate([
+DayBookService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_http__["Http"], __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"], __WEBPACK_IMPORTED_MODULE_3__common_services_permission__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_4__global_state__["a" /* GlobalState */]])
-], CashBookService);
+], DayBookService);
 
 
 
 /***/ }),
 
-/***/ 1563:
+/***/ 1574:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cash_book_component__ = __webpack_require__(1408);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CashBookRoutingModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__day_book_component__ = __webpack_require__(1414);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DayBookRoutingModule; });
 
 
 
 
 var routes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_3__cash_book_component__["a" /* CashBookComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_3__day_book_component__["a" /* DayBookComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
 ];
-var CashBookRoutingModule = (function () {
-    function CashBookRoutingModule() {
+var DayBookRoutingModule = (function () {
+    function DayBookRoutingModule() {
     }
-    return CashBookRoutingModule;
+    return DayBookRoutingModule;
 }());
-CashBookRoutingModule = __decorate([
+DayBookRoutingModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         imports: [__WEBPACK_IMPORTED_MODULE_0__angular_router__["RouterModule"].forChild(routes)],
         exports: [__WEBPACK_IMPORTED_MODULE_0__angular_router__["RouterModule"]]
     })
-], CashBookRoutingModule);
+], DayBookRoutingModule);
 
 
 
 /***/ }),
 
-/***/ 1810:
+/***/ 1826:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"clearfix\">\r\n    <div class=\"col-md-12\" style=\"padding-left: 0;padding-right: 0px\">\r\n      <div class=\"col-md-1\" style=\"padding: 0;width: 30px !important\">\r\n        <table>\r\n          <tr style=\"height:30px;width:30px\">\r\n            <td style=\"border: 1pt solid black;\">\r\n              <i (click)=\"loadFilter()\" tooltip-placement=\"right\" tooltip=\"Main filters\" style=\"margin:5px\"><span\r\n                  class=\"glyphicon glyphicon-filter\" tooltip=\"Main filters\"></span></i>\r\n            </td>\r\n          </tr>\r\n          <tr>\r\n            <td style=\"border: 1pt solid black;\">\r\n              <i (click)=\"ExportReportInExcel()\" style=\"margin:5px\"> <span\r\n                      class=\"glyphicon glyphicon-export\"></span></i>\r\n          </td>\r\n          </tr>\r\n        </table>\r\n      </div>\r\n      <div class=\"col-md-11\" style=\"padding: 0;width:96.66% !important\">\r\n        <report-body *ngIf=\"ReportDataObj.particularsRow\" [listSetting]=\"listSetting\" [reportType]=\"reportType\" [voucherName]=\"filterObj.VOUCHERNAME\"\r\n          [particularsRow]=\"ReportDataObj.particularsRow\" [totalRow]=\"ReportDataObj.totalRow\" [ACNAME]=\"filterObj.ACNAME\" [DATE1]=\"filterObj.DATE1\" [DATE2]=\"filterObj.DATE2\"></report-body>\r\n  \r\n          \r\n      </div>\r\n    </div>\r\n  </div>\r\n  \r\n  \r\n  \r\n  \r\n  <report-filter #reportFilter (filterEmiiter)=\"applyFilter($event)\" [reportType]=\"reportType\"></report-filter>\r\n  "
+module.exports = "<div class=\"clearfix\">\r\n  <div class=\"col-md-12\" style=\"padding-left: 0;padding-right: 0px\">\r\n    <div class=\"col-md-1\" style=\"padding: 0;width: 30px !important\">\r\n      <table>\r\n        <tr style=\"height:30px;width:30px\">\r\n          <td style=\"border: 1pt solid black;\">\r\n            <i (click)=\"loadFilter()\" tooltip-placement=\"right\" tooltip=\"Main filters\" style=\"margin:5px\"><span\r\n                class=\"glyphicon glyphicon-filter\" tooltip=\"Main filters\"></span></i>\r\n          </td>\r\n        </tr>\r\n        <tr>\r\n          <td style=\"border: 1pt solid black;\">\r\n            <i (click)=\"ExportReportInExcel()\" style=\"margin:5px\"> <span\r\n                    class=\"glyphicon glyphicon-export\"></span></i>\r\n        </td>\r\n        </tr>\r\n      </table>\r\n    </div>\r\n    <div class=\"col-md-11\" style=\"padding: 0;width:96.66% !important\">\r\n      <report-body *ngIf=\"ReportDataObj.particularsRow\" [listSetting]=\"listSetting\" [reportType]=\"reportType\" [voucherName]=\"filterObj.VOUCHERNAME\"\r\n        [particularsRow]=\"ReportDataObj.particularsRow\" [totalRow]=\"ReportDataObj.totalRow\" [ACNAME]=\"filterObj.ACNAME\" [DATE1]=\"filterObj.DATE1\" [DATE2]=\"filterObj.DATE2\"></report-body>\r\n\r\n        \r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n<report-filter #reportFilter (filterEmiiter)=\"applyFilter($event)\" [reportType]=\"reportType\"></report-filter>\r\n"
 
 /***/ })
 
