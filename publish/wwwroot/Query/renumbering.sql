@@ -136,6 +136,4 @@ DEALLOCATE cur
     INNER JOIN ##accmain_temp_ordered AS B
     ON R.old_vchrno COLLATE DATABASE_DEFAULT = B.old_vchrno COLLATE DATABASE_DEFAULT;
 END;
-GO
-
 
